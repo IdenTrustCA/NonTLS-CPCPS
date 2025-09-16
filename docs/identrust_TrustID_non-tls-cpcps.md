@@ -196,33 +196,28 @@ Code Signing Certificates are not intended to assert that the signed code is saf
 
 This CP-CPS is administered by:
 
-> IdenTrust PMA
->
-> IdenTrust Services, LLC
->
-> 5225 Wiley Post Way, Suite 450
->
-> Salt Lake City, UT 84116
->
-> Email: <Policy@IdenTrust.com>
->
-> Phone: (888) 882-1104
+##IdenTrust PMA##
+
+IdenTrust Services, LLC
+
+5225 Wiley Post Way, Suite 450
+
+Salt Lake City, UT 84116
+
+Email: <Policy@IdenTrust.com>
+
+Phone: (888) 882-1104
 
 ### **1.5.2 Contact Person**
 
 Questions regarding the implementation and administration of this CP-CPS should be directed to:
 
-> IdenTrust PMA
->
-> IdenTrust Services, LLC
->
-> 5225 Wiley Post Way, Suite 450
->
-> Salt Lake City, UT 84116
->
-> Email: <Policy@IdenTrust.com>
->
-> Phone: (888) 882-1104
+IdenTrust PMA
+IdenTrust Services, LLC
+5225 Wiley Post Way, Suite 450
+Salt Lake City, UT 84116
+Email: <Policy@IdenTrust.com>
+Phone: (888) 882-1104
 
 ### **1.5.3 Certificate Problem Reporting**
 
