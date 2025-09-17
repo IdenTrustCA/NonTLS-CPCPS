@@ -50,9 +50,9 @@ The name of this CP-CPS which follow the [RFC 3647](https://www.ietf.org/rfc/rfc
 The following table contains subsequent revisions:
 
 ### **CP-CPS Document Versions**
-| **Version**   | **Date**    | **Summary of Changes / Comments** |      
-|----------|----------|----------|
-| 5.0.0 | September 12, 2025 | This document replaces IdenTrust CP v4.9.2 and IdenTrust CPS v4.9.2 with the following updates:                                                                                                                <ol> <li> Remove all TLS Certificate references </li> <li> Added relevant CP language where applicable </li> <li> Moved sections to align the S/MIME BR and CS BR </li> <li> Section 1.6: Added/updated definitions/Acronyms/References||5. Section 4.10.2.1: "Problem Report" moved to Section 1.5.2.1 </li> <li> Section 5.4.1: Removed detailed audit log entries in table </li> <li> Section 6.3.2: Updated Timestamp CA details </li> <li> Section 7: Removed TLS Certificate Profile details </li> <li> Appendix A: Removed 
+| **Version** | **Date** | **Summary of Changes / Comments** |      
+|---|---|---|
+| 5.0.0 | September 12, 2025 | This document replaces IdenTrust CP v4.9.2 and IdenTrust CPS v4.9.2 with the following updates: <ol> <li> Remove all TLS Certificate references </li> <li> Added relevant CP language where applicable </li> <li> Moved sections to align the S/MIME BR and CS BR </li> <li> Section 1.6: Added/updated definitions/Acronyms/References||5. Section 4.10.2.1: "Problem Report" moved to Section 1.5.2.1 </li> <li> Section 5.4.1: Removed detailed audit log entries in table </li> <li> Section 6.3.2: Updated Timestamp CA details </li> <li> Section 7: Removed TLS Certificate Profile details </li> <li> Appendix A: Removed 
 
 
 Prior versions of IdenTrust CP, CPS and combined CP-CPS documents can be found in the "Policies -- Archived" Section of the [IdenTrust TrustID Document Library](https://www.identrust.com/support/documents/trustid).
@@ -196,33 +196,23 @@ Code Signing Certificates are not intended to assert that the signed code is saf
 
 This CP-CPS is administered by:
 
-> IdenTrust PMA
->
-> IdenTrust Services, LLC
->
-> 5225 Wiley Post Way, Suite 450
->
-> Salt Lake City, UT 84116
->
-> Email: <Policy@IdenTrust.com>
->
-> Phone: (888) 882-1104
+IdenTrust PMA.  
+IdenTrust Services, LLC.  
+5225 Wiley Post Way, Suite 450.  
+Salt Lake City, UT 84116.  
+Email: <Policy@IdenTrust.com>.  
+Phone: (888) 882-1104. 
 
 ### **1.5.2 Contact Person**
 
 Questions regarding the implementation and administration of this CP-CPS should be directed to:
 
-> IdenTrust PMA
->
-> IdenTrust Services, LLC
->
-> 5225 Wiley Post Way, Suite 450
->
-> Salt Lake City, UT 84116
->
-> Email: <Policy@IdenTrust.com>
->
-> Phone: (888) 882-1104
+IdenTrust PMA.  
+IdenTrust Services, LLC.  
+5225 Wiley Post Way, Suite 450.  
+Salt Lake City, UT 84116.  
+Email: <Policy@IdenTrust.com>.  
+Phone: (888) 882-1104.  
 
 ### **1.5.3 Certificate Problem Reporting**
 
@@ -249,12 +239,12 @@ If a Policy change is significant, the PMA may assign a new Object Identifier (O
 ### **1.6.1 Definitions**
 | **Term** | **Definition** |    
 |----------|----------|
-| **Accept or Acceptance**                                     | An End Entity's act that triggers the End Entity's rights and obligations with respect to its TrustID Certificate under the applicable Subscriber Agreement or Authorized Relying Party Agreement. Indications of Acceptance may include without limitation: <ol> - Using the TrustID Certificate (after Issuance); </ol> <ol> - Failing to notify IdenTrust of any problems with the TrustID Certificate within a reasonable time after receiving it </ol> <ol> - Other manifestations of assent. </ol> |
+| **Accept or Acceptance**                                     | An End Entity's act that triggers the End Entity's rights and obligations with respect to its TrustID Certificate under the applicable Subscriber Agreement or Authorized Relying Party Agreement. Indications of Acceptance may include without limitation: <ol>- Using the TrustID Certificate (after Issuance); </ol><ol>- Failing to notify IdenTrust of any problems with the TrustID Certificate within a reasonable time after receiving it </ol><ol> - Other manifestations of assent. </ol> |
 | **Activation Data**                                    | Private data used or required to access or activate Cryptographic Modules (e.g., a personal identification number (PIN), pass phrase, or a manually-held Key share used to unlock a Private Key before creating a Digital Signature).|
 | **Affiliate**                                                | A corporation, partnership, joint venture, or other entity controlling, controlled by, or under common control with another entity, or an agency, department, political subdivision, or any entity operating under the direct control of a Government Entity  |
 | **Air-Gapped**                                         | Physically and logically separated, disconnected, and isolated from all other Systems.|
 | **Applicant**                                                | The Natural Person or Legal Entity that applies for (or seeks renewal of) a Certificate. Once the Certificate is issued, the Applicant is referred to as the Subscriber. For Certificates issued to devices, the Applicant is the entity that controls or operates the device named in the Certificate, even if the device is sending the actual Certificate Request. |
-| **Applicant Representative**                                 | A Natural Person or human sponsor who is either the Applicant, employed by the Applicant, or an authorized agent who has express authority to represent the Applicant: <ol> - who signs and submits, or approves a Certificate Request on behalf of the Applicant; </ol> <ol> - who signs and submits a Subscriber Agreement on behalf of the Applicant; </ol> <ol> - and/or who acknowledges the Terms of Use on behalf of the Applicant when the Applicant is an Affiliate of the CA or is the CA. </ol> |
+| **Applicant Representative**                                 | A Natural Person or human sponsor who is either the Applicant, employed by the Applicant, or an authorized agent who has express authority to represent the Applicant: <ol> - who signs and submits, or approves a Certificate Request on behalf of the Applicant; </ol><ol> - who signs and submits a Subscriber Agreement on behalf of the Applicant; </ol><ol> - and/or who acknowledges the Terms of Use on behalf of the Applicant when the Applicant is an Affiliate of the CA or is the CA. </ol> |
 | **Anti-Malware Organization**                          | An entity that maintains information about Suspect Code and/or develops software used to prevent, detect, or remove malware.|
 | **Application Software Supplier**                      | A supplier of email client software or other relying‐party Application Software Supplier such as mail user agents (web‐based or application based) and email service providers that process S/MIME Certificates.|
 | **Assumed Name**                                       | Also known as "doing business as", "DBA", or "d/b/a" name in the US and "trading as" name in the UK.|
@@ -269,7 +259,7 @@ If a Policy change is significant, the PMA may assign a new Object Identifier (O
 | **CA Key Pair**                                        | A Key Pair where the Public Key appears as the Subject Public Key Info in one or more Root CA Certificate(s) and/or Subordinate CA Certificate(s).|
 | **CA Private Signing Key**                             | The Private Key that corresponds to IdenTrust\'s Public Key listed in its CA Certificate and used to sign TrustID Certificates.|
 | **CAA**                                                | From [RFC 8659](https://www.rfc-editor.org/rfc/rfc8659.html): "The Certification Authority Authorization (CAA) DNS Resource Record allows a DNS Domain Name holder to specify one or more Certification Authorities (CAs) authorized to issue Certificates for that Domain Name. CAA Resource Records allow a public a public CA to implement additional controls to reduce the risk of unintended Certificate mis‐issue."|
-| **Certificate**                                              | A computer-based record or electronic message that: <ol> <ol> <ol> <ol> - Identifies the Certification Authority issuing it </ol> <ol> -  Names or identifies a Subscriber, Authorized Relying Party, or Electronic Device </ol> <ol> -   Contains the Public Key of the Subscriber, Authorized Relying Party, or Electronic Device </ol> <ol> - Identifies the Certificate's Validity Period </ol> <ol> - Is Digitally Signed by a Certification Authority and </ol> <ol> - Has the meaning ascribed to it in accordance with applicable standards </ol> </ol> </ol> </ol> A Certificate includes not only its actual content but also all documents expressly referenced or incorporated in it. </ol> |
+| **Certificate**                                              | A computer-based record or electronic message that: <ol> - Identifies the Certification Authority issuing it </ol> <ol> -  Names or identifies a Subscriber, Authorized Relying Party, or Electronic Device </ol> <ol> -  Contains the Public Key of the Subscriber, Authorized Relying Party, or Electronic Device </ol> <ol> - Identifies the Certificate's Validity Period </ol> <ol> - Is Digitally Signed by a Certification Authority and </ol> <ol> - Has the meaning ascribed to it in accordance with applicable standards </ol> </ol> </ol> </ol> A Certificate includes not only its actual content but also all documents expressly referenced or incorporated in it. </ol> |
 | **Certificate Data**                                   | Certificate Requests and data related thereto (whether obtained from the Applicant or otherwise) in the CA's possession or control or to which the CA has access.|
 | **Certificate Management Process**                     | Processes, practices, and procedures associated with the use of keys, software, and hardware, by which the CA verifies Certificate Data, issues Certificates, maintains a Repository, and revokes Certificates.|
 | **Certificate Management System**                      | A System used by a CA or Delegated Third Party to process, approve Issuance of, or store Certificates or Certificate status information, including the database, database server, and storage.|
@@ -289,25 +279,25 @@ If a Policy change is significant, the PMA may assign a new Object Identifier (O
 | **Code Signing Certificate**                           | A digital Certificate issued by a CA that contains a Code Signing EKU. Non-EV and EV Code Signing Certificates focus only on assuring the identity of the Subscriber Organization and that the signed code has not been modified from its original form. These Certificates are not intended to provide any other assurances, representations, or warranties. Specifically, Non-EV and EV Code Signing Certificates do not warrant that code is free from vulnerabilities, malware, bugs, or other problems. |
 | **Critical Security Event**                            | An event, set of circumstances, or anomalous activity that could lead to a circumvention of CA Infrastructure security controls or compromise of CA Infrastructure integrity or operational continuity, including, but not limited to, excessive login attempts, attempts to access prohibited resources, DoS/DDoS attacks, attacker reconnaissance, excessive traffic at unusual hours, signs of unauthorized access, system intrusion, or physical compromise of component integrity.|
 | **Critical Vulnerability**                             | A System vulnerability that has a CVSS v2.0 score of 7.0 or higher according to the NVD or an equivalent to such CVSS rating (see <https://nvd.nist.gov/vuln-metrics/cvss>), or as otherwise designated as a Critical Vulnerability by the CA or the CA/Browser Forum.|
-| **Cross-Certified Subordinate CA Certificate**         | A Certificate used to establish a trust relationship between 2 Root CAs.|
+| **Cross-Certified Subordinate CA Certificate**                          | A Certificate used to establish a trust relationship between 2 Root CAs.|
 | **Cryptographic Module**                               | The set of hardware, software, firmware, or some combination thereof that implements cryptographic logic or processes, including cryptographic algorithms, and is contained within the cryptographic boundary of the module. \[NIST FIPS 140-3\].|
 | **CSPRNG**                                             | Cryptographically Secure Pseudo-Random Number Generator: a Pseudo-Random Number generator intended for use in a cryptographic System.|
 | **Delegated Third Party**                              | A Natural Person or Legal Entity that is not CA the and that operates any part of a Certificate Issuing System.|
-| **Delegated Third Party System**                       | Any part of a Certificate System used by a Delegated Third Party while performing the functions delegated to it by the CA.|
-| **Digital Signature / Digitally Sign**                 | The transformation of an electronic record by one person using a Private Key and Public Key Cryptography so that another person having the transformed record and the corresponding Public Key can accurately determine: <ol> - Whether the transformation was created using the Private Key that corresponds to the Public Key; and </ol> <ol> - Whether the record has been altered since the transformation was made. </ol>  |
-| **Distinguished Name (or DN)**                         | The unique identifier for a Subscriber so that he, she, or it can be located in a directory (e.g., the DN for a Subscriber might contain the following attributes: common name, Email Address (mail), Organization name (o), Organizational unit (ou), locality (l), state (st) and country (c)).|
-| **Domain Name**                                        | The label assigned to a node in the Domain Name system (see Fully Qualified Domain Name).|
-| **Domain Namespace**                                   | The set of all possible Domain Names that are subordinate to a single node in the Domain Name system.|
-| **Electronic Device**                                  | Computer software, hardware or other electronic or automated means (including email) configured and enabled by a person to act as their agent and to initiate or respond to electronic records or performances, in whole or in part, without review or intervention by such person.|
-| **Email Address(es)**                                  | From [RFC 5321](https://datatracker.ietf.org/doc/html/rfc5321): "A character string that identifies a user to whom mail will be sent or a location into which mail will be deposited."|
+| **Delegated Third Party System**                             | Any part of a Certificate System used by a Delegated Third Party while performing the functions delegated to it by the CA.|
+| **Digital Signature / Digitally Sign**                               | The transformation of an electronic record by one person using a Private Key and Public Key Cryptography so that another person having the transformed record and the corresponding Public Key can accurately determine: <ol> - Whether the transformation was created using the Private Key that corresponds to the Public Key; and </ol> <ol> - Whether the record has been altered since the transformation was made. </ol>  |
+| **Distinguished Name (or DN)**                                   | The unique identifier for a Subscriber so that he, she, or it can be located in a directory (e.g., the DN for a Subscriber might contain the following attributes: common name, Email Address (mail), Organization name (o), Organizational unit (ou), locality (l), state (st) and country (c)).|
+| **Domain Name**                    | The label assigned to a node in the Domain Name system (see Fully Qualified Domain Name).|
+| **Domain Namespace**               | The set of all possible Domain Names that are subordinate to a single node in the Domain Name system.|
+| **Electronic Device**              | Computer software, hardware or other electronic or automated means (including email) configured and enabled by a person to act as their agent and to initiate or respond to electronic records or performances, in whole or in part, without review or intervention by such person.|
+| **Email Address(es)**              | From [RFC 5321](https://datatracker.ietf.org/doc/html/rfc5321): "A character string that identifies a user to whom mail will be sent or a location into which mail will be deposited."|
 | **End Entity(ies)**                                    | Subscribers and Authorized Relying Parties.|
-| **Enterprise RA**                                      | An employee or agent of a Sponsoring Organization unaffiliated with the Issuing CA, who authorizes Issuance of Certificates to that Organization. Enterprise RAs sign an agreement with IdenTrust, which set forth their obligations, which include selective equivalent obligations to an LRA.|
-| **Government Agency**                                  | In the context of a Private Organization, the Government Agency in the Jurisdiction of Incorporation under whose authority the legal existence of Private Organizations is established (e.g., the Government Agency that issued the Certificate of Incorporation). In the context of Business Entities, the Government Agency in the jurisdiction of operation registering business entities. In the case of a Government Entity, the entity that enacts law, regulations, or decrees establishing the legal existence of Government Entities.|
-| **Government Entity**                                  | A government‐operated Legal Entity, agency, department, ministry, branch, or similar element of the government of a country, or political subdivision within such country (such as a state, province, city, county, etc.).|
-| **Individual(s)**                                      | A Natural Person and not a juridical person or Legal Entity.|
-| **Individual-Validated**                               | Refers to a Certificate Subject that includes only Individual (Natural Person) attributes, rather than attributes linked to an Organization.|
-| **Internet**                                           | The Internet is a global System of interconnected computer networks that uses multiple protocols to communicate data.|
-| **Internet Protocol (or IP)**                          | The primary protocol in the Internet Layer defined by the Request for Comment 1122 ([RFC 1122](https://datatracker.ietf.org/doc/html/rfc1122)) - Requirements for Internet Hosts \-- Communication Layers, Internet Engineering Task Force, R. Braden, October 1989. The IP has the task of delivering datagrams from the source host to the destination host solely based on the addresses.|
+| **Enterprise RA**                   | An employee or agent of a Sponsoring Organization unaffiliated with the Issuing CA, who authorizes Issuance of Certificates to that Organization. Enterprise RAs sign an agreement with IdenTrust, which set forth their obligations, which include selective equivalent obligations to an LRA.|
+| **Government Agency**               | In the context of a Private Organization, the Government Agency in the Jurisdiction of Incorporation under whose authority the legal existence of Private Organizations is established (e.g., the Government Agency that issued the Certificate of Incorporation). In the context of Business Entities, the Government Agency in the jurisdiction of operation registering business entities. In the case of a Government Entity, the entity that enacts law, regulations, or decrees establishing the legal existence of Government Entities.|
+| **Government Entity**               | A government‐operated Legal Entity, agency, department, ministry, branch, or similar element of the government of a country, or political subdivision within such country (such as a state, province, city, county, etc.).|
+| **Individual(s)**                   | A Natural Person and not a juridical person or Legal Entity.|
+| **Individual-Validated**            | Refers to a Certificate Subject that includes only Individual (Natural Person) attributes, rather than attributes linked to an Organization.|
+| **Internet**                        | The Internet is a global System of interconnected computer networks that uses multiple protocols to communicate data.|
+| **Internet Protocol (or IP)**       | The primary protocol in the Internet Layer defined by the Request for Comment 1122 ([RFC 1122](https://datatracker.ietf.org/doc/html/rfc1122)) - Requirements for Internet Hosts \-- Communication Layers, Internet Engineering Task Force, R. Braden, October 1989. The IP has the task of delivering datagrams from the source host to the destination host solely based on the addresses.|
 | **IP Address or IP Addresses**                         | A 32-bit or 128-bit label assigned to a device that uses the Internet Protocol for communication.|
 | **IP Address Registration Authority**                  | The Internet Assigned Numbers Authority (IANA) or a Regional Internet Registry (RIPE, APNIC, ARIN, AfriNIC, LACNIC)|
 | **Issue Certificates / Issuance**                      | The act performed by a CA in creating a Certificate, listing itself as \"Issuer,\" and notifying the Applicant or PKI Sponsor of its contents and that the Certificate is ready and available for Acceptance.|
@@ -366,62 +356,54 @@ If a Policy change is significant, the PMA may assign a new Object Identifier (O
 | **Random Value**                                       | A value specified by a CA to the Domain Registrant that exhibits at least 112 bits of entropy.|
 | **Reasonable Reliance**                                      | For purposes of this CP-CPS, an Authorized Relying Party's decision to rely on a TrustID Certificate will be considered Reasonable Reliance if he, she, or it: <ol> - Has entered into an Authorized Relying Party Agreement and agreed to be bound by the terms and conditions of the CP-CPS; </ol> <ol> - Verified that the Digital Signature in question (if any) was created by the Private Key corresponding to the Public Key in the TrustID Certificate during the time that the TrustID Certificate was valid, and that the communication signed with the Digital Signature had not been altered; </ol> <ol> - Verified that the TrustID Certificate in question was valid at the time of the Authorized Relying Party's reliance, by conducting a status check of the Certificate's then-current validity as required by IdenTrust; and </ol> Used the TrustID Certificate for purposes appropriate under this CP-CPS, and under circumstances where reliance would be reasonable and in good faith in light of all the circumstances that were known or should have been known to the Authorized Relying Party before reliance. An Authorized Relying Party bears all risk of relying on a TrustID Certificate while knowing or having reason to know of any facts that would cause a person of ordinary business prudence to refrain from relying on the Certificate. |
 | **Registration Agency**                                      | A Government Agency that registers business information in connection with an entity's business formation or authorization to conduct business under a license, charter, or other certification. A Registration Agency may include, but is not limited to  <ol> i.  a State Department of Corporations or a Secretary of State; </ol> <ol>ii. a licensing agency, such as a State Department of Insurance; or </ol> <ol> iii. a chartering agency, such as a state office or department of financial regulation, banking or finance, or a federal agency such as the Office of the Comptroller of the Currency or Office of Thrift Supervision. </ol> |
-| **Registration Authority (or RA)**                     | A Legal Entity that is not a CA, and hence does not sign or issue Certificates, contractually delegated by IdenTrust to Accept and process Certificate applications, and to verify the identity of potential End Entities, and authenticate the information contained in Certificate applications, in conformity with the provisions of this Policy and related agreements. RA's do not sign or issue Certificates.|
-| **Registration Number**                                | The unique number assigned to a Private Organization by the incorporating agency in such entity's Jurisdiction of Incorporation.|
-| **Registration Reference**                             | The unique number assigned to a Private Organization by the incorporating agency in such entity's Jurisdiction of Incorporation.|
-| **Reliable Data Source**                               | An identification document or source of data used to verify Subject Identity Information that is generally recognized among commercial enterprises and governments as reliable, and which was created by a third party for a purpose other than the Applicant obtaining a Certificate.|
-| **Reliable Method of Communication**                   | A method of communication, such as a postal/courier delivery address, telephone number, or Email Address, that was verified using a source other than the Applicant Representative.|
-| **Relying Party**                                      | Any Natural Person or Legal Entity that relies on a Valid Certificate. An Application Software Supplier is not considered a Relying Party when software distributed by such Supplier merely displays information relating to a Certificate.|
+| **Registration Authority (or RA)**                     | A Legal Entity that is not a CA, and hence does not sign or issue Certificates, contractually delegated by IdenTrust to Accept and process Certificate applications, and to verify the identity of potential End Entities, and authenticate the information contained in Certificate applications, in conformity with the provisions of this Policy and related agreements. RA's do not sign or issue Certificates. |
+| **Registration Number**                                | The unique number assigned to a Private Organization by the incorporating agency in such entity's Jurisdiction of Incorporation. |
+| **Registration Reference**                             | The unique number assigned to a Private Organization by the incorporating agency in such entity's Jurisdiction of Incorporation. |
+| **Reliable Data Source**                               | An identification document or source of data used to verify Subject Identity Information that is generally recognized among commercial enterprises and governments as reliable, and which was created by a third party for a purpose other than the Applicant obtaining a Certificate. |
+| **Reliable Method of Communication**                   | A method of communication, such as a postal/courier delivery address, telephone number, or Email Address, that was verified using a source other than the Applicant Representative. |
+| **Relying Party**                                      | Any Natural Person or Legal Entity that relies on a Valid Certificate. An Application Software Supplier is not considered a Relying Party when software distributed by such Supplier merely displays information relating to a Certificate. |
 | **Remote Identity Proofing**                           | Remote Identity Proofing allows an authorized Individual to perform Identity Proofing via a video conferencing session, in lieu of conducting in-person Identity Proofing. [NIST SP 800-63A Section 5.3.3](https://pages.nist.gov/800-63-3/sp800-63a.html#sec5) defines the parameters specific to Remote Identity Proofing and the methods in which the Identity Proofing event must occur. Based on the assurance level of the Certificate for which Remote Identity Proofing is being conducted, the session may be conducted in a supervised or an unsupervised session. See definitions for Supervised Remote Identity Proofing and Unsupervised Remote Identity Proofing for additional information regarding each Identity Proofing model. Refer to [Section 3.2.4.4](#remote-identity-proofing) for further definitions regarding Supervised versus Unsupervised Identity Proofing. |
-| **Repository**                                         | An online database containing publicly‐disclosed PKI governance documents (such as Certificate Policies and Certification Practice Statements) and Certificate status information, either in the form of a CRL or an OCSP response.|
+| **Repository**                                         | An online database containing publicly‐disclosed PKI governance documents (such as Certificate Policies and Certification Practice Statements) and Certificate status information, either in the form of a CRL or an OCSP response. |
 | **Revocation**                                         | The act of making a Certificate permanently ineffective from a specified time forward. Revocation, is effected by notation or inclusion in a set of revoked Certificates or other directory or database of revoked Certificates (e.g., inclusion in a CRL).|
-| **Risk Assessment**                                    | A formal process that 1. Identifies and documents foreseeable internal and external threats to the CA Infrastructure that could result in: • unauthorized access to the CA Infrastructure; • disclosure of data stored in the CA Infrastructure; • misuse of the CA Infrastructure; or • unapproved alteration or destruction of any part of the CA Infrastructure; pg. 5 2. Assesses and documents the likelihood and potential damage of each identified threat, taking into consideration minimally the sensitivity and criticality of the CA Infrastructure; and 3. Assesses and documents the sufficiency of the policies, procedures, controls, information systems, technology, and other arrangements that the CA has in place to counter each identified threat. |
-| **Root CA Certificate**                                | A self‐signed and self‐issued Certificate where: 1. the issuer and Subject of the Certificate are the same; and 2. the Digital Signature of the Certificate is: • generated using the Private Key of a Key Pair whose corresponding Public Key is bound to the Certificate; and • verified using the Public Key contained in the Certificate.|
-| **Root CA Private Key**                                | The Private Key associated with a Root CA Certificate.|
-| **Root CA System**                                     | A System used to: 1. generate a Key Pair whose Private Key is or will be a Root CA Private Key; 2. store a Root CA Private Key; or 3. create Digital Signatures using a Root CA Private Key.|
-| **Root Key Generation Script**                         | A documented plan of procedures to be performed for the generation of the Root CA Key Pair|
-| **SANS Top 25**                                        | A list created with input from the SANS Institute and the Common Weakness Enumeration (CWE) that identifies the Top 25 most dangerous software errors that lead to exploitable vulnerabilities. See <https://www.sans.org/top25-software-errors/>|
-| **Secure Email Certificate**                           | Also referred as Mailbox-Validated, a Certificate issued to an Email Address over which the Certificate Applicant demonstrates control to the RA by the Certificate Applicant responding to a unique challenge sent during the authentication process conducted before Issuance. A Secure Email Certificate can be used for the purposes of email signing, email encryption, and client authentication.|
-| **Secure Room**                                        | The room within the data center housing the CA production equipment for IdenTrust. Only specific authorized Trusted Role employees are granted access to the Secure Room based on their roles on a need-to-know or need-to-have-access basis. Such authorization is granted by the Head of Operations, or when so designated, by the Security Office.|
-| **Security Support System**                            | A System or set of Systems supporting the security of the CA Infrastructure, which minimally includes: 1. authentication; 2. network boundary control; 3. audit logging; 4. audit log reduction and analysis; 5. vulnerability scanning; 6. physical intrusion detection; 7. host‐based intrusion detection; and 8. network‐based intrusion detection.|
-| **Signing Service**                                    | An Organization that generates the Key Pair and securely manages the Private Key associated with a Code Signing Certificate, on behalf of a Subscriber.|
-| **Split-Knowledge Technique**                          | A security procedure where no single Individual possesses the equipment, knowledge, or expertise to view, alter or otherwise have access to sensitive or confidential information in a particular PKI.|
-| **Sponsoring Organization**                            | An Organization that has an affiliation with an Individual and has permitted the Individual to hold a TrustID Certificate that identifies the Sponsoring Organization and the fact of the Individual's affiliation with the Sponsoring Organization (see Affiliated Individual). In the case of Certificates issued to Electronic Devices, the Sponsoring Organization owns or controls the Electronic Device or the information asserted in the Certificate such as the Domain Name for a Certificate issued for a server. In the context of the CP, they are also called Applicant but from hereon they are referred to as Sponsoring Organizations.|
-| **Sponsor-Validated or Business Certificate**          | Refers to a Certificate Subject which combines Individual (Natural Person) attributes in conjunction with a subject:organizationName (an associated Legal Entity) attribute. Registration for Sponsor-Validated Certificates may be performed by an Enterprise RA where the subject:organizationName is either that of the delegated enterprise, or an Affiliate of the delegated enterprise, or that the delegated enterprise is an agent of the named Subject Organization.|
-| **Strict Profile**                                     | The S/MIME profiles are the long term target profile for S/MIME Certificates with extKeyUsage limited to id-kp-emailProtection, and stricter use of Subject DN attributes and other extensions.|
-| **Subject**                                            | The Natural Person, device, System, unit, or Legal Entity identified in a Certificate as the Subject. The Subject is either the Subscriber or a device under the control and operation of the Subscriber.|
-| **Subject Distinguished Name**                         | The specific field in a Certificate containing the unique name-identifier for the Subscriber.|
-| **Subject Identity Information**                       | Information that identifies the Certificate Subject. Subject Identity Information does not include a Domain Name or an IP Address listed in the subjectAltName extension or the Subject commonName field.|
-| **Subordinate CA**                                     | A Certification Authority whose Certificate is signed by the Root CA, or another Subordinate CA.|
-| **Subordinate CA Certificate**                         | A Certificate that is signed by the IdenTrust Root CA or other Subordinate CA's within the IdenTrust Root chain. Subordinate CA Certificates and their corresponding Public Keys may be embedded into software obtained or downloaded by the affirmative act of an Authorized Relying Party in order to establish a certification chain within the TrustID PKI hierarchy.|
+| **Risk Assessment**                                    | A formal process that: <br> 1. Identifies and documents foreseeable internal and external threats to the CA Infrastructure that could result in: <ol> • unauthorized access to the CA Infrastructure; </ol> <ol> • disclosure of data stored in the CA Infrastructure; • misuse of the CA Infrastructure; or </ol> <ol> • unapproved alteration or destruction of any part of the CA Infrastructure; pg. 5 </ol> 2. Assesses and documents the likelihood and potential damage of each identified threat, taking into consideration minimally the sensitivity and criticality of the CA Infrastructure; and <br> 3. Assesses and documents the sufficiency of the policies, procedures, controls, information systems, technology, and other arrangements that the CA has in place to counter each identified threat. |
+| **Root CA Certificate**                                | A self‐signed and self‐issued Certificate where: 1. the issuer and Subject of the Certificate are the same; and 2. the Digital Signature of the Certificate is: • generated using the Private Key of a Key Pair whose corresponding Public Key is bound to the Certificate; and • verified using the Public Key contained in the Certificate. |
+| **Root CA Private Key**                                | The Private Key associated with a Root CA Certificate. |
+| **Root CA System**                                     | A System used to: <br> 1. generate a Key Pair whose Private Key is or will be a Root CA Private Key; <br> 2. store a Root CA Private Key; or <br> 3. create Digital Signatures using a Root CA Private Key. |
+| **Root Key Generation Script**                         | A documented plan of procedures to be performed for the generation of the Root CA Key Pair |
+| **SANS Top 25**                                        | A list created with input from the SANS Institute and the Common Weakness Enumeration (CWE) that identifies the Top 25 most dangerous software errors that lead to exploitable vulnerabilities. See <https://www.sans.org/top25-software-errors/> |
+| **Secure Email Certificate**                           | Also referred as Mailbox-Validated, a Certificate issued to an Email Address over which the Certificate Applicant demonstrates control to the RA by the Certificate Applicant responding to a unique challenge sent during the authentication process conducted before Issuance. A Secure Email Certificate can be used for the purposes of email signing, email encryption, and client authentication. |
+| **Secure Room**                                        | The room within the data center housing the CA production equipment for IdenTrust. Only specific authorized Trusted Role employees are granted access to the Secure Room based on their roles on a need-to-know or need-to-have-access basis. Such authorization is granted by the Head of Operations, or when so designated, by the Security Office. |
+| **Security Support System**                            | A System or set of Systems supporting the security of the CA Infrastructure, which minimally includes: <br> 1. authentication; <br> 2. network boundary control; <br> 3. audit logging; <br> 4. audit log reduction and analysis; <br> 5. vulnerability scanning; <br> 6. physical intrusion detection; <br> 7. host‐based intrusion detection; and <br> 8. network‐based intrusion detection. |
+| **Signing Service**                                    | An Organization that generates the Key Pair and securely manages the Private Key associated with a Code Signing Certificate, on behalf of a Subscriber. |
+| **Split-Knowledge Technique**                          | A security procedure where no single Individual possesses the equipment, knowledge, or expertise to view, alter or otherwise have access to sensitive or confidential information in a particular PKI. |
+| **Sponsoring Organization**                            | An Organization that has an affiliation with an Individual and has permitted the Individual to hold a TrustID Certificate that identifies the Sponsoring Organization and the fact of the Individual's affiliation with the Sponsoring Organization (see Affiliated Individual). In the case of Certificates issued to Electronic Devices, the Sponsoring Organization owns or controls the Electronic Device or the information asserted in the Certificate such as the Domain Name for a Certificate issued for a server. In the context of the CP, they are also called Applicant but from hereon they are referred to as Sponsoring Organizations. |
+| **Sponsor-Validated or Business Certificate**          | Refers to a Certificate Subject which combines Individual (Natural Person) attributes in conjunction with a subject:organizationName (an associated Legal Entity) attribute. Registration for Sponsor-Validated Certificates may be performed by an Enterprise RA where the subject:organizationName is either that of the delegated enterprise, or an Affiliate of the delegated enterprise, or that the delegated enterprise is an agent of the named Subject Organization. |
+| **Strict Profile**                                     | The S/MIME profiles are the long term target profile for S/MIME Certificates with extKeyUsage limited to id-kp-emailProtection, and stricter use of Subject DN attributes and other extensions. |
+| **Subject**                                            | The Natural Person, device, System, unit, or Legal Entity identified in a Certificate as the Subject. The Subject is either the Subscriber or a device under the control and operation of the Subscriber. |
+| **Subject Distinguished Name**                         | The specific field in a Certificate containing the unique name-identifier for the Subscriber. |
+| **Subject Identity Information**                       | Information that identifies the Certificate Subject. Subject Identity Information does not include a Domain Name or an IP Address listed in the subjectAltName extension or the Subject commonName field. |
+| **Subordinate CA**                                     | A Certification Authority whose Certificate is signed by the Root CA, or another Subordinate CA. |
+| **Subordinate CA Certificate**                         | A Certificate that is signed by the IdenTrust Root CA or other Subordinate CA's within the IdenTrust Root chain. Subordinate CA Certificates and their corresponding Public Keys may be embedded into software obtained or downloaded by the affirmative act of an Authorized Relying Party in order to establish a certification chain within the TrustID PKI hierarchy. |
 | **Subscriber**                                         | A Natural Person or Legal Entity to whom a Certificate is issued and who is legally bound by a Subscriber Agreement or Terms of Use.|
-| **Subscriber Agreement**                               | An agreement between the CA and the Applicant/Subscriber that specifies the rights and responsibilities of the parties.|
-| **Subscriber Certificate**                             | See TrustID Certificate|
-| **Supervised Remote Identity Proofing**                | A real-time Identity Proofing event where the RA/Trusted Agent is not in the same physical location as the Applicant/Subscriber. The RA/Trusted Agent controls a device that is utilized by the Applicant/Subscriber in order to ensure the Remote Identity Proofing process employs physical, technical, and procedural measures to provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person Identity Proofing process.|
-|| Supervised Remote Identity Proofing requires that a third person, in addition to the RA/TA and the Applicant, participate in the Identity Proofing event to attest to the Applicant's identity and act as a witness to the proceedings.
-|| Supervised Remote Identity Proofing is used for high assurance Certificate Issuance.|
-|| Refer to Remote Identity Proofing and Unsupervised Remote Identity Proofing for related information.|
-|| Refer to [Section 3.2.4.4](#remote-identity-proofing) for further definitions regarding Supervised versus Unsupervised Identity Proofing.|
-| **Suspect Code**                                       | Code that contains malicious functionality or serious vulnerabilities, including spyware, malware and other code that installs without the user\'s consent and/or resists its own removal, code that compromises user security and/or code that can be exploited in ways not intended by its designers to compromise the trustworthiness of the platforms on which it executes.|
-| **System**                                             | One or more pieces of equipment or software that stores, transforms, or communicates data.|
-| **Technically Constrained Subordinate CA Certificate** | A Subordinate CA Certificate that uses a combination of Extended Key Usage and Name Constraint extensions as defined within the Certificate Profile to limit the scope within which the Subordinate CA Certificate may issue Subscriber or additional Subordinate CA Certificates.|
-| **Terms of Use**                                       | Provisions regarding the safekeeping and acceptable uses of a Certificate issued in accordance with this CP-CPS when the Applicant/Subscriber is an Affiliate of the CA or is the CA.|
-| **Timestamp Authority**                                | A service operated by the CA or a delegated third party for its own Code Signing Certificate users that timestamps data using a Certificate chained to a public Root Certificate, thereby asserting that the data (or the data from which the data were derived via a secure hashing algorithm) existed at the specified time.|
-| **Time-Stamping Certificate**                          | A Certificate used by a Time-Stamping Authority to time-stamp data, thereby asserting that the data existed at the specified time.|
-| **Token**                                              | A Cryptographic Module consisting of a hardware object (e.g., a "smart card"), often with memory and a microchip.|
-| **Trusted Agent(s)**                                   | Entity authorized to act as a representative of a Sponsoring Organization in verifying Applicant or PKI Sponsor identification during the registration process. Trusted Agents do not have automated interfaces with CAs. See [Section 1.3.5.5](#trusted-agents).|
-| **Trusted Role(s)**                                    | An employee or contractor of a CA or Delegated Third Party who has authorized access to any component of CA Infrastructure.|
-| **TrustID Certificate**                                | A Non-TLS Certificate issued pursuant to this CP-CPS.|
-| **Unsupervised Remote Identity Proofing**              | A real-time Identity Proofing event where the RA/Trusted Agent is not in the same physical location as the Applicant/Subscriber. The RA/Trusted Agent controls a device that is utilized by the Applicant/Subscriber in order to ensure the Remote Identity Proofing process employs physical, technical, and procedural measures to provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person Identity Proofing process.|
-|| For Unsupervised Remote Identity Proofing, only the RA/Trusted Agent and the Applicant are required to participate in the session.|
-|| Unsupervised Remote Identity Proofing may be used for Basic and Medium Assurance Certificate Issuance.|
-|| Refer to Remote Identity Proofing and Supervised Remote Identity Proofing for related information.|
-|| Refer to [Section 3.2.4.4](#remote-identity-proofing) for additional details.|
-| **Valid Certificate**                                  | Certificate that passes the validation procedures specified in this CP-CPS which are in line with [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280).|
-| **Validation Specialist**                              | Someone who performs the information verification duties specified by the CA/Browser Forum Baseline Requirements.|
-| **Validity Period**                                    | The intended term of validity of a Certificate, beginning with the date of Issuance ("Valid From" or "Activation" date), and ending on the expiration date indicated in the Certificate ("Valid To" or "Expiry" date). From [Section 4.1.2.5 of RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5): "The period of time from notBefore through notAfter, inclusive."|
-| **Vulnerability Scan**                                 | A process that uses manual or automated tools to probe internal and external Systems to check and report on the status of operating systems, services, and devices exposed to the network and the presence of vulnerabilities listed in the NVD, OWASP Top Ten, or SANS Top 25.|
-| **Workstation**                                        | A device, such as a phone, tablet, or desktop or laptop computer, which is: 1. connected to the same network as CA Infrastructure and/or Network Equipment; and 2. capable of accessing CA Infrastructure and/or Network Equipment.|
+| **Subscriber Agreement**                               | An agreement between the CA and the Applicant/Subscriber that specifies the rights and responsibilities of the parties. |
+| **Subscriber Certificate**                             | See TrustID Certificate |
+| **Supervised Remote Identity Proofing**                | A real-time Identity Proofing event where the RA/Trusted Agent is not in the same physical location as the Applicant/Subscriber. The RA/Trusted Agent controls a device that is utilized by the Applicant/Subscriber in order to ensure the Remote Identity Proofing process employs physical, technical, and procedural measures to provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person Identity Proofing process. <br> Supervised Remote Identity Proofing requires that a third person, in addition to the RA/TA and the Applicant, participate in the Identity Proofing event to attest to the Applicant's identity and act as a witness to the proceedings. <br> <br> Supervised Remote Identity Proofing is used for high assurance Certificate Issuance. <br> <br> Refer to Remote Identity Proofing and Unsupervised Remote Identity Proofing for related information. <br> <br> Refer to [Section 3.2.4.4](#remote-identity-proofing) for further definitions regarding Supervised versus Unsupervised Identity Proofing. |
+| **Suspect Code**                                       | Code that contains malicious functionality or serious vulnerabilities, including spyware, malware and other code that installs without the user\'s consent and/or resists its own removal, code that compromises user security and/or code that can be exploited in ways not intended by its designers to compromise the trustworthiness of the platforms on which it executes. |
+| **System**                                             | One or more pieces of equipment or software that stores, transforms, or communicates data. |
+| **Technically Constrained Subordinate CA Certificate** | A Subordinate CA Certificate that uses a combination of Extended Key Usage and Name Constraint extensions as defined within the Certificate Profile to limit the scope within which the Subordinate CA Certificate may issue Subscriber or additional Subordinate CA Certificates. |
+| **Terms of Use**                                       | Provisions regarding the safekeeping and acceptable uses of a Certificate issued in accordance with this CP-CPS when the Applicant/Subscriber is an Affiliate of the CA or is the CA. |
+| **Timestamp Authority**                                | A service operated by the CA or a delegated third party for its own Code Signing Certificate users that timestamps data using a Certificate chained to a public Root Certificate, thereby asserting that the data (or the data from which the data were derived via a secure hashing algorithm) existed at the specified time. |
+| **Time-Stamping Certificate**                          | A Certificate used by a Time-Stamping Authority to time-stamp data, thereby asserting that the data existed at the specified time. |
+| **Token**                                              | A Cryptographic Module consisting of a hardware object (e.g., a "smart card"), often with memory and a microchip. |
+| **Trusted Agent(s)**                                   | Entity authorized to act as a representative of a Sponsoring Organization in verifying Applicant or PKI Sponsor identification during the registration process. Trusted Agents do not have automated interfaces with CAs. See [Section 1.3.5.5](#trusted-agents). |
+| **Trusted Role(s)**                                    | An employee or contractor of a CA or Delegated Third Party who has authorized access to any component of CA Infrastructure. |
+| **TrustID Certificate**                                | A Non-TLS Certificate issued pursuant to this CP-CPS. |
+| **Unsupervised Remote Identity Proofing**              | A real-time Identity Proofing event where the RA/Trusted Agent is not in the same physical location as the Applicant/Subscriber. The RA/Trusted Agent controls a device that is utilized by the Applicant/Subscriber in order to ensure the Remote Identity Proofing process employs physical, technical, and procedural measures to provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person Identity Proofing process. <br> <br> For Unsupervised Remote Identity Proofing, only the RA/Trusted Agent and the Applicant are required to participate in the session. <br> <br> Unsupervised Remote Identity Proofing may be used for Basic and Medium Assurance Certificate Issuance. <br> <br> Refer to Remote Identity Proofing and Supervised Remote Identity Proofing for related information. <br> Refer to [Section 3.2.4.4](#remote-identity-proofing) for additional details. |
+| **Valid Certificate**                                  | Certificate that passes the validation procedures specified in this CP-CPS which are in line with [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280). |
+| **Validation Specialist**                              | Someone who performs the information verification duties specified by the CA/Browser Forum Baseline Requirements. |
+| **Validity Period**                                    | The intended term of validity of a Certificate, beginning with the date of Issuance ("Valid From" or "Activation" date), and ending on the expiration date indicated in the Certificate ("Valid To" or "Expiry" date). From [Section 4.1.2.5 of RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5): "The period of time from notBefore through notAfter, inclusive." |
+| **Vulnerability Scan**                                 | A process that uses manual or automated tools to probe internal and external Systems to check and report on the status of operating systems, services, and devices exposed to the network and the presence of vulnerabilities listed in the NVD, OWASP Top Ten, or SANS Top 25. |
+| **Workstation**                                        | A device, such as a phone, tablet, or desktop or laptop computer, which is: 1. connected to the same network as CA Infrastructure and/or Network Equipment; and 2. capable of accessing CA Infrastructure and/or Network Equipment. |
 
 ### **1.6.2 Acronyms**
 |  **Acronym**  |  **Definition** |
@@ -1350,19 +1332,19 @@ IdenTrust shall revoke a Certificate within 24 hours if one or more of the follo
 7.  IdenTrust has reasonable assurance that a Certificate was used to sign Suspect Code.
 IdenTrust should revoke a Certificate within 24 hours and shall revoke a Certificate within 5 days if one or more of the following occurs:
 8.  The Certificate no longer complies with the requirements of [Section 6.1.5](#key-sizes) and [Section 6.1.6](#public-key-parameters-generation-and-quality-checking);
-8.  IdenTrust obtains evidence that the Certificate was misused;
-9.  IdenTrust is made aware that a Subscriber has violated one or more of its material obligations under the Subscriber Agreement or Terms of Use;
-10. IdenTrust is made aware of any circumstance indicating that use of an Email Address or Fully-Qualified Domain Name in the Certificate is no longer legally permitted (e.g., a court or arbitrator has revoked the right to use an Email Address or Domain Name, a relevant licensing or services agreement between the Subscriber has terminated, or the account holder has failed to maintain the active status of the Email Address or Domain Name);
-11. IdenTrust is made aware of a material change in the information contained in the Certificate;
+9.  IdenTrust obtains evidence that the Certificate was misused;
+10.  IdenTrust is made aware that a Subscriber has violated one or more of its material obligations under the Subscriber Agreement or Terms of Use;
+11. IdenTrust is made aware of any circumstance indicating that use of an Email Address or Fully-Qualified Domain Name in the Certificate is no longer legally permitted (e.g., a court or arbitrator has revoked the right to use an Email Address or Domain Name, a relevant licensing or services agreement between the Subscriber has terminated, or the account holder has failed to maintain the active status of the Email Address or Domain Name);
+12. IdenTrust is made aware of a material change in the information contained in the Certificate;
 IdenTrust is made aware that the Certificate was not issued in accordance with the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates or with this CP-CPS;
-12. IdenTrust determines or is made aware that any of the information appearing in the Certificate is inaccurate;
-13. IdenTrust's right to issue Certificates under the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates expires or is revoked or terminated, unless IdenTrust has made arrangements to continue maintaining the CRL/OCSP Repository;
-14. Revocation is required by IdenTrust CP-CPS;
-15. IdenTrust is made aware of a demonstrated or proven method that exposes the Subscriber's Private Key to compromise or if there is clear evidence that the specific method used to generate the Private Key was flawed.
+13. IdenTrust determines or is made aware that any of the information appearing in the Certificate is inaccurate;
+14. IdenTrust's right to issue Certificates under the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates expires or is revoked or terminated, unless IdenTrust has made arrangements to continue maintaining the CRL/OCSP Repository;
+15. Revocation is required by IdenTrust CP-CPS;
+16. IdenTrust is made aware of a demonstrated or proven method that exposes the Subscriber's Private Key to compromise or if there is clear evidence that the specific method used to generate the Private Key was flawed.
 
-> IdenTrust may delay Revocation of a Code Signing Certificate based on a request from Application Software Suppliers where immediate Revocation has a potentially large negative impact to the ecosystem.
->
-> **Note:** Nothing herein prohibits IdenTrust from revoking a Code Signing Certificate prior to these time frames.
+IdenTrust may delay Revocation of a Code Signing Certificate based on a request from Application Software Suppliers where immediate Revocation has a potentially large negative impact to the ecosystem.
+
+**Note:** Nothing herein prohibits IdenTrust from revoking a Code Signing Certificate prior to these time frames.
 
 #### **4.9.1.2 Reasons for Revoking a Subordinate CA Certificate**
 
@@ -1374,8 +1356,7 @@ IdenTrust will revoke a Subordinate CA Certificate within 7 days if one or more 
 4.  IdenTrust obtains evidence that the CA Certificate was misused;
 5.  IdenTrust confirms that the CA Certificate was not issued in accordance with or that Subordinate CA has not complied with this document or the applicable Certificate Policy or Certification Practice Statement;
 6.  IdenTrust determines that any of the information appearing in the CA Certificate is inaccurate or misleading;
-7.  IdenTrust or the Subordinate CA ceases operations for any reason and has not arranged for another CA to provide Revocation support for the CA Certificate;
-
+7.  IdenTrust or the Subordinate CA ceases operations for any reason and has not arranged for another CA to provide Revocation support for the CA Certificate; <br>
 IdenTrust or the Subordinate CA's right to issue Certificates under the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates expires or is revoked or terminated, unless the Issuing CA has made arrangements to continue maintaining the CRL/OCSP Repository; or
 8.  Revocation is required by IdenTrust's Certificate Policy, Certification Practice Statement; and/or CP-CPS.
 
@@ -1384,11 +1365,8 @@ IdenTrust or the Subordinate CA's right to issue Certificates under the [S/MIME 
 Different parties may request Certificate Revocation as follows:
 
 -   The Issuing CA may summarily revoke Certificates within its domain.
-
 -   An RA can request the Revocation of an End Entity's TrustID Certificate on behalf of the End Entity, the Sponsoring Organization, or other authorized party, or on its behalf.
-
 -   An End Entity is authorized to request the Revocation of his, her, or its Certificate, as is a Subscriber's Sponsoring Organization.
-
 -   Additionally, Subscribers, Authorized Relying Parties, Application Software Suppliers, and other third parties may submit Certificate Problem Reports informing the Issuing CA of reasonable cause to revoke the Certificate. See [Section 4.9.3](#procedure-for-revocation-request). below.
 
 In any case, notice should be provided to the Subscriber promptly after Revocation.
@@ -1449,7 +1427,7 @@ CRLs must be available via a publicly-accessible HTTP URL (i.e., "published").
 
 Within twenty-four (24) hours of issuing its first Certificate, the Issuing CA generate and publish either: - a full and complete CRL; OR - partitioned (i.e., "sharded") CRLs that, when aggregated, represent the equivalent of a full and complete CRL.
 
-Fo r the status of Subscriber Certificates, IdenTrust:
+For the status of Subscriber Certificates, IdenTrust:
 1.  Update and publish a new CRL at least every: - seven (7) days if all Certificates include an Authority Information Access extension with an *id-ad-ocsp* *accessMethod* ("AIA OCSP pointer"); or - four (4) days in all other cases;
 2.  Update and publish a new CRL within twenty-four (24) hours after recording a Certificate as revoked.
 
@@ -1588,6 +1566,7 @@ IdenTrust developed, implements and maintains a comprehensive security program d
 5.  Comply with all other security requirements applicable to the CA by law.
 
 The Certificate Management Process shall include:
+
 1.  Physical security and environmental controls;
 2.  System integrity controls, including configuration management, integrity maintenance of trusted code, and malware detection/prevention;
 3.  Network security and firewall management, including port restrictions and IP address filtering;
@@ -1595,6 +1574,7 @@ The Certificate Management Process shall include:
 5.  Logical access controls, activity logging, and inactivity time-outs to provide individual accountability.
 
 The IdenTrust CA Security Management Process shall include an annual Risk Assessment that:
+
 1.  Identifies foreseeable internal and external threats that could result in unauthorized access, disclosure, misuse, alteration, or destruction of any Certificate Data or Certificate Management Processes;
 2.  Assesses the likelihood and potential damage of these threats, taking into consideration the sensitivity of the Certificate Data and Certificate Management Processes; and
 3.  Assesses the sufficiency of the policies, procedures, information systems, technology, and other arrangements that the CA has in place to counter such threats.
@@ -1701,22 +1681,21 @@ Specifically, the generic roles in this CP-CPS translate into specific roles for
 
 The functions and duties performed by these persons are also separated and distributed so that one person alone cannot circumvent security measures or subvert the security and trustworthiness of the PKI. See [Section 5.2.4](#roles-requiring-separation-of-duties).
 
-| **IdenTrust Trusted Roles Matrix Mapping** |  |  |  |  |  |
-|---|---|---|---|---|---|
-| TrustID Role | IdenTrust-Internally Defined Roles |  |  |  |  |
-|  |      CA Administrator |      LRA / Enterprise RA     |      System Administrator     |      Security Officer     |      RA     Administrator     |
-|     CA Administrator                            | X |  |  |  |  |
-|     CA Officer                                  |  | X |  |  |  |
-|     CA Auditor                                  |  |  |  | X |  |
-|     CA Operator                                 |  |  | X |  |  |
-|     CSA Administrator                           | X |  |  |  |  |
-|     CSA Auditor                                 |  |  |  | X |  |
-|     CSA Operator                                |  |  | X |  |  |
-|     RA Administrator                            |  |  |  |  | X |
-|     RA Officer                                  |  | X |  |  |  |
-|     RA Auditor                                  |  |  |  | X |  |
-|     RA Operator                                 |  |  | X |  |  |
-|     RA Administrator                            |  |  |  |  | X |
+| **IdenTrust Trusted Roles Matrix Mapping** |  |
+|---|---|
+| TrustID Role     |	IdenTrust-Internally Defined Roles |
+| CA Administrator |    CA Administrator    |
+| CA Officer       |    LRA / Enterprise RA |
+| CA Auditor       |    Security Officer    |
+| CA Operator      |    System Administrator|
+| CSA Administrator|    CA Administrator    |
+| CSA Auditor      |    Security Officer    |
+| CSA Operator     |    System Administrator|
+| RA Administrator |    RA Administrator    |
+| RA Officer       |    LRA / Enterprise RA |
+| RA Auditor       |    Security Officer    |
+| RA Operator      |    System Administrator|
+| RA Administrator |    RA Administrator    |
 
 The following subsections provide a detailed description of the responsibilities for each Trusted Role.
 
@@ -1770,9 +1749,9 @@ The Software Engineers, also known as developers, have the following responsibil
 -   Write and update technical documentation; and
 -   Handle incident response and incident management.
 
-> As Software Engineer roles perform functions that can introduce security problems if not carried out properly, whether accidentally or maliciously, controls are in place requiring approval from the Security Officer or from Operations Manager roles prior to the execution of any tasks that bridge Software Engineer roles.
->
-> All such controls are audited annually by a third party auditor as part of the WebTrust Program for Certification Authorities, in compliance with the* ISO 21188 Public Key Policy and Practices Framework* standard.
+As Software Engineer roles perform functions that can introduce security problems if not carried out properly, whether accidentally or maliciously, controls are in place requiring approval from the Security Officer or from Operations Manager roles prior to the execution of any tasks that bridge Software Engineer roles.
+
+All such controls are audited annually by a third party auditor as part of the WebTrust Program for Certification Authorities, in compliance with the* ISO 21188 Public Key Policy and Practices Framework* standard.
 
 ##### **5.2.1.1.6 DevOps**
 
@@ -2232,11 +2211,7 @@ IdenTrust records at least the following events:
     4)  Issuance of Certificates;
     5)  Generation of Certificate Revocation Lists; and
     6)  Signing of OCSP Responses (as described in [Section 4.10](#certificate-status-services)).
-    7)  Multi-Perspective Issuance Corroboration attempts from each Network Perspective, minimally recording the following information:
-
-        a)  an identifier that uniquely identifies the Network Perspective used;
-        b)  the attempted Domain Name and/or IP address; and
-        c)  the result of the attempt (e.g., "domain validation pass/fail", "CAA permission/prohibition").
+    7)  Multi-Perspective Issuance Corroboration attempts from each Network Perspective, minimally recording the following information: <br> a. an identifier that uniquely identifies the Network Perspective used; <br> b. the attempted Domain Name and/or IP address; and <br> c. the result of the attempt (e.g., "domain validation pass/fail", "CAA permission/prohibition").
     8)  Multi-Perspective Issuance Corroboration quorum results for each attempted Domain Name or IP address represented in a Certificate Request (i.e., "3/4" which should be interpreted as "Three (3) out of four (4) attempted Network Perspectives corroborated the determinations made by the Primary Network Perspective).
 
 
@@ -2375,27 +2350,16 @@ Logging of router and firewall activities necessary to meet the requirements of 
 The Timestamp Authority must log the following information and make these records available to its Qualified Auditor as proof of the Timestamp Authority's compliance with the [CS BR](https://cabforum.org/working-groups/code-signing/documents/):
 
 1.  Physical or remote access to a timestamp server, including the time of the access and the identity of the Individual accessing the server,
-
 2.  History of the timestamp server configuration,
-
 3.  Any attempt to delete or modify timestamp logs,
-
 4.  Security events, including:
-
     1.  Successful and unsuccessful Timestamp Authority access attempts;
-
     2.  Timestamp Authority server actions performed;
-
     3.  Security profile changes;
-
     4.  System crashes and other anomalies; and
-
     5.  Firewall and router activities;
-
 5.  Revocation of a Timestamp Certificate,
-
 6.  Major changes to the timestamp server's time, and
-
 7.  System startup and shutdown.
 
 ### **5.4.2 Frequency of Processing Log**
@@ -2414,10 +2378,8 @@ RAs are obligated by contract, and by this CP-CPS, to implement controls that al
 
 IdenTrust and Timestamp Authority retains audit logs for at least 2 years of:
 
-1.  CA Certificate and Key lifecycle management event records Key Generation, backup, storage, recovery, archival, and destruction as set forth in [Section 5.4.1](#types-of-events-recorded) (1) after the later occurrence of:
-
-    a.  the destruction of the CA Private Key; or
-
+1.  CA Certificate and Key lifecycle management event records Key Generation, backup, storage, recovery, archival, and destruction as set forth in [Section 5.4.1](#types-of-events-recorded) (1) after the later occurrence of: <br>
+    a.  the destruction of the CA Private Key; or <br>
     b.  the Revocation or expiration of the final CA Certificate in that set of Certificates that have an X.509v3 *basicConstraints* extension with the cA field set to true and which share a common Public Key corresponding to the CA Private Key;
 2.  Subscriber Certificate lifecycle management event records as set forth in [Section 5.4.1](#types-of-events-recorded) (2) after the expiration of the Subscriber Certificate;
 3.  Any security event records as set forth in [Section 5.4.1](#types-of-events-recorded) (3) after the event occurred. All security audit logs, both electronic and non-electronic, are retained and made available during compliance audits.
@@ -2649,7 +2611,7 @@ In the event that it is necessary for IdenTrust or an RA to cease operation, all
 
 #### **6.1.1.1 CA Key Pair Generation**
 
-For CA Key Pairs that are either
+For CA Key Pairs that are either:
 
 1.  used as a CA Key Pair for a Root Certificate or
 2.  used as a CA Key Pair for a Subordinate CA Certificate, where the Subordinate CA is not the operator of the Root CA or an Affiliate of the Root CA,
@@ -2699,7 +2661,6 @@ IdenTrust shall reject a Certificate Request if one or more of the following con
 3.  IdenTrust is aware of a demonstrated or proven method that exposes the Applicant's Private Key to compromise;
 4.  IdenTrust have previously been notified that the Applicant's Private Key has suffered a Key Compromise, using the procedure for Revocation request as described in [Section 4.9.3](#procedure-for-revocation-request) and [Section 4.9.12](#special-requirements-for-re-key-compromise);
 5.  The Public Key corresponds to an industry-demonstrated weak Private Key. For requests submitted on or after November 15, 2024, at least the following precautions are implemented:
-
     1.  In the case of Debian weak keys vulnerability (<https://wiki.debian.org/SSLkeys>), the CA shall reject all keys found at <https://github.com/cabforum/Debian-weak-keys/>.
     2.  For each Key type (e.g., RSA, ECDSA) and size listed in the Repository. For all other keys meeting the requirements of [Section 6.1.5](#key-sizes) with the exception of RSA Key sizes greater than 8192 bits, IdenTrust shall reject Debian weak keys.
     3.  In the case of ROCA vulnerability, the CA shall reject keys identified by the tools available at <https://github.com/crocs-muni/roca> or equivalent.
@@ -2723,7 +2684,7 @@ The Subscriber's Public Key is delivered to IdenTrust or the RA (which in turn i
 
 Before the retrieval process, an Enterprise RA enrolls applications in bulk (i.e., a bulk load file) of Applicants/PKI Sponsors and approves Issuance of a Certificate to the Subscribers and PKI Sponsors. Activation Code(s) is/are generated and sent via a verified channel to the Applicant/PKI Sponsor before the time of retrieval. The Applicant/PKI Sponsor uses the Activation Code(s) in a server-authenticated SSL/TLS Encrypted Session during which the Public Key is submitted to the RA/CA in a *PKCS#10* and a Certificate is returned back during the same session.
 
-### 6.1.4 CA Public Key Delivery to Relying Parties**
+### 6.1.4 CA Public Key Delivery to Relying Parties
 IdenTrust and its RAs ensure that Subscribers and Relying Parties receive and maintain the trust anchor(s) in a trustworthy fashion. Methods implemented for this delivery may include:
 
 1.  The Public Key may be delivered to Subscribers during the Certificate retrieval process for their own Subscriber's Certificates during the server-authenticated SSL/TLS Encrypted Session as part of a message formatted in accordance with the *PKCS#7*.
@@ -2805,11 +2766,11 @@ The Individuals taking part in tasks that require 2-person control and separatio
 
 IdenTrust does not escrow the CA Private Keys used to sign Certificates and CRLs
 
-#### **6.2.3.2 Escrow of Subscriber's Signature Private Keys
+#### **6.2.3.2 Escrow of Subscriber's Signature Private Keys**
 
 IdenTrust does not escrow Subscriber's signature Private Keys. RAs are prohibited under this CP-CPS from escrowing the signature Private Keys of Subscribers.
 
-#### **6.2.3.3 Escrow of Subscriber's Encryption Private Keys
+#### **6.2.3.3 Escrow of Subscriber's Encryption Private Keys**
 
 Subscriber's encryption Private Keys may be escrowed to enable Key recovery. Encryption Private Key escrow is decided on an implementation specific basis.
 
@@ -2859,7 +2820,6 @@ Techniques that must be used to satisfy this requirement include:
 
 1.  Use of a Cryptographic Module, verified by means of a FIPS or Common Criteria Certificate; or
 2.  A cloud-based Key Generation and protection solution with the following requirements:
-
     1.  Key creation, storage, and usage of Private Key must remain within the security boundaries of the cloud solution's Hardware Crypto Module that conforms to the specified requirements;
     2.  Subscription at the level that manages the Private Key must be configured to log all access, operations, and configuration changes on the resources securing the Private Key.
 
@@ -3020,7 +2980,7 @@ Clock adjustments are auditable events listed with other events in the log avail
 
 ## **7.1 Certificate Profile**
 
-IdenTrust meets the technical requirements set forth in [Section 6.1.5](#key-sizes) Key Sizes, and [[Section 6.1.6](#public-key-parameters-generation-and-quality-checking)](#public-key-parameters-generation-and-quality-checking) ‐ Public Key Parameters Generation and Quality Checking.
+IdenTrust meets the technical requirements set forth in [Section 6.1.5](#key-sizes) Key Sizes, and [[Section 6.1.6]](#public-key-parameters-generation-and-quality-checking) ‐ Public Key Parameters Generation and Quality Checking.
 
 IdenTrust Certificates are issued in accordance with the Certificate Profile guideline specified in [Section 7 of the S/MIME BR](https://cabforum.org/working-groups/smime/requirements/#7-certificate-crl-and-ocsp-profiles) for S/MIME Certificates and [Section 7 of the CS BR](https://cabforum.org/working-groups/code-signing/requirements/#7-certificate-crl-and-ocsp-profiles) for Code Signing Certificates.
 
@@ -3033,72 +2993,51 @@ IdenTrust only issues X.509 Certificates, version 3 Certificates.
 All TrustID Certificate contents and extensions are based on [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280) and [RFC 6818](https://datatracker.ietf.org/doc/html/rfc6818)when applicable.
 
 #### **7.1.2.1 Root CA Certificates**
-| **Root CA Certificate Profile** ||||
-|---|---|---|---|
-| **Field**| **Value**|||
-| *version*| v3(2).|||
-| *serialNumber*| Unique non‐sequential number greater than zero (0) and less than 2¹⁵⁹ containing at least 64 bits of output from a CSPRNG. |||
-| *signature*| See [Section 7.1.3.2.](#signature-algorithm-identifier)|||
-| *Issuer*| Encoded value byte‐for‐byte identical to the encoded Subject distinguished name|||
-| *validity*| See [Section 6.3.2](#certificate-operational-periods-and-key-pair-usage-periods).|||
-| *Subject*| CN = Root Certificate name unique across all root Certificates issued by IdenTrust.|||
-|| O = IdenTrust|||
-|| C = US|||
-| *subjectPublicKeyInfo*| See Section [7.1.3.1](#subjectpublickeyinfo).|||
-| *signatureAlgorithm*| Encoded value must be byte-for-byte identical to the *tbsCertificate.signature*.|||
+| **Root CA Certificate Profile** ||
+|---|---|
+| **Field**| **Value** |
+| *version*| v3(2). |
+| *serialNumber* | Unique non‐sequential number greater than zero (0) and less than 2¹⁵⁹ containing at least 64 bits of output from a CSPRNG. |
+| *signature* | See [Section 7.1.3.2.](#signature-algorithm-identifier) |
+| *Issuer* | Encoded value byte‐for‐byte identical to the encoded Subject distinguished name|
+| *validity* | See [Section 6.3.2](#certificate-operational-periods-and-key-pair-usage-periods). |
+| *Subject* | CN = Root Certificate name unique across all root Certificates issued by IdenTrust. <br> O = IdenTrust <br> C = US |
+| *subjectPublicKeyInfo* | See Section [7.1.3.1](#subjectpublickeyinfo).|
+| *signatureAlgorithm* | Encoded value must be byte-for-byte identical to the *tbsCertificate.signature*.|
 
-| **Extension**| **Present**| **Critical** | **Description / Value**|
+| **Extension** | **Present** | **Critical** | **Description / Value** |
 |---|---|---|---|
-| *authorityKeyIdentifier*| Y| N| Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field.|
-| *basicConstraints*| Y| Y| cA = true|
-| *keyUsage*| Y| Y| *digitalSignature, keyCertSign* and *cRLSign*|
-| *subjectKeyIdentifier*| Y| N| Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2) |
-| *extKeyUsage*| Not present|||
-| *certificatePolicies*| Not present|||
+| *authorityKeyIdentifier* | Y | N | Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field. |
+| *basicConstraints* | Y | Y | cA = true |
+| *keyUsage* | Y | Y | *digitalSignature, keyCertSign* and *cRLSign* |
+| *subjectKeyIdentifier* | Y | N | Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2) |
+| *extKeyUsage* | N |
+| *certificatePolicies* | N |
 
 #### **7.1.2.2 Subordinate CA Certificates**
-| **Subordinate CA Certificate Profile** ||||
-|---|---|---|---|
-| **Field** | **Value**|
-| *version* | v3(2).|
+| **Subordinate CA Certificate Profile** ||
+|---|---|
+| **Field** | **Value** |
+| *version* | v3(2). |
 | *serialNumber*| Unique non‐sequential number greater than zero (0) and less than 2¹⁵⁹ containing at least 64 bits of output from a CSPRNG. |
-| *signature* | See [Section 7.1.3.2.](#signature-algorithm-identifier)|
-| *Issuer* | Must be byte-for-byte identical to the s*ubject* field of the Issuing CA|
-| *validity* | See [Section 6.3.2](#certificate-operational-periods-and-key-pair-usage-periods).|
-| *Subject* | CN = Subordinate CA's unique identifier name|
-|| O = Subordinate CA's Organization legal name or DBA|
-|| OU = {Optional} Subordinate CA's custom CA name|
-|| C = Two-letter ISO 3166-1 country code of Subordinate CA's place of business|
+| *signature* | See [Section 7.1.3.2.](#signature-algorithm-identifier) |
+| *Issuer* | Must be byte-for-byte identical to the s*ubject* field of the Issuing CA |
+| *validity* | See [Section 6.3.2](#certificate-operational-periods-and-key-pair-usage-periods). |
+| *Subject* | CN = Subordinate CA's unique identifier name <br> O = Subordinate CA's Organization legal name or DBA <br> OU = {Optional} Subordinate CA's custom CA name <br> C = Two-letter ISO 3166-1 country code of Subordinate CA's place of business |
 | *subjectPublicKeyInfo* | See [Section 7.1.3.1](#subjectpublickeyinfo).|
-| *signatureAlgorithm* | Encoded value must be byte-for-byte identical to the tbsCertificate.signature.|
+| *signatureAlgorithm* | Encoded value must be byte-for-byte identical to the tbsCertificate.signature. |
 
 | **Extension**| **Present**| **Critical** | **Description / Value** |
 |---|---|---|---|
-| *authorityKeyIdentifier*| Y| N| Contains only the *keyIdentifier* field identical to the subjectKeyIdentifer field of the Issuing CA.|
-| *basicConstraints*| Y| Y| cA = True|
-|||| May contain the *pathlenConstraint* field.|
-| *certificatePolicies*| Y| N| Certificate Policy:|
-|||| Policy Identifier= anyPolicy {2.5.29.32.0}|
-|||| Policy Qualifier Info:|
-|||| Policy Qualifier Id=id-qt-cps|
-|||| Qualifier: HTTPS URL for the Issuing CA's Certificate Policy|
-|||| Policy Qualifier Info:[^3]|
-|||| Policy Qualifier Id=User Notice|
-|||| Qualifier: Notice Text=Subordinate CA text|
-| *crlDistributionPoints*| Y| N| Contains the HTTP URL of the CA's CRL service.|
-| *keyUsage*| Y| Y| *DigitalSignature;* *keyCertSign*; *cRLSign*|
-| *subjectKeyIdentifier*| Y| N| Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2)|
-| *extKeyUsage*| Y| N| **For S/MIME**|
-|||| *id-kp-emailProtection, id-kp-clientAuth*; it may contain other values; except *id-kp-serverAuth; id-kp-codeSigning*; id-kp-timeStamping or anyExtendedKeyUsage. |
-|||| **For Code Signing Subordinate CA**|
-|||| *id-kp-codeSigning*.|
-|||| **For Timestamping Subordinate CA**|
-|||| *id-kp-timeStamping*|
-|||| **For Client Authentication Subordinate CA**|
-|||| *id-kp-clientAuth*|
-| *authorityInformationAccess*| Y| N| Optional - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
-|||| *id-ad-caIssuers* (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate.|
-| *nameConstraints*| May be present and marked critical.|||
+| *authorityKeyIdentifier*| Y | N | Contains only the *keyIdentifier* field identical to the subjectKeyIdentifer field of the Issuing CA. |
+| *basicConstraints* | Y | Y | cA = True <br> May contain the *pathlenConstraint* field. |
+| *certificatePolicies*| Y | N | Certificate Policy: <br> Policy Identifier = any <br> Policy {2.5.29.32.0} <br> Policy Qualifier Info: <br> Policy Qualifier Id=id-qt-cps <br> Qualifier: HTTPS URL for the Issuing CA's Certificate Policy <br> Policy Qualifier Info: [^3] <br> Policy Qualifier Id=User Notice <br> Qualifier: Notice Text=Subordinate CA text |
+| *crlDistributionPoints*| Y | N | Contains the HTTP URL of the CA's CRL service.|
+| *keyUsage*| Y | Y | *DigitalSignature;* *keyCertSign*; *cRLSign*|
+| *subjectKeyIdentifier*| Y | N | Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2) |
+| *extKeyUsage*| Y | N | **For S/MIME** <br> *id-kp-emailProtection, id-kp-clientAuth*; it may contain other values; except *id-kp-serverAuth; id-kp-codeSigning*; id-kp-timeStamping or anyExtendedKeyUsage. <br> **For Code Signing Subordinate CA** <br> *id-kp-codeSigning*. <br> **For Timestamping Subordinate CA**<br> *id-kp-timeStamping* <br> **For Client Authentication Subordinate CA** <br> *id-kp-clientAuth* |
+| *authorityInformationAccess*| Y | N | Optional - <br> *id-ad-ocsp* (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder. <br>  *id-ad-caIssuers* (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate. |
+| *nameConstraints* | May be present and marked critical. |
 
 #### **7.1.2.3 End Entity Certificates**
 
@@ -3115,40 +3054,26 @@ All TrustID Certificate contents and extensions are based on [RFC 5280](https://
 | *subjectPublicKeyInfo*| See [Section 7.1.3.1](#subjectpublickeyinfo).|
 | *signatureAlgorithm*| Encoded value must be byte-for-byte identical to the tbsCertificate.signature.|
 
-| **Extension**| **Present**| **Critical** | **Description / Value** ||||||
-|---|---|---|---|---|---|---|---|---|
-| *authorityInformationAccess*| Y| N| Optional - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
-|||| *id-ad-caIssuers* (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate.|
-| *authorityKeyIdentifier*| Y| N| Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA.|
-| *certificatePolicies*| Y| N| Certificate Policy:|||
-|||| Policy Identifier = One S/MIME Policy OID pair in [Section 7.1.6](#certificate-policy-object-identifier) (CA/B Forum+IdenTrust)|
-|||| Policy Qualifier Info:|
-|||| Policy Qualifier Id=*id-qt-cps*|
-|||| Qualifier: HTTPS URL for the Issuing CA's Certificate Policy|
-|||| Policy Qualifier Info:[^4]|
-|||| Policy Qualifier Id=User Notice|
-|||| Qualifier: Notice Text=Subordinate CA text|
-| *extKeyUsage*| Y| N|
-|||| **Strict**| **Multipurpose**. |
-|||| *id-kp-emailProtection*| *id-kp-emailProtection* and other values may be present, except these:|
-||||| *id-kp-serverAuth*, *id-kp-codeSigning, id-kp-timeStamping*, or *anyExtendedKeyUsage* |
-| *subjectAltName*| Y| N| Contains at least one GeneralName entry of the following types:|
-|||| \- rfc822Name and/or|||
-|||| \- otherName of type id-on-SmtpUTF8Mailbox.|||
-|||| \- otherName: *userPrincipalName*|||
-| *keyUsage*| Y| Y| **Strict**| **Multipurpose**|
-|||| For signing only, bit positions are set for digitalSignature and may be set for nonrepudiation.\|| For signing only, bit positions are set for digitalSignature and may be set for nonrepudiation.\|
+| **Extension** | **Present** | **Critical** | **Description / Value** ||
+|---|---|---|---|---|
+| *authorityInformationAccess*| Y| N | Optional - *id-ad-ocsp* (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder. <br> <br> *id-ad-caIssuers* (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate.|
+| *authorityKeyIdentifier*| Y | N | Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA.|
+| *certificatePolicies*| Y | N | Certificate Policy: <br> Policy Identifier = One S/MIME Policy OID pair in [Section 7.1.6](#certificate-policy-object-identifier) (CA/B Forum+IdenTrust) <br> <br> Policy Qualifier Info: <br> Policy Qualifier Id=*id-qt-cps* <br> Qualifier: HTTPS URL for the Issuing CA's Certificate Policy <br> <br> Policy Qualifier Info:[^4] <br> Policy Qualifier Id=User Notice <br> Qualifier: Notice Text=Subordinate CA text |
+| *extKeyUsage*| Y | N | **Strict** | **Multipurpose** |
+|||| *id-kp-emailProtection*| *id-kp-emailProtection* and other values may be present, except these: <br> *id-kp-serverAuth*, *id-kp-codeSigning, id-kp-timeStamping*, or *anyExtendedKeyUsage* |
+| *subjectAltName*| Y| N | Contains at least one GeneralName entry of the following types: <br> \- rfc822Name and/or <br> \- otherName of type id-on-SmtpUTF8Mailbox. <br> \- otherName: *userPrincipalName*|||
+| *keyUsage*| Y| Y| **Strict**| **Multipurpose** |
+|||| For signing only, bit positions are set for digitalSignature and may be set for nonrepudiation.\|| For signing only, bit positions are set for digitalSignature and may be set for nonrepudiation. |
 |||| For Key management only, bit positions are set for *keyAgreemen*t and may be set for *encipherOnly* or *decipherOnly*.\|| For Key management only, bit positions are set for *keyAgreement* and may be set for *encipherOnly* or *decipherOnly*.\|
-|||| For dual use, bit positions are set for digitalSignature and *keyAgreement* and may be set for nonrepudiation and for *encipherOnly* or *decipherOnly* (only if keyAgreement is set).|
-| *basicConstraints*| Y| Y| The cA field is set to false.|
-| *crlDistributionPoints*| Y| N| Present and not marked critical.|
-|||| It contains the HTTP URL of the CA's CRL service.|
-| *subjectKeyIdentifier*| Y| N| Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2)|
+|||| For dual use, bit positions are set for digitalSignature and *keyAgreement* and may be set for nonrepudiation and for *encipherOnly* or *decipherOnly* (only if keyAgreement is set). |
+| *basicConstraints*| Y| Y | The cA field is set to false. |
+| *crlDistributionPoints*| Y| N | Present and not marked critical. <br> It contains the HTTP URL of the CA's CRL service. |
+| *subjectKeyIdentifier*| Y| N| Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2) |
 
 ##### **7.1.2.3.1.1 S/MIME Subject Attributes**
 
-| **Attribute**| **Multipurpose** |||| **Strict** ||||||||
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **Attribute**| **Multipurpose** |||| **Strict** ||||
+|---|---|---|---|---|---|---|---|---|
 || **Mailbox**| **Organization** | **Sponsor** | **Individual** | **Mailbox** | **Organization** | **Sponsor** | **Individual** |
 || **Validated** | **Validated** | **Validated** | **Validated** | **Validated** | **Validated** | **Validated** | **Validated** |
 | *commonName*| May | May | May | May | May | May | May | May |
@@ -3170,50 +3095,26 @@ All TrustID Certificate contents and extensions are based on [RFC 5280](https://
 
 ##### **7.1.2.3.2 End Entity Certificates Code Signing**
 
-| **End Entity Code Signing Certificate Profile** | | | |
-|---|---|---|---|
+| **End Entity Code Signing Certificate Profile** | |
+|---|---|
 | **Field** | **Value** |
 | *version* | v3(2). |
 | *serialNumber* | Unique non‐sequential number greater than zero (0) and less than 2¹⁵⁹ containing at least 64 bits of output from a CSPRNG. |
 | *signature* | See [Section 7.1.3.2.](#signature-algorithm-identifier) |
 | *Issuer* | Encoded value byte‐for‐byte identical to the encoded Subject of the Issuing CA |
 | *validity* | See [Section 6.3.2](#certificate-operational-periods-and-key-pair-usage-periods). |
-| *Subject* **Code Signing Non EV** | CN = Organization legal name |
-|| OU = Organizational unit (Optional) |
-|| CN = Organization legal name |
-|| O = Full legal name or DBA with full legal name in parenthesis |
-|| SERIALNUMBER = Unique registration number[^5] |
-|| L = City/locality name present if S is absent |
-|| S = State or province name present if L is absent |
-|| C = Two-letter ISO 3166-1 country code of Organization's place of business |
-| *Subject* **Code Signing EV** | CN = Organization legal name |
-|| OU = Organizational unit (Optional) |
-|| O = Full legal name or DBA with full legal name in parenthesis |
-|| 2.5.4.15 = *businessCategory*[^6] |
-|| 1.3.6.1.4.1.311.60.2.1.2 = *jurisdictionStateOrProvinceName* |
-|| 1.3.6.1.4.1.311.60.2.1.3 = *jurisdictionCountryName* |
-|| SERIALNUMBER = Unique registration number^8^ |
-|| L = City/locality name |
-|| S = State or province name |
-|| C = Two-letter ISO 3166-1 country code of Organization's place of business |
+| *Subject* **Code Signing Non EV** | CN = Organization legal name <br> OU = Organizational unit (Optional) <br> CN = Organization legal name <br> O = Full legal name or DBA with full legal name in parenthesis <br> SERIALNUMBER = Unique registration number[^5] <br> L = City/locality name present if S is absent <br> S = State or province name present if L is absent <br> C = Two-letter ISO 3166-1 country code of Organization's place of business |
+| *Subject* **Code Signing EV** | CN = Organization legal name <br> OU = Organizational unit (Optional) <br> O = Full legal name or DBA with full legal name in parenthesis <br> 2.5.4.15 = *businessCategory*[^6] <br> 1.3.6.1.4.1.311.60.2.1.2 = *jurisdictionStateOrProvinceName* <br> 1.3.6.1.4.1.311.60.2.1.3 = *jurisdictionCountryName* <br> SERIALNUMBER = Unique registration number^8^ <br> L = City/locality name <br> S = State or province name <br> C = Two-letter ISO 3166-1 country code of Organization's place of business |
 | *subjectPublicKeyInfo* | See [Section 7.1.3.1](#subjectpublickeyinfo). |
 | *signatureAlgorithm* | Encoded value must be byte-for-byte identical to the tbsCertificate.signature. |
 
 | **Extension** | **Present** | **Critical** | **Description / Value** |
 |---|---|---|---|
-| *authorityInformationAccess* | Y | N | Optional - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
-|||| id-ad-caIssuers (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate. |
+| *authorityInformationAccess* | Y | N | Optional - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder. <br> *id-ad-caIssuers* (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate. |
 | *authorityKeyIdentifier* | Y | N | Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA. |
-| *certificatePolicies* | Y | N | Certificate Policy: |
-|||| Policy Identifier = One Code Signing (EV or Non-EV) Policy OID pair in [Section 7.1.6](#certificate-policy-object-identifier) (CA/B Forum+IdenTrust) |
-|||| Policy Qualifier Info: |
-|||| Policy Qualifier Id=id-qt-cps |
-|||| Qualifier: HTTPS URL for the Issuing CA's Certificate Policy |
-|||| Policy Qualifier Info:[^7] |
-|||| Policy Qualifier Id=User Notice |
-|||| Qualifier: Notice Text=Subordinate CA text |
+| *certificatePolicies* | Y | N | Certificate Policy: <br> Policy Identifier = One Code Signing (EV or Non-EV) Policy OID pair in [Section 7.1.6](#certificate-policy-object-identifier) (CA/B Forum+IdenTrust) <br> Policy Qualifier Info: <br> Policy Qualifier Id=id-qt-cps <br> Qualifier: HTTPS URL for the Issuing CA's Certificate Policy <br> Policy Qualifier Info:[^7] <br> Policy Qualifier Id=User Notice <br> Qualifier: Notice Text=Subordinate CA text |
 | *extKeyUsage* | Y | N | *id-kp-codeSigning* |
-| *subjectAltName* | Not present | | |
+| *subjectAltName* | Not present |
 | *keyUsage* | Y | Y | digitalSignature |
 | *basicConstraints* | May | Y | The cA field is set to false. |
 | *crlDistributionPoints* | Y | N | Present and not marked critical. It contains the HTTP URL of the CA's CRL service. |
@@ -3221,123 +3122,81 @@ All TrustID Certificate contents and extensions are based on [RFC 5280](https://
 
 ##### **7.1.2.3.3 End Entity Certificates Timestamping**
 
-| **End Entity Timestamping Certificate Profile** ||||
-|---|---|---|---|
-| **Field**| **Value**|||
-| *version*| v3(2).|||
-| *serialNumber*| Unique non‐sequential number greater than zero (0) and less than 2¹⁵⁹ containing at least 64 bits of output from a CSPRNG. |||
-| *signature*| See [Section 7.1.3.2.](#signature-algorithm-identifier)|||
-| *Issuer*| Encoded value byte‐for‐byte identical to the encoded Subject of the Issuing CA|||
-| *validity*| See [Section 6.3.2](#certificate-operational-periods-and-key-pair-usage-periods).|||
-| *Subject*| CN = Timestamp authority name|||
-|| O = Full legal name or DBA with full legal name in parenthesis|||
-|| C = Two-letter ISO 3166-1 country code of Organization's place of business|||
-| *subjectPublicKeyInfo*| See [Section 7.1.3.1](#subjectpublickeyinfo).|||
-| *signatureAlgorithm*| Encoded value must be byte-for-byte identical to the tbsCertificate.signature.|||
+| **End Entity Timestamping Certificate Profile** |
+|---|---|
+| **Field** | **Value** |
+| *version* | v3(2). |
+| *serialNumber* | Unique non‐sequential number greater than zero (0) and less than 2¹⁵⁹ containing at least 64 bits of output from a CSPRNG. |
+| *signature* | See [Section 7.1.3.2.](#signature-algorithm-identifier) |
+| *Issuer* | Encoded value byte‐for‐byte identical to the encoded Subject of the Issuing CA |
+| *validity* | See [Section 6.3.2](#certificate-operational-periods-and-key-pair-usage-periods). |
+| *Subject* | CN = Timestamp authority name <br> O = Full legal name or DBA with full legal name in parenthesis <br> C = Two-letter ISO 3166-1 country code of Organization's place of business |
+| *subjectPublicKeyInfo* | See [Section 7.1.3.1](#subjectpublickeyinfo).|
+| *signatureAlgorithm* | Encoded value must be byte-for-byte identical to the tbsCertificate.signature.|
 
 | **Extension**| **Present**| **Critical** | **Description / Value**|
 |---|---|---|---|
-| *authorityInformationAccess*| Y| N| Optional - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
-|||| id-ad-caIssuers (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate.|
-| *authorityKeyIdentifier*| Y| N| Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA.|
-| *certificatePolicies*| Y| N| Certificate Policy:|
-|||| Policy Identifier = One Timestamping Policy OID pair in [Section 7.1.6](#certificate-policy-object-identifier) (CA/B Forum+IdenTrust) |
-|||| Policy Qualifier Info:|
-|||| Policy Qualifier Id=id-qt-cps|
-|||| Qualifier: HTTPS URL for the Issuing CA's Certificate Policy|
-|||| Policy Qualifier Info:[^8]|
-|||| Policy Qualifier Id=User Notice|
-|||| Qualifier: Notice Text=Subordinate CA text|
-| *extKeyUsage*| Y| N| *id-kp-timeStamping*|
-| *subjectAltName*| Not present|||
-| *keyUsage*| Y| Y| digitalSignature|
-| *basicConstraints*| May| Y| The cA field is set to false.|
-| *crlDistributionPoints*| Y| N| Present and not marked critical.|
-|||| It contains the HTTP URL of the CA's CRL service.|
-| *subjectKeyIdentifier*| Y| N| Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2)|
+| *authorityInformationAccess* | Y| N | Optional - <br> id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder. <br> <br> id-ad-caIssuers (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate. |
+| *authorityKeyIdentifier* | Y | N | Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA. |
+| *certificatePolicies* | Y | N | Certificate Policy: <br> Policy Identifier = One Timestamping Policy OID pair in [Section 7.1.6](#certificate-policy-object-identifier) (CA/B Forum+IdenTrust) <br> Policy Qualifier Info: <br> Policy Qualifier Id=id-qt-cps <br> Qualifier: HTTPS URL for the Issuing CA's Certificate Policy <br> Policy Qualifier Info:[^8] <br> Policy Qualifier Id=User Notice <br> Qualifier: Notice Text=Subordinate CA text |
+| *extKeyUsage*| Y| N | *id-kp-timeStamping* |
+| *subjectAltName* | Not present |
+| *keyUsage*| Y| Y | digitalSignature |
+| *basicConstraints*| May | Y | The cA field is set to false. |
+| *crlDistributionPoints*| Y | N | Present and not marked critical. <br> It contains the HTTP URL of the CA's CRL service. |
+| *subjectKeyIdentifier*| Y | N | Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2) |
 
 ##### **7.1.2.3.4 End Entity Certificates Card Authentication**
 
 | **End Entity Card Authentication Certificate Profile** ||||
 |---|---|---|---|
 | **Field**| **Value**|||
-| *version*| v3(2).|||
-| *serialNumber*| Unique non‐sequential number greater than zero (0) and less than 2¹⁵⁹ containing at least 64 bits of output from a CSPRNG. |||
-| *signature*| See [Section 7.1.3.2.](#signature-algorithm-identifier)|||
-| *Issuer*| Encoded value byte‐for‐byte identical to the encoded Subject of the Issuing CA|||
-| *validity*| See [Section 6.3.2](#certificate-operational-periods-and-key-pair-usage-periods).|||
-| *Subject*| serialNumber = SERIALNUMBER = Unique device registration number|||
-|| CN = {fn mi ln}|||
-|| O = Full legal name or DBA with full legal name in parenthesis|||
-|| OU = Custom value|||
-|| E = *emailAddress*|||
-|| C = Two-letter ISO 3166-1 country code of Organization's place of business|||
-| *subjectPublicKeyInfo*| See [Section 7.1.3.1](#subjectpublickeyinfo).|||
-| *signatureAlgorithm*| Encoded value must be byte-for-byte identical to the tbsCertificate.signature.|||
+| *version*| v3(2).|
+| *serialNumber* | Unique non‐sequential number greater than zero (0) and less than 2¹⁵⁹ containing at least 64 bits of output from a CSPRNG. |
+| *signature* | See [Section 7.1.3.2.](#signature-algorithm-identifier)|
+| *Issuer* | Encoded value byte‐for‐byte identical to the encoded Subject of the Issuing CA |
+| *validity* | See [Section 6.3.2](#certificate-operational-periods-and-key-pair-usage-periods). |
+| *Subject* | serialNumber = SERIALNUMBER = Unique device registration number <br> CN = {fn mi ln} <br> O = Full legal name or DBA with full legal name in parenthesis <br> OU = Custom value <br> E = *emailAddress* <br> C = Two-letter ISO 3166-1 country code of Organization's place of business |
+| *subjectPublicKeyInfo* | See [Section 7.1.3.1](#subjectpublickeyinfo).|
+| *signatureAlgorithm* | Encoded value must be byte-for-byte identical to the tbsCertificate.signature.|
 
 | **Extension**| **Present**| **Critical** | **Description / Value**|
 |---|---|---|---|
-| *authorityInformationAccess*| Y| N| Optional - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
-|||| id-ad-caIssuers (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate.|
-| *authorityKeyIdentifier*| Y| N| Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA.|
-| *certificatePolicies*| Y| N| Certificate Policy:|
-|||| Policy Identifier = One IdenTrust Only Client Authentication OID Policy OID from [Section 7.1.6](#certificate-policy-object-identifier) |
-|||| Policy Qualifier Info:|
-|||| Policy Qualifier Id=id-qt-cps|
-|||| Qualifier: HTTPS URL for the Issuing CA's Certificate Policy|
-|||| Policy Qualifier Info:[^9]|
-|||| Policy Qualifier Id=User Notice|
-|||| Qualifier: Notice Text=Subordinate CA text|
-| *extKeyUsage*| Y| N| *SmartCard* logon (1.3.6.1.4.1.311.20.2.2)|
-|||| *id-kp-clientAuth*|
-| *subjectAltName*| Y| N| Contains at least one GeneralName entry of the following types:|
-|||| \- rfc822Name and/or|
-|||| \- otherName of type id-on-SmtpUTF8Mailbox.|
-|||| \- otherName: *userPrincipalName*|
-| *keyUsage*| Y| Y| digitalSignature|
-| *basicConstraints*| May| Y| The cA field is set to false.|
-| *crlDistributionPoints*| Y| N| Present and not marked critical.|
-|||| It contains the HTTP URL of the CA's CRL service.|
-| *subjectKeyIdentifier*| Y| N| Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2)|
+| *authorityInformationAccess* | Y | N | Optional - <br> id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder. <br> <br> id-ad-caIssuers (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate. |
+| *authorityKeyIdentifier* | Y | N | Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA. |
+| *certificatePolicies* | Y | N | Certificate Policy: <br> Policy Identifier = One IdenTrust Only Client Authentication OID Policy OID from [Section 7.1.6](#certificate-policy-object-identifier) <br> Policy Qualifier Info: <br> Policy Qualifier Id=id-qt-cps <br> Qualifier: HTTPS URL for the Issuing CA's Certificate Policy <br> Policy Qualifier Info:[^9] <br> Policy Qualifier Id=User Notice <br> Qualifier: Notice Text=Subordinate CA text |
+| *extKeyUsage*| Y| N | *SmartCard* logon (1.3.6.1.4.1.311.20.2.2) <br> *id-kp-clientAuth* |
+| *subjectAltName*| Y | N | Contains at least one GeneralName entry of the following types: <br> \- rfc822Name and/or <br> \- otherName of type id-on-SmtpUTF8Mailbox. <br> \- otherName: *userPrincipalName* |
+| *keyUsage*| Y| Y | digitalSignature |
+| *basicConstraints*| May | Y | The cA field is set to false. |
+| *crlDistributionPoints* | Y| N | Present and not marked critical. <br> It contains the HTTP URL of the CA's CRL service. |
+| *subjectKeyIdentifier*| Y| N | Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2) |
 
 ##### **7.1.2.3.5 End Entity Certificates Client Authentication**
 
 | **End Entity Client Authentication Certificate Profile** ||||
 |---|---|---|---|
-| **Field**| **Value**|||
-| *version*| v3(2).|||
-| *serialNumber*| Unique non‐sequential number greater than zero (0) and less than 2¹⁵⁹ containing at least 64 bits of output from a CSPRNG. |||
-| *signature*| See [Section 7.1.3.2.](#signature-algorithm-identifier)|||
-| *Issuer*| Encoded value byte‐for‐byte identical to the encoded Subject of the Issuing CA|||
-| *validity*| See [Section 6.3.2](#certificate-operational-periods-and-key-pair-usage-periods).|||
-| *Subject*| CN = Client Authentication device name|||
-|| O = Full legal name or DBA with full legal name in parenthesis|||
-|| E = emailAddress|||
-|| C = Two-letter ISO 3166-1 country code of Organization's place of business|||
-| *subjectPublicKeyInfo*| See [Section 7.1.3.1](#subjectpublickeyinfo).|||
-| *signatureAlgorithm*| Encoded value must be byte-for-byte identical to the tbsCertificate.signature.|||
+| **Field** | **Value**|||
+| *version* | v3(2). |
+| *serialNumber* | Unique non‐sequential number greater than zero (0) and less than 2¹⁵⁹ containing at least 64 bits of output from a CSPRNG. |
+| *signature* | See [Section 7.1.3.2.](#signature-algorithm-identifier) |
+| *Issuer* | Encoded value byte‐for‐byte identical to the encoded Subject of the Issuing CA |
+| *validity* | See [Section 6.3.2](#certificate-operational-periods-and-key-pair-usage-periods). |
+| *Subject* | CN = Client Authentication device name <br> O = Full legal name or DBA with full legal name in parenthesis <br> E = emailAddress <br> C = Two-letter ISO 3166-1 country code of Organization's place of business |
+| *subjectPublicKeyInfo* | See [Section 7.1.3.1](#subjectpublickeyinfo). |
+| *signatureAlgorithm* | Encoded value must be byte-for-byte identical to the tbsCertificate.signature. |
 
 | **Extension**| **Present**| **Critical** | **Description / Value**|
 |---|---|---|---|
-| *authorityInformationAccess*| Y| N| Optional - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
-|||| id-ad-caIssuers (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate.|
-| *authorityKeyIdentifier*| Y| N| Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA.|
-| *certificatePolicies*| Y| N| Certificate Policy:|
-|||| Policy Identifier = One IdenTrust Only Client Authentication OID Policy OID from [Section 7.1.6](#certificate-policy-object-identifier) |
-|||| Policy Qualifier Info:|
-|||| Policy Qualifier Id=id-qt-cps|
-|||| Qualifier: HTTPS URL for the Issuing CA's Certificate Policy|
-|||| Policy Qualifier Info:[^10]|
-|||| Policy Qualifier Id=User Notice|
-|||| Qualifier: Notice Text=Subordinate CA text|
-| *extKeyUsage*| Y| N| *id-kp-clientAuth*|
-| *subjectAltName*| May| N            | May be present and not marked critical.|
-|||| rfc822Name = emailAddress (from the Subject)|
-| *keyUsage*| Y| Y| digitalSignature|
-| *basicConstraints*| May| Y| The cA field is set to false.|
-| *crlDistributionPoints*| Y| N| Present and not marked critical.|
-|||| It contains the HTTP URL of the CA's CRL service.|
-| *subjectKeyIdentifier*| Y| N| Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2)|
+| *authorityInformationAccess* | Y | N | Optional - <br> id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder. <br> id-ad-caIssuers (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate. |
+| *authorityKeyIdentifier* | Y | N | Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA. |
+| *certificatePolicies*| Y| N| Certificate Policy: <br> Policy Identifier = One IdenTrust Only Client Authentication OID Policy OID from [Section 7.1.6](#certificate-policy-object-identifier) <br> Policy Qualifier Info: <br> Policy Qualifier Id=id-qt-cps <br> Qualifier: HTTPS URL for the Issuing CA's Certificate Policy <br> Policy Qualifier Info:[^10] <br> Policy Qualifier Id=User Notice <br> Qualifier: Notice Text=Subordinate CA text |
+| *extKeyUsage* | Y| N | *id-kp-clientAuth* |
+| *subjectAltName* | May | N | May be present and not marked critical. <br> rfc822Name = emailAddress (from the Subject) |
+| *keyUsage* | Y | Y | digitalSignature |
+| *basicConstraints* | May | Y | The cA field is set to false. |
+| *crlDistributionPoints*| Y| N| Present and not marked critical. <br> It contains the HTTP URL of the CA's CRL service. |
+| *subjectKeyIdentifier* | Y | N | Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2) |
 
 ### **7.1.3 Algorithm Object Identifiers**
 
@@ -3372,40 +3231,37 @@ IdenTrust, as the Issuing CA, includes at least one Policy OID in every Certific
 |**TrustID Certificate Names, Types, and Policy OIDs**||||
 |---|---|---|---|
 | **Name**| **Type**| **CA/Browser Forum OID**| **IdenTrust Policy OID**|
-| Mailbox-Validated          | S/MIME          | 2.23.140.1.5.1.2 (MP^\*^)          | 2.16.840.1.113839.0.6.11.1   |
-| Secure Email Software          | Signing/Encryption           | 2.23.140.1.5.1.3 (Strict)          |          |
-| Mailbox-Validated          | S/MIME          | 2.23.140.1.5.1.2(MP^\*^)           | 2.16.840.1.113839.0.6.11.2   |
-| Secure Email Hardware          | Signing/Encryption          | 2.23.140.1.5.1.3 (MP^\*^) (Strict) |          |
-| Organization-Validated          | S/MIME          | 2.23.140.1.5.2.2 (MP^\*^)          | 2.16.840.1.113839.0.6.8      |
-| FATCA Organization          | Signing/Encryption           | 2.23.140.1.5.2.3 (Strict)          |          |
-| Sponsor-Validated          | S/MIME          | 2.23.140.1.5.3.2 (MP^\*^)          | 2.16.840.1.113839.0.6.10.2   |
-| Business Card-Auth          | Signing/Encryption/Identity  | 2.23.140.1.5.3.3 (Strict)          |          |
-| Sponsor-Validated          | S/MIME          | 2.23.140.1.5.3.2 (MP^\*^)          | 2.16.840.1.113839.0.6.10.100 |
-| Business Card-Auth          | Card Authentication          | 2.23.140.1.5.3.3 (Strict)          |          |
-| Sponsor-Validated          | S/MIME          | 2.23.140.1.5.3.2 (MP^\*^)          | 2.16.840.1.113839.0.6.2.1    |
-| Business Software          | Signing /Encryption/Identity | 2.23.140.1.5.3.3 (Strict)          |          |
-| Sponsor-Validated          | S/MIME (AATL enabled)        | 2.23.140.1.5.3.2 (MP^\*^)          | 2.16.840.1.113839.0.6.12.2   |
-| Business Hardware          | Signing /Encryption/Identity | 2.23.140.1.5.3.3 (Strict)          |          |
-| Individual-Validated          | S/MIME          | 2.23.140.1.5.4.2 (MP^\*^)          | 2.16.840.1.113839.0.6.1.1    |
-| Personal Basic Software          | Signing /Encryption/Identity | 2.23.140.1.5.4.3 (Strict)          |          |
-| Individual-Validated          | S/MIME          | 2.23.140.1.5.4.2 (MP^\*^)          | 2.16.840.1.113839.0.6.1.2    |
-| Personal Medium SW          | Signing /Encryption/Identity | 2.23.140.1.5.4.3 (Strict)          |          |
-| Individual-Validated          | S/MIME (AATL enabled)        | 2.23.140.1.5.4.2 (MP^\*^)          | 2.16.840.1.113839.0.6.12.1   |
-| Personal Medium HW          | Signing /Encryption/Identity | 2.23.140.1.5.4.3 (Strict)          |          |
-| Non-EV Code Signing          | Code Signing          | 2.23.140.1.4.1          | 2.16.840.1.113839.0.6.14.2   |
-| EV Code Signing          | Code Signing          | 2.23.140.1.3          | 2.16.840.1.113839.0.6.14.1   |
-| Time-Stamping          | Timestamping          | 2.23.140.1.4.2          | 2.16.840.1.113839.0.6.13.1   |
-|          |          |          | 2.16.840.1.113839.0.6.13.3   |
-| CIV^\*\*^ Card Authentication          | Signing/Encryption           | N/A          | 2.16.840.1.101.3.2.1.3.19    |
-| Device          |          |          | 2.16.840.1.113839.0.6.20.1   |
-| CIV^\*\*^ Card Authentication Human          | Signing          | N/A          | 2.16.840.1.101.3.2.1.3.19    |
-|          |          |          | 2.16.840.1.113839.0.6.12.25  |
-| CIV^\*\*^ Card Auth Basic          | Signing/Encryption           | N/A          | 2.16.840.1.101.3.2.1.3.19    |
-|          |          |          | 2.16.840.1.113839.0.6.30.1   |
-| Administrative CA          | Signing/Encryption/Identity  | N/A          | 2.16.840.1.113839.0.7 (arc)  |
-| Administrators          | Signing/Encryption/Identity  | N/A          | 2.16.840.1.113839.0.7.1      |
-| Registration Authorities          | Signing/Encryption/Identity  | N/A          | 2.16.840.1.113839.0.7.2.2    |
-| Authorized Relying Parties          | Signing/Encryption/Identity  | N/A          | 2.16.840.1.113839.0.7.3.1    |
+| Mailbox-Validated   | S/MIME   | 2.23.140.1.5.1.2 (MP^\*^)   | 2.16.840.1.113839.0.6.11.1   |
+| Secure Email Software   | Signing/Encryption   | 2.23.140.1.5.1.3 (Strict)   |
+| Mailbox-Validated   | S/MIME   | 2.23.140.1.5.1.2(MP^\*^)   | 2.16.840.1.113839.0.6.11.2   |
+| Secure Email Hardware   | Signing/Encryption   | 2.23.140.1.5.1.3 (MP^\*^) (Strict) |
+| Organization-Validated   | S/MIME   | 2.23.140.1.5.2.2 (MP^\*^)   | 2.16.840.1.113839.0.6.8      |
+| FATCA Organization   | Signing/Encryption   | 2.23.140.1.5.2.3 (Strict)   |
+| Sponsor-Validated   | S/MIME   | 2.23.140.1.5.3.2 (MP^\*^)   | 2.16.840.1.113839.0.6.10.2   |
+| Business Card-Auth   | Signing/Encryption/Identity  | 2.23.140.1.5.3.3 (Strict)   |
+| Sponsor-Validated   | S/MIME   | 2.23.140.1.5.3.2 (MP^\*^)   | 2.16.840.1.113839.0.6.10.100 |
+| Business Card-Auth   | Card Authentication   | 2.23.140.1.5.3.3 (Strict)   | 
+| Sponsor-Validated   | S/MIME   | 2.23.140.1.5.3.2 (MP^\*^)   | 2.16.840.1.113839.0.6.2.1    |
+| Business Software   | Signing /Encryption/Identity | 2.23.140.1.5.3.3 (Strict)   |
+| Sponsor-Validated   | S/MIME (AATL enabled)   | 2.23.140.1.5.3.2 (MP^\*^)   | 2.16.840.1.113839.0.6.12.2   |
+| Business Hardware   | Signing /Encryption/Identity | 2.23.140.1.5.3.3 (Strict)   |   |
+| Individual-Validated   | S/MIME   | 2.23.140.1.5.4.2 (MP^\*^)   | 2.16.840.1.113839.0.6.1.1    |
+| Personal Basic Software   | Signing /Encryption/Identity | 2.23.140.1.5.4.3 (Strict)   |
+| Individual-Validated   | S/MIME   | 2.23.140.1.5.4.2 (MP^\*^)   | 2.16.840.1.113839.0.6.1.2    |
+| Personal Medium SW   | Signing /Encryption/Identity | 2.23.140.1.5.4.3 (Strict)   |
+| Individual-Validated   | S/MIME (AATL enabled)   | 2.23.140.1.5.4.2 (MP^\*^)   | 2.16.840.1.113839.0.6.12.1   |
+| Personal Medium HW   | Signing /Encryption/Identity | 2.23.140.1.5.4.3 (Strict)   |
+| Non-EV Code Signing   |   Code Signing   | 2.23.140.1.4.1   | 2.16.840.1.113839.0.6.14.2   |
+| EV Code Signing   |   Code Signing   | 2.23.140.1.3   | 2.16.840.1.113839.0.6.14.1   |
+| Time-Stamping   |   Timestamping   | 2.23.140.1.4.2   | 2.16.840.1.113839.0.6.13.1  <br> 2.16.840.1.113839.0.6.13.3   |
+| CIV^\*\*^ Card Authentication   | Signing/Encryption   | N/A   | 2.16.840.1.101.3.2.1.3.19    |
+| Device    |   |   | 2.16.840.1.113839.0.6.20.1   |
+| CIV^\*\*^ Card Authentication Human   | Signing   | N/A   | 2.16.840.1.101.3.2.1.3.19 <br> 2.16.840.1.113839.0.6.12.25  |
+| CIV^\*\*^ Card Auth Basic   |   Signing/Encryption   | N/A   | 2.16.840.1.101.3.2.1.3.19   <br>  2.16.840.1.113839.0.6.30.1   |
+| Administrative CA   | Signing/Encryption/Identity  | N/A   | 2.16.840.1.113839.0.7 (arc)  |
+| Administrators   | Signing/Encryption/Identity  | N/A   | 2.16.840.1.113839.0.7.1   |
+| Registration Authorities   |   Signing/Encryption/Identity  | N/A   | 2.16.840.1.113839.0.7.2.2    |
+| Authorized Relying Parties   |   Signing/Encryption/Identity  | N/A   | 2.16.840.1.113839.0.7.3.1    |
 
 ^\*^Multipurpose
 
@@ -3439,31 +3295,22 @@ IdenTrust issues version two (2) CRLs conforming [RFC 5280](https://datatracker.
 
 ### **7.2.2 CRL and CRL Entry Extensions**
 
-| **Field or Extension**| **Value** ||||
-|---|---|---|---|---|
+| **Field or Extension**| **Value** |
+|---|---|
 | *Issuer* | DN of issuer of CRL ||
 | *thisUpdate*| The date and time when the Certificate revocation list validity begins|
-| *nextUpdate*| For Subordinate CAs: Up to ThisUpdate + 1 year|
-|| For Subscribers: Up to ThisUpdate + 10 days|
+| *nextUpdate*| For Subordinate CAs: Up to ThisUpdate + 1 year <br> For Subscribers: Up to ThisUpdate + 10 days|
 | *revokedCertificates*| List of revoked Certificates, including the "Revoked Certificates Component" below .|
 | *CRLNumber*| The serial number of this CRL in an incrementally increasing sequence of CRLs|
-| *authorityKeyIdentifier*| Is present and not marked critical|
-|| The *keyIdentifier* field is present and the value is identical to the *subjectKeyIdentifier* field of the Issuing CA|
+| *authorityKeyIdentifier*| Is present and not marked critical <br> The *keyIdentifier* field is present and the value is identical to the *subjectKeyIdentifier* field of the Issuing CA|
 | *CRLNumber*| Present and not marked critical, containing an integer greater than or equal to zero (0) and less than 2¹⁵⁹, and convey a strictly increasing sequence.|
 | *issuingDistributionPoint*| Used only on partitioned CRLs, marked critical|
 
-| **Revoked Certificates Component** |||
-|---|---|---|
+| **Revoked Certificates Component** ||
+|---|---|
 | *serialNumber*| Byte-for-byte identical to the serialNumber contained in the revoked Certificate.|
 | *revocationDate*| The date and time revocation occurred. IdenTrust may update the revocation date in a CRL entry when it is determined that the Private Key of the Certificate was compromised prior to the revocation date that is indicated in the CRL entry for that Certificate.|
-| *crlEntryExtensions*| Must include an [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280) '*reasonCode*' field not marked critical, as follows:|
-|| **0. *unspecified***: Represented by the omission of a *reasonCode*. Must be omitted if the CRL entry is for a Certificate not technically capable of causing issuance unless the CRL entry is for a Subscriber Certificate Subject to these [TLS BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) revoked prior to July 15, 2023.|
-|| **1. *keyCompromise***: Indicates that it is known or suspected that the Subscriber's Private Key has been compromised.|
-|| **3. *affiliationChanged***: Indicates that the Subject's name or other Subject identity Information in the Certificate has changed, but there is no cause to suspect that the Certificate's Private Key has been compromised.|
-|| **4. *superseded***: Indicates that the Certificate is being replaced because: the Subscriber has requested a new Certificate, IdenTrust has reasonable evidence that the validation of domain authorization or control for any fully‐qualified domain name or IP address in the Certificate should not be relied upon, or the CA has revoked the Certificate for compliance reasons such as the Certificate does not comply with the [TLS BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) or this CP-CPS. |
-|| **5. *cessationOfOperation***: Indicates that the website with the Certificate is shut down prior to the expiration of the Certificate, or if the Subscriber no longer owns or controls the Domain Name in the Certificate prior to the expiration of the Certificate.|
-|| **6. *certificateHold***: Must not be included if the CRL entry is for (1) a Certificate Subject to the [TLS BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/).|
-|| **9. *privilegeWithdrawn*:** Indicates that there has been a subscriber‐side infraction that has not resulted in keyCompromise, such as the Certificate Subscriber provided misleading information in their Certificate Request or has not upheld their material obligations under the Subscriber Agreement or Terms of Use.|
+| *crlEntryExtensions*| Must include an [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280) '*reasonCode*' field not marked critical, as follows: <br> **0. *unspecified***: Represented by the omission of a *reasonCode*. Must be omitted if the CRL entry is for a Certificate not technically capable of causing issuance unless the CRL entry is for a Subscriber Certificate Subject to these [TLS BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) revoked prior to July 15, 2023. <br> **1. *keyCompromise***: Indicates that it is known or suspected that the Subscriber's Private Key has been compromised. <br> **3. *affiliationChanged***: Indicates that the Subject's name or other Subject identity Information in the Certificate has changed, but there is no cause to suspect that the Certificate's Private Key has been compromised. <br> **4. *superseded***: Indicates that the Certificate is being replaced because: the Subscriber has requested a new Certificate, IdenTrust has reasonable evidence that the validation of domain authorization or control for any fully‐qualified domain name or IP address in the Certificate should not be relied upon, or the CA has revoked the Certificate for compliance reasons such as the Certificate does not comply with the [TLS BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) or this CP-CPS. <br> **5. *cessationOfOperation***: Indicates that the website with the Certificate is shut down prior to the expiration of the Certificate, or if the Subscriber no longer owns or controls the Domain Name in the Certificate prior to the expiration of the Certificate. <br> **6. *certificateHold***: Must not be included if the CRL entry is for (1) a Certificate Subject to the [TLS BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/). <br> **9. *privilegeWithdrawn*:** Indicates that there has been a subscriber‐side infraction that has not resulted in keyCompromise, such as the Certificate Subscriber provided misleading information in their Certificate Request or has not upheld their material obligations under the Subscriber Agreement or Terms of Use.|
 
 ## **7.3 OCSP Profile**
 
@@ -3530,7 +3377,7 @@ IdenTrust has a contractual relationship with the auditing firm for the performa
 
 IdenTrust will maintain these standards when conducting audits of Sponsoring Organizations with Enterprise RAs.
 
-## **8.3 Assessor's relationship to assessed entity
+## **8.3 Assessor's relationship to assessed entity**
 
 The Compliance Inspector(s) and IdenTrust establish a contractual relationship for the performance of the inspection to provide an unbiased, independent evaluation.
 
@@ -3732,34 +3579,26 @@ The Certificate Warranties specifically include, but are not limited to, the fol
 
 1.  **Right to Use Mailbox Address:** That, at the time of Issuance, the CA:
 
-    i.  implemented a procedure for verifying that the Applicant either had the right to use, or had control of, the Mailbox Addresses listed in the Certificate's Subject field and subjectAltName extension (or was delegated such right or control by someone who had such right to use or control);
-
-    ii. followed the procedure when issuing the Certificate; and
-
+    i.  implemented a procedure for verifying that the Applicant either had the right to use, or had control of, the Mailbox Addresses listed in the Certificate's Subject field and subjectAltName extension (or was delegated such right or control by someone who had such right to use or control); <br>
+    ii. followed the procedure when issuing the Certificate; and <br>
     iii. accurately described the procedure in the CA's CP, CPS and/or CP-CPS;
 
 2.  **Authorization for Certificate**: That, at the time of Issuance, the CA:
 
-    i.  implemented a procedure for verifying that the Subject authorized the Issuance of the Certificate and that the Applicant Representative is authorized to request the Certificate on behalf of the Subject;
-
-    ii. followed the procedure when issuing the Certificate; and
-
+    i.  implemented a procedure for verifying that the Subject authorized the Issuance of the Certificate and that the Applicant Representative is authorized to request the Certificate on behalf of the Subject; <br>
+    ii. followed the procedure when issuing the Certificate; and <br>
     iii. accurately described the procedure in the CA's CP and/or CPS;
 
 3.  **Accuracy of Information**: That, at the time of Issuance, the CA:
 
-    i.  implemented a procedure for verifying the accuracy of all of the information contained in the Certificate (with the exception of the subject:serialNumber attribute);
-
-    ii. followed the procedure when issuing the Certificate; and
-
+    i.  implemented a procedure for verifying the accuracy of all of the information contained in the Certificate (with the exception of the subject:serialNumber attribute); <br>
+    ii. followed the procedure when issuing the Certificate; and <br>
     iii. accurately described the procedure in the CA's CP and/or CPS;
 
 4.  **Identity of Applicant**: That, if the Certificate contains Subject Identity Information, the CA:
 
-    i.  implemented a procedure to verify the identity of the Applicant in accordance with [Section 3.2](#initial-identity-validation) and [Section 7.1.2](#certificate-content-and-extensions);
-
-    ii. followed the procedure when issuing the Certificate; and
-
+    i.  implemented a procedure to verify the identity of the Applicant in accordance with [Section 3.2](#initial-identity-validation) and [Section 7.1.2](#certificate-content-and-extensions); <br>
+    ii. followed the procedure when issuing the Certificate; and <br>
     iii. accurately described the procedure in the CA's CP, CPS and/or CP-CPS;
 
 5.  **Subscriber Agreement**: That, if the CA and Subscriber are not Affiliated, the Subscriber and CA are parties to a legally valid and enforceable Subscriber Agreement that satisfies the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and with the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates, or, if the CA and Subscriber are the same entity or are Affiliated, the Applicant Representative acknowledged the Terms of Use;
