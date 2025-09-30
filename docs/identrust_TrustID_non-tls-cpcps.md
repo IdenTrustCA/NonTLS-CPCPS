@@ -3367,25 +3367,25 @@ IdenTrust, as the Issuing CA, includes at least one Policy OID in every Certific
 |**TrustID Certificate Names, Types, and Policy OIDs**||||
 |---|---|---|---|
 | **Name**| **Type**| **CA/Browser Forum OID**| **IdenTrust Policy OID**|
-| Mailbox-Validated          | S/MIME          | 2.23.140.1.5.1.2 (MP^\*^)          | 2.16.840.1.113839.0.6.11.1   |
+| Mailbox-Validated          | S/MIME          | 2.23.140.1.5.1.2 (MP^*^)          | 2.16.840.1.113839.0.6.11.1   |
 | Secure Email Software          | Signing/Encryption           | 2.23.140.1.5.1.3 (Strict)          |          |
-| Mailbox-Validated          | S/MIME          | 2.23.140.1.5.1.2(MP^\*^)           | 2.16.840.1.113839.0.6.11.2   |
-| Secure Email Hardware          | Signing/Encryption          | 2.23.140.1.5.1.3 (MP^\*^) (Strict) |          |
-| Organization-Validated          | S/MIME          | 2.23.140.1.5.2.2 (MP^\*^)          | 2.16.840.1.113839.0.6.8      |
+| Mailbox-Validated          | S/MIME          | 2.23.140.1.5.1.2(MP^*^)           | 2.16.840.1.113839.0.6.11.2   |
+| Secure Email Hardware          | Signing/Encryption          | 2.23.140.1.5.1.3 (MP^*^) (Strict) |          |
+| Organization-Validated          | S/MIME          | 2.23.140.1.5.2.2 (MP^*^)          | 2.16.840.1.113839.0.6.8      |
 | FATCA Organization          | Signing/Encryption           | 2.23.140.1.5.2.3 (Strict)          |          |
-| Sponsor-Validated          | S/MIME          | 2.23.140.1.5.3.2 (MP^\*^)          | 2.16.840.1.113839.0.6.10.2   |
+| Sponsor-Validated          | S/MIME          | 2.23.140.1.5.3.2 (MP^*^)          | 2.16.840.1.113839.0.6.10.2   |
 | Business Card-Auth          | Signing/Encryption/Identity  | 2.23.140.1.5.3.3 (Strict)          |          |
-| Sponsor-Validated          | S/MIME          | 2.23.140.1.5.3.2 (MP^\*^)          | 2.16.840.1.113839.0.6.10.100 |
+| Sponsor-Validated          | S/MIME          | 2.23.140.1.5.3.2 (MP^*^)          | 2.16.840.1.113839.0.6.10.100 |
 | Business Card-Auth          | Card Authentication          | 2.23.140.1.5.3.3 (Strict)          |          |
-| Sponsor-Validated          | S/MIME          | 2.23.140.1.5.3.2 (MP^\*^)          | 2.16.840.1.113839.0.6.2.1    |
+| Sponsor-Validated          | S/MIME          | 2.23.140.1.5.3.2 (MP^*^)          | 2.16.840.1.113839.0.6.2.1    |
 | Business Software          | Signing /Encryption/Identity | 2.23.140.1.5.3.3 (Strict)          |          |
-| Sponsor-Validated          | S/MIME (AATL enabled)        | 2.23.140.1.5.3.2 (MP^\*^)          | 2.16.840.1.113839.0.6.12.2   |
+| Sponsor-Validated          | S/MIME (AATL enabled)        | 2.23.140.1.5.3.2 (MP^*^)          | 2.16.840.1.113839.0.6.12.2   |
 | Business Hardware          | Signing /Encryption/Identity | 2.23.140.1.5.3.3 (Strict)          |          |
-| Individual-Validated          | S/MIME          | 2.23.140.1.5.4.2 (MP^\*^)          | 2.16.840.1.113839.0.6.1.1    |
+| Individual-Validated          | S/MIME          | 2.23.140.1.5.4.2 (MP^*^)          | 2.16.840.1.113839.0.6.1.1    |
 | Personal Basic Software          | Signing /Encryption/Identity | 2.23.140.1.5.4.3 (Strict)          |          |
-| Individual-Validated          | S/MIME          | 2.23.140.1.5.4.2 (MP^\*^)          | 2.16.840.1.113839.0.6.1.2    |
+| Individual-Validated          | S/MIME          | 2.23.140.1.5.4.2 (MP^*^)          | 2.16.840.1.113839.0.6.1.2    |
 | Personal Medium SW          | Signing /Encryption/Identity | 2.23.140.1.5.4.3 (Strict)          |          |
-| Individual-Validated          | S/MIME (AATL enabled)        | 2.23.140.1.5.4.2 (MP^\*^)          | 2.16.840.1.113839.0.6.12.1   |
+| Individual-Validated          | S/MIME (AATL enabled)        | 2.23.140.1.5.4.2 (MP^*^)          | 2.16.840.1.113839.0.6.12.1   |
 | Personal Medium HW          | Signing /Encryption/Identity | 2.23.140.1.5.4.3 (Strict)          |          |
 | Non-EV Code Signing          | Code Signing          | 2.23.140.1.4.1          | 2.16.840.1.113839.0.6.14.2   |
 | EV Code Signing          | Code Signing          | 2.23.140.1.3          | 2.16.840.1.113839.0.6.14.1   |
