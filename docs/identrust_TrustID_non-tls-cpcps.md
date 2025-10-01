@@ -1337,7 +1337,7 @@ IdenTrust is made aware that the Certificate was not issued in accordance with t
 
 > IdenTrust may delay Revocation of a Code Signing Certificate based on a request from Application Software Suppliers where immediate Revocation has a potentially large negative impact to the ecosystem.
 >
-> **Note:** Nothing herein prohibits IdenTrust from revoking a Code Signing Certificate prior to these time frames.
+> Note: Nothing herein prohibits IdenTrust from revoking a Code Signing Certificate prior to these time frames.
 
 #### **4.9.1.2 Reasons for Revoking a Subordinate CA Certificate**
 
@@ -1350,9 +1350,8 @@ IdenTrust will revoke a Subordinate CA Certificate within 7 days if one or more 
 5.  IdenTrust confirms that the CA Certificate was not issued in accordance with or that Subordinate CA has not complied with this document or the applicable Certificate Policy or Certification Practice Statement;
 6.  IdenTrust determines that any of the information appearing in the CA Certificate is inaccurate or misleading;
 7.  IdenTrust or the Subordinate CA ceases operations for any reason and has not arranged for another CA to provide Revocation support for the CA Certificate;
-
-IdenTrust or the Subordinate CA's right to issue Certificates under the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates expires or is revoked or terminated, unless the Issuing CA has made arrangements to continue maintaining the CRL/OCSP Repository; or
-8.  Revocation is required by IdenTrust's Certificate Policy, Certification Practice Statement; and/or CP-CPS.
+8.  IdenTrust or the Subordinate CA's right to issue Certificates under the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates expires or is revoked or terminated, unless the Issuing CA has made arrangements to continue maintaining the CRL/OCSP Repository; or
+9.  Revocation is required by IdenTrust's Certificate Policy, Certification Practice Statement; and/or CP-CPS.
 
 ### **4.9.2 Who Can Request Revocation**
 
@@ -1508,7 +1507,7 @@ Revocation entries on the CRL or OCSP Response are only removed until after the 
 
 ### **4.10.2 Service Availability**
 
-IdenTrust operates and maintains CRL and OCSP capability with resources sufficient to provide a response time of ten (10) seconds or less under normal operating conditions.
+IdenTrust operates and maintains CRL and optional OCSP capability with resources sufficient to provide a response time of ten (10) seconds or less under normal operating conditions.
 
 IdenTrust Root CA Certificates, CRLs, and online TrustID Certificate status information are available for retrieval 24 hours a day, seven days a week, with a minimum of 99% availability overall per year, and scheduled downtime does not exceed 0.5% annually, excluding network outages.
 
@@ -1534,21 +1533,7 @@ Upon renewal, the remaining period of the Certificate being renewed is added to 
 
 If a Key Pair is used for signature and confidentiality purposes, recovery of the Private Key is prohibited. If an encryption Certificate is issued and retrieved separately from the signing Certificate, IdenTrust does offer selective services to recover the Private Key of the Encryption Certificate only. IdenTrust does not provide the mechanisms (hardware, software, or procedural) that permit recovery of the Private Key of TrustID Certificates. The Encryption service may or may not be available for TrustID Certificates. The following steps provide the stipulations for Key recovery.
 
-#### **4.12.1.1 Circumstances for Private Key Recovery**
-
-There are no circumstances for Private Key Recovery for TrustID Certificates because the Private Key is not held in escrow.
-
-#### **4.12.1.2 Key Recovery Roles: Who Can Request Private Key Recovery**
-
-When and if the Key Recovery feature is enabled for TrustID, a request for Key recovery may be made by the Subscriber using his or her signature Private Key for purposes of authentication (automated self-recovery) or by any Individual who can demonstrate a reasonable authority and lawful need to obtain a recovered Key (a Requestor).
-
 ### **4.12.2 Session Key Encapsulation and Recovery Policy and Practices**
-
-#### **4.12.2.1 Automated Self-Recovery**
-
-When and if the Key Recovery feature is enabled for TrustID, the Subscriber is authenticated to the Key escrow System using a valid, approved CA Certificate. The identity of the Subscriber for the escrowed Key to be recovered is authenticated during automated self-recovery when the Subscriber attempts to access IdenTrust's Certificate Management Center (CMC) or a similar facility for hosted registration processes. Subscribers are asked to present their digital Certificate or apply their Digital Signature and authenticate themselves to the CMC or similar facility. The encryption Key cannot be recovered unless the corresponding Digital Signature Certificate is presented which is an equivalent to the Certificate whose companion Private Key is being recovered (e.g., a TrustID Business Certificate cannot be recovered with a TrustID Personal Certificate). Once the Subscriber has authenticated himself/herself to the CMC or hosted facility, the Subscriber's *PKCS#12* and the Account Password are extracted from the Key Escrow Database (KED) and made available to the Subscriber during a secure, online session. The Subscriber is then required to install the Key in a cryptographic container meeting the same security level for the Certificate, as specified in the Subscriber Agreement and the Certificate Policy for the corresponding product.
-
-#### **4.12.2.2 Session Key Encapsulation and Recovery Policy and Practices**
 
 IdenTrust currently does not support Key escrow and recovery using Key encapsulation techniques.
 
@@ -1660,78 +1645,56 @@ The IdenTrust CA Infrastructure System is backed up at the secured facility, usi
 
 All employees, contractors, and consultants of IdenTrust and RAs who have access to or control over cryptographic operations that may materially affect the Issuance, use, or Revocation of TrustID Certificates, including access to restricted operations of IdenTrust's CA and RA Systems, and Repository are for purposes of this CP-CPS, considered as serving in Trusted Roles. Such personnel include but are not limited to Administrators, Officers, Auditors, and Operators who oversee CA or RA operations.
 
-IdenTrust follows a documented procedure for appointing Individuals to Trusted Roles. Trusted Role employees who require System access are issued unique digital credentials -- not user-names and passwords -- to authenticate into the Certificate Systems. All System activities can be traced back to that Individual. No group accounts, shared roles, or shared digital credentials are permitted.
+IdenTrust Trusted Role personnel are appointed via “Trusted Role Appointment Letters” and are made aware to follow up on alerts of possible Critical Security Events and other security requirements.
+Specifically, the generic roles in this CP-CPS translate into specific roles for the CA and RA, which include, but are not limited to:
+-	CA Administrator;
+-	RA Administrator;
+-	Quality Assurance Personnel;
+-	Local Registration Agent (LRA);
+-	System Administrator;
+-	Network Engineer;
+-	Security Officer; 
+-	Software Engineer;
+-	Development Operations (DevOps); 
+-	Customer Support Representative; and
+-	Operations Management Personnel.
 
-All IdenTrust employees must follow the IdenTrust Employee Security Handbook which among other security procedures indicates that all employee workstations are automatically locked after 10 minutes of inactivity. This configuration cannot be changed by the employee.
+##### **5.2.1.1 CA Administrator**
 
-IdenTrust performs a comprehensive user account audit every 3 months and deactivates any user account that is no longer required.
-
-Lockout account access to Certificate Systems after no more than 5 failed access attempts is not applicable when the access is authenticated via digital credentials.
-
-Credentials issued to any privileged account or service account to access the secured facility hosting Certificate Systems are revoked within one business day upon confirmation that the person is no longer in that role.
-
-IdenTrust Trusted Role personnel are appointed via "Trusted Role Appointment Letters" and are made aware to follow up on alerts of possible Critical Security Events and other security requirements.
-
-Specifically, the generic roles in this CP-CPS translate into specific roles for the CA and RA, which include, but are not limited to, CA/RA administrators, system administration personnel, system operators, engineering personnel, and operations managers. For specifics, see the IdenTrust Trusted Roles Matrix Mapping table below.
-
-The functions and duties performed by these persons are also separated and distributed so that one person alone cannot circumvent security measures or subvert the security and trustworthiness of the PKI. See [Section 5.2.4](#roles-requiring-separation-of-duties).
-
-| **IdenTrust Trusted Roles Matrix Mapping** |  |  |  |  |  |
-|---|---|---|---|---|---|
-| TrustID Role | IdenTrust-Internally Defined Roles |  |  |  |  |
-|  |      CA Administrator |      LRA / Enterprise RA     |      System Administrator     |      Security Officer     |      RA     Administrator     |
-|     CA Administrator                            | X |  |  |  |  |
-|     CA Officer                                  |  | X |  |  |  |
-|     CA Auditor                                  |  |  |  | X |  |
-|     CA Operator                                 |  |  | X |  |  |
-|     CSA Administrator                           | X |  |  |  |  |
-|     CSA Auditor                                 |  |  |  | X |  |
-|     CSA Operator                                |  |  | X |  |  |
-|     RA Administrator                            |  |  |  |  | X |
-|     RA Officer                                  |  | X |  |  |  |
-|     RA Auditor                                  |  |  |  | X |  |
-|     RA Operator                                 |  |  | X |  |  |
-|     RA Administrator                            |  |  |  |  | X |
-
-The following subsections provide a detailed description of the responsibilities for each Trusted Role.
-
-#### **5.2.1.1 Certificate Authority Trusted Roles**
-
-##### **5.2.1.1.1 CA Administrator**
-
-All Certificates issued under the IdenTrust TrustID Root Certificate, including the Root, are issued under the control of IdenTrust Operations management as operator and CA services provider. The responsibilities for CA functions are carried out by IdenTrust's employees acting in their Trusted Roles and include administration and operation tasks described in this CP-CPS. IdenTrust Administrator is a Trusted Role. IdenTrust Administrator's responsibilities and operating procedures, as they relate to CA Operations, are as follows:
-
--   Installation, configuration, and maintenance of the CA software;
--   Establishing and maintaining system accounts and configuring audit parameters;
--   Installation and configuration of Repository software;
--   Installation and configuration of the RA software (Internal RA only);
--   Configuration of CRL parameters;
--   Configuration of Certificate Profiles;
--   Cross-Certified Subordinate CA Certificate, Root CA Certificate, and Subordinate CA Certificate Key management (performed under 2-person control); and
--   Cross-certification paperwork and workflow of the Root CA and Subordinate CAs by the other Bridges.
-
-The CA Administrator will ensure that the Root CA Keys will not be used to sign Certificates except in the following cases:
-
--   Self-signed Certificate to represent the Root CA itself;
--   Certificates for Issuing CAs and External CAs;
--   Certificates for infrastructure purposes (e.g., administrative role Certificates, internal CA operational Certificates for Electronic Devices, and OCSP Response verification Certificates); and
--   Certificates issued solely for the purpose of testing products with Certificates issued by the Root CA.
-
-CA Administrators do not Issue to Subscribers.
-
+The CA Administrator’s responsibilities and operating procedures, as they relate to CA Operations, are as follows:
+•	Installation, configuration, and maintenance of the CA software;
+•	Establishing and maintaining system accounts and configuring audit parameters;
+•	Installation and configuration of Repository software;
+•	Installation and configuration of the RA software (Internal RA only);
+•	Configuration of CRL parameters;
+•	Configuration of Certificate Profiles;
+•	Cross-Certified Subordinate CA Certificate, Root CA Certificate, and Subordinate CA Certificate Key management (performed under 2-person control); and
+•	Cross-certification paperwork and workflow of the Root CA and Subordinate CAs by the other Bridges.
+• The CA Administrator will ensure that the Root CA Keys will not be used to sign Certificates except in the following cases:
+•	Self-signed Certificate to represent the Root CA itself;
+•	Certificates for Issuing CAs and External CAs;
+•	Certificates for infrastructure purposes (e.g., administrative role Certificates, internal CA operational Certificates for Electronic Devices, and OCSP Response verification Certificates); and
+•	Certificates issued solely for the purpose of testing products with Certificates issued by the Root CA.
 IdenTrust will maintain redundancy in the role of CA Administrators. For the TrustID PKI, at least 2 CA Administrators are maintained in case a primary CA Administrator is on vacation, sick leave, etc.
 
-##### **5.2.1.1.2 CA Agent**
+#### **5.2.1.2	RA Administrator**
+The RA Administrator of an RA is a Trusted Role with duties for the RA that are similar to those of the CA Administrator for IdenTrust, including the following responsibilities and operating procedures:
+•	Installation, configuration, and maintenance of software on the RA System;
+•	Key Generation and management of Keys and the Certificate lifecycle of the RA System; and 
+•	Secure operation and management of the RA System, including patch management, backup, system logging, and physical and logical security.
+Within IdenTrust, the RA Administrator functions are performed by the System Administrator except for Key Management which would be performed by the CA Administrator.
 
-Within IdenTrust, the CA Officer role is performed by an LRA. See [Section 5.2.4](#roles-requiring-separation-of-duties) for further detail. CA Certificates generation responsibility is also shared by Customer Support Representatives.
+#### *5.2.1.3	Quality Assurance Personnel**
+As Quality Assurance Personnel roles perform functions that, if not carried out properly, can introduce security problems, whether accidentally or maliciously, controls are in place requiring approval from the Operations Management Personnel role prior to the introduction of code to Staging and Production environments. 
+Quality Assurance Personnel have the following tasks:
+•	Develop and execute test plans; 
+•	Identify and document defects;
+•	Conduct functional, regression, performance and user acceptance testing; 
+•	Collaborate with cross-functional teams including developers, product managers and other stake holders; 
+•	Maintain test environments;
+•	Report and track quality metrics
+•	Lead Change Management from code freeze through Production deployment. 
 
-##### **5.2.1.1.3 CA Auditor**
-
-Within IdenTrust, the CA Auditor functions are performed by the IdenTrust Security Office with oversight by the IdenTrust Security Officer. See [Section 5.2.1.5.3](#security-officer) for details.
-
-##### **5.2.1.1.4 CA Operator**
-
-Within IdenTrust, the CA Operator functions are divided between the CA Administrator and the System Administrator. See [Section 5.2.1.5.1](#system-administrator) for details on CA Operator's tasks performed by the System Administrator.
 
 ##### **5.2.1.1.5 Software Engineer**
 
