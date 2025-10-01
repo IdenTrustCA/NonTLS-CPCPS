@@ -393,7 +393,6 @@ If a Policy change is significant, the PMA may assign a new Object Identifier (O
 | **TrustID Certificate**                                | A Non-TLS Certificate issued pursuant to this CP-CPS.|
 | **Unsupervised Remote Identity Proofing**              | A real-time Identity Proofing event where the RA/Trusted Agent is not in the same physical location as the Applicant/Subscriber. The RA/Trusted Agent controls a device that is utilized by the Applicant/Subscriber in order to ensure the Remote Identity Proofing process employs physical, technical, and procedural measures to provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person Identity Proofing process. For Unsupervised Remote Identity Proofing, only the RA/Trusted Agent and the Applicant are required to participate in the session. Unsupervised Remote Identity Proofing may be used for Basic and Medium Assurance Certificate Issuance. Refer to Remote Identity Proofing and Supervised Remote Identity Proofing for related information. Refer to [Section 3.2.4.4](#remote-identity-proofing) for additional details.|
 | **Valid Certificate**                                  | Certificate that passes the validation procedures specified in this CP-CPS which are in line with [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280).|
-| **Validation Specialist**                              | Someone who performs the information verification duties specified by the CA/Browser Forum Baseline Requirements.|
 | **Validity Period**                                    | The intended term of validity of a Certificate, beginning with the date of Issuance ("Valid From" or "Activation" date), and ending on the expiration date indicated in the Certificate ("Valid To" or "Expiry" date). From [Section 4.1.2.5 of RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5): "The period of time from notBefore through notAfter, inclusive."|
 | **Vulnerability Scan**                                 | A process that uses manual or automated tools to probe internal and external Systems to check and report on the status of operating systems, services, and devices exposed to the network and the presence of vulnerabilities listed in the NVD, OWASP Top Ten, or SANS Top 25.|
 | **Workstation**                                        | A device, such as a phone, tablet, or desktop or laptop computer, which is: 1. connected to the same network as CA Infrastructure and/or Network Equipment; and 2. capable of accessing CA Infrastructure and/or Network Equipment.|
@@ -1713,121 +1712,7 @@ An LRA is a Trusted Role. The responsibilities and operating procedures for the 
 -   Operating of the LRA/RA systems and cryptographic hardware (including system backups and recovery, or changing recording media); and
 -   Generating of Cross-Certified Subordinate CA Certificate, the Root CA Certificate and Subordinate CA Certificates, re-keying, and Revocation (performed under 2-person control).
 
-
-##### **5.2.1.1.5 Software Engineer**
-
-The Software Engineers, also known as developers, have the following responsibilities:
-
--   Build clean and efficient code based on user needs;
--   Test software and debug for any issues;
--   Collaborate with other developers, managers, systems personnel, product owners and UX designers in building software;
--   Identify and deploy software tools, systems, and components;
--   Implement quality assurance standards;
--   Write and update technical documentation; and
--   Handle incident response and incident management.
-
-> As Software Engineer roles perform functions that can introduce security problems if not carried out properly, whether accidentally or maliciously, controls are in place requiring approval from the Security Officer or from Operations Manager roles prior to the execution of any tasks that bridge Software Engineer roles.
-
-> All such controls are audited annually by a third party auditor as part of the WebTrust Program for Certification Authorities, in compliance with the* ISO 21188 Public Key Policy and Practices Framework* standard.
-
-##### **5.2.1.1.6 DevOps**
-
-The DevOps roles responsibilities are as follows:
-
--   Build clean and efficient code based on user needs;
--   Provide infrastructure and automation to support software development and deployment of applications;
--   Coding to support process automation; i.e., infrastructure as code;
--   Collaborate with other developers, managers, and technical operations;
--   Identify and deploy software tools, systems, and components;
--   Implement quality assurance standards;
--   Write and update technical documentation; and
--   Handle incident response and incident management.
-
-As DevOps roles perform functions that can introduce security problems if not carried out properly, whether accidentally or maliciously, controls are in place requiring approval from the Security Officer or from Operations Manager roles prior to execution of any tasks that bridge DevOps roles.
-
-All such controls are audited annually by a third party auditor as part of the WebTrust Program for Certification Authorities, in compliance with *the ISO 21188 Public Key Policy and Practices Framework standard*.
-
-#### **5.2.1.2 Certificate Status Authority (CSA) Roles**
-
-##### **5.2.1.2.1 CSA Administrator**
-
-Within IdenTrust, CA Administrators also carry out the responsibilities of the CSA Administrator. The CSA Administrator responsibilities and operating procedures performed by IdenTrust CA Administrators, as they relate to CSA Operation, are as follows:
-
--   Installation, configuration, and maintenance of the CSA software;
--   Generating and backing up CSA Keys (performed under 2-person control);
--   Management of CSA Key and Certificate lifecycle, including renewal of OCSP Responder Certificates (performed under 2-person control);
--   Establishing and maintaining system accounts and configuring audit parameters; and
--   Operation of the CSA equipment.
-
-##### **5.2.1.2.2 CSA Agent**
-
-Within IdenTrust the CA Agent and the CSA Agent are equivalent and interchangeable. See [Section 5.2.1.1.2](#ca-agent) CA Agent.
-
-##### **5.2.1.2.3 CSA Operator**
-
-Within IdenTrust, the CSA Operator functions are divided between the CSA Administrator and the System Administrator. See [Section 5.2.1.5.1](#system-administrator) System Administrator for details on CSA Operator's tasks performed by the System Administrator.
-
-##### **5.2.1.2.4 CSA Auditor**
-
-Within IdenTrust, the CSA Auditor functions are performed by the IdenTrust Security Office with oversight by the IdenTrust Security Officer. See [Section 5.2.1.5.3](#security-officer) Security Officer for details.
-
-##### **5.2.1.2.5 CA Operator**
-
-Within IdenTrust the CA Operator and the CSA Operator are equivalent and interchangeable.
-
-#### **5.2.1.3 Card Management System ("CMS") Roles**
-
-CMS services are offered to selected enterprise customers and the CMS roles typically handle these functions: Card issuance, Key Generation and storage, Certificate management, PIN management, card lifecycle management, user management, integration with PKI components, reporting and auditing, Policy enforcement and remote card management. These functions are performed by CMS Operators at the enterprise customer system environment; therefore, no CMS Trusted Roles are required in this CP-CPS.
-
-#### **5.2.1.4 Registration Authority Roles**
-
-The RAs operating under this CP-CPS are subject to all applicable terms and conditions therein. If a CA delegates Identity Proofing responsibility to an RA, then the RA must be bound to comply with the provisions of this CP-CPS under the contract between the CA and RA in which such delegation is made.
-
-##### **5.2.1.4.1 RA Administrator**
-
-The RA Administrator of an RA is a Trusted Role with duties for the RA that are similar to those of the CA Administrator for IdenTrust, including the following responsibilities and operating procedures:
-
--   Installation, configuration, and maintenance of software on the RA System;
--   Key Generation and management of Keys and the Certificate lifecycle of the RA System; and
--   Secure operation and management of the RA System, including patch management, backup, system logging, and physical and logical security.
-
-Within IdenTrust, the RA Administrator functions are performed by the System Administrator except for Key Management which would be performed by the CA Administrator. See [Section 5.2.1.5.1](#system-administrator) for details on RA Administrator's tasks performed by the System Administrator.
-
-##### **5.2.1.4.2 RA Officer**
-
-The RA Officer of an RA is a Trusted Role with duties for the RA that are the same as those of the LRA for IdenTrust. See [Section 5.2.1.4.4](#local-registration-agent-lra) for further detail.
-
-Within IdenTrust, the RA Officer role is performed by an LRA.
-
-##### **5.2.1.4.3 RA Auditor**
-
-The RA Auditor of an RA is a Trusted Role with duties for the RA that are similar to those of the Security Officer for IdenTrust, including the following responsibilities and operating procedures:
-
--   Review, maintenance, and archiving of audit logs; and
--   Performance or oversight of internal compliance audits to ensure that the RA is operating in accordance with this CP-CPS.
-
-Within IdenTrust, the RA Auditor functions are performed by the Security Officer. See [Section 5.2.1.5.3](#security-officer) for details.
-
-##### **5.2.1.4.5 Trusted Agent**
-
-A Trusted Agent is an entity external to IdenTrust, acts as representative of the Sponsoring Organization, and that is obligated by contract and by this CP-CPS to perform Identity Proofing in a trustworthy manner.
-
-A Trusted Agent is confirmed through the Issuance of a business Certificate stored in a hardware Cryptographic Module that validates to a FIPS level equal to or higher than the Certificates for which the Trusted Agent will perform Identity Proofing. IdenTrust or the RA may provide software such as web pages, forms, instructions, and other resources to facilitate the work of Trusted Agents, but they do not have privileged access to IdenTrust's or the RA's systems used to issue and revoke Certificates.
-
-The Trusted Agent has the following duties:
-
--   Performing in-person or remote identification of Applicants/PKI Sponsors in accordance with guidelines specified in this CP-CPS;
--   Securely communicating requests to and responses from the LRA or Enterprise RA;
--   Collecting copies of identification documents and declarations of identity; and
--   Delivering end-user support to Applicants/PKI Sponsors and Subscribers (distribute cryptographic hardware, troubleshooting, assist with Revocation)
-
-A Trusted Agent need not be a Trusted Role and as such, some of the requirements related to background checks below do not apply.
-
-#### **5.2.1.5 Other Roles**
-
-The Trusted Role titles are defined in governing CP documents; however, the titles of Individuals within IdenTrust or an External RA who perform the duties associated with the CP-defined Trusted Roles do not align on a one-to-one basis. Additionally, there are other internally defined roles that are required to support the CA and/or RA operation. The following subsections describe other roles that have been defined as Key to the IdenTrust CA and/or RA operation and fulfill the duties of the Trusted Roles as defined in by governing CP documents. The IdenTrust Trusted Role Matrix provided in [Section 5.2.1](#trusted-roles) provides a cross reference mapping of CP-defined Trusted Roles to internal IdenTrust Trusted Roles Matrix.
-
-##### **5.2.1.5.1 System Administrator**
+##### **5.2.1.5 System Administrator**
 
 IdenTrust's System Administrators have Trusted Roles and are responsible for RA and CA operations not addressed by LRAs or Enterprise RAs and the following:
 
@@ -1838,7 +1723,7 @@ IdenTrust's System Administrators have Trusted Roles and are responsible for RA 
 -   Performance of the daily incremental database backups; and
 -   Administrative functions such as time services and maintaining the database.
 
-##### **5.2.1.5.2 Network Engineer**
+##### **5.2.1.6 Network Engineer**
 
 IdenTrust's Network Engineers are Trusted Roles and responsible for:
 
@@ -1847,7 +1732,7 @@ IdenTrust's Network Engineers are Trusted Roles and responsible for:
 -   Creation of devices to support recovery from catastrophic system loss; and
 -   Changing of the host or network interface configuration.
 
-##### **5.2.1.5.3 Security Officer**
+##### **5.2.1.7 Security Officer**
 
 The IdenTrust Security Officers are Trusted Roles responsible for reviewing the audit logs recorded by CA, CSA, and RA systems and actions of administrators and operators during the performance of some of their duties. They also perform and oversee compliance audits to ensure compliance of the PKI with this CP-CPS.
 
@@ -1866,7 +1751,36 @@ A Security Officer reviews logs for events such as the following:
 
 The Security Officer also performs, or oversees, internal compliance audits to ensure that the CA, CSA, RA, and LRA systems are operating in accordance with this CP-CPS.
 
-##### **5.2.1.5.4 Customer Support Representative**
+##### **5.2.1.8 Software Engineer**
+
+The Software Engineers, also known as developers, have the following responsibilities:
+
+-   Build clean and efficient code based on user needs;
+-   Test software and debug for any issues;
+-   Collaborate with other developers, managers, systems personnel, product owners and UX designers in building software;
+-   Identify and deploy software tools, systems, and components;
+-   Implement quality assurance standards;
+-   Write and update technical documentation; and
+-   Handle incident response and incident management.
+
+As Software Engineer roles perform functions that can introduce security problems if not carried out properly, whether accidentally or maliciously, controls are in place requiring approval from the Security Officer or from Operations Manager roles prior to the execution of any tasks that bridge Software Engineer roles.
+
+##### **5.2.1.9 Development Operations (DevOps)**
+
+The DevOps roles responsibilities are as follows:
+
+-   Build clean and efficient code based on user needs;
+-   Provide infrastructure and automation to support software development and deployment of applications;
+-   Coding to support process automation; i.e., infrastructure as code;
+-   Collaborate with other developers, managers, and technical operations;
+-   Identify and deploy software tools, systems, and components;
+-   Implement quality assurance standards;
+-   Write and update technical documentation; and
+-   Handle incident response and incident management.
+
+As DevOps roles perform functions that can introduce security problems if not carried out properly, whether accidentally or maliciously, controls are in place requiring approval from the Security Officer or from Operations Manager roles prior to execution of any tasks that bridge DevOps roles.
+
+##### **5.2.1.10 Customer Support Representative**
 
 IdenTrust's Customer Support Representatives are Trusted Roles and perform the following duties:
 
@@ -1874,23 +1788,8 @@ IdenTrust's Customer Support Representatives are Trusted Roles and perform the f
 -   Maintaining account information in the System that holds Subscriber information;
 -   Initiating Revocation processes; and
 -   Generating the External Root CA Certificate and Subordinate CA Certificate, re-keying, and Revocation (performed under 2-person control).
-
-##### **5.2.1.5.5 PKI Consultant**
-
-PKI Consultants are IdenTrust employees who coordinate the processes needed to securely onboard new CAs, RAs, and LRAs. PKI Consultant responsibilities include:
-
--   Installation and configuration of RA software connecting to the CA Infrastructure System;
--   Assistance with Identity Proofing processes to be used by IdenTrust, RAs, and LRAs;
--   Assistance with distributing Cryptographic Modules containing RA System Keys; and
--   Configuration of RA System access rights to CA-provided services.
-
-##### **5.2.1.5.6 PKI Sponsor**
-
-A PKI Sponsor represents a Sponsoring Organization that may be named in the Certificate's Subject extension. The PKI Sponsor works with the LRA, Enterprise RA, or Trusted Agent to register appropriate information in accordance with [Section 4.1](#certificate-application). The PKI Sponsor is responsible for the Electronic Device and has the duties of a Subscriber, including but not limited to protecting the Private Key of the Electronic Device.
-
-A PKI Sponsor need not be a Trusted Role and as such, some of the requirements related to background checks below do not apply.
-
-##### **5.2.1.5.7 Operations Manager**
+  
+##### **5.2.1.11 Operations Management Personnel**
 
 A list of IdenTrust's Operations Managers (i.e., IdenTrust's Head of IdenTrust, and other Operations designees below the Head of Operations) is kept at all times as approved and authorized by the Head of IdenTrust. The Operations Manager performs the following duties:
 
@@ -1902,17 +1801,7 @@ A list of IdenTrust's Operations Managers (i.e., IdenTrust's Head of IdenTrust, 
 
 As not all Operations Managers hold a Trusted Role, some of the requirements related to background checks do not apply to them.
 
-##### **5.2.1.5.8 Enterprise RA**
-
-Enterprise RAs function as a limited LRA contractually and have the following responsibilities:
-
--   Verifying identity via review and approval of documents provided by the PKI Sponsor;
--   Entering PKI Sponsor and Subscriber information, verifying correctness, and approving requests;
--   Securely communicating requests to and responses from the RA/CA Infrastructure System;
--   Receiving, approving, and distributing Certificates; and
--   Authenticating identity upon request for Revocation and executing Revocation.
-
-IdenTrust retains all responsibilities of the RA as specified as the contract between IdenTrust and the institution using the Enterprise RAs.
+tions are performed by the Security Officer. See [Section 5.2.1.5.3](#security-officer) for details.
 
 ### **5.2.2 Number of Persons Required per Task**
 
@@ -1952,20 +1841,6 @@ IdenTrust must enforce rigorous control procedures for the separation of validat
 IdenTrust maintains strict separation-of-duties/Multi-Party Controls for its Trusted Roles. These controls are audited annually by a third party auditor as part of the AICPA/CICA WebTrust Program for Certification Authorities audit described in [Section 8](#compliance-audit-and-other-assessments).
 
 Oversight of IdenTrust's Trusted Roles is performed by the Risk Management Committee, Operations Management, the human resources department, and Executive Management. IdenTrust maintains a list of Individuals performing each Trusted Role. The list is maintained by the highest-ranking Operations Manager (i.e., Head of IdenTrust or Head of Operations) and, for audit purposes, the Security Office maintains a current copy of the list.
-
-Roles requiring separation of duties include (but are not limited to):
-
--   **CA/CSA/CMS Administrator:** No person participating as IdenTrust CA/CSA/CMS Administrator will assume the role of Security Officer, LRA, Network Engineer, or Operations Manager.
--   **Local Registration Authority:** An LRA may not assume an Operations Manager, CA/CSA/CMS Administrator, RA Administrator, System Administrator, Network Engineer, Security Officer, or management oversight role (Risk Management, Operations Management, Human Resources, or Executive Management).
--   **RA Administrator:** (whether an IdenTrust Internal RA Administrator or an External RA Administrator): An RA Administrator may not assume the Operations Manager, LRA, Network Engineer, or Security Officer role.
--   **System Administrator:** A System Administrator may not assume the Security Officer, LRA or Operations Manager role.
--   **Network Engineer:** The Network Engineer may not assume the Security Officer, LRA, CA/CSA/CMS Administrator, or Operations Manager role.
--   **Security Officer:** The Security Officer may not serve in any other Trusted Role (e.g. the roles of CA/CSA/CMS Administrator, LRA, RA Administrator, Systems Administrator, or Network Engineer).
--   **Help Desk Representative:** Help Desk Representatives may not serve in the role of CA/CSA/CMS Administrator, RA Administrator, System Administrator, or Network Engineer.
--   **PKI Consultant:** PKI Consultants may not serve in the roles of CA/CSA/CMS Administrators, System Administrators, Network Administrators, and Security Officers.
--   **Operations Manager:** The Operations Manager may not serve as CA/CSA/CMS Administrator, Systems Administrator, LRA, or Network Engineer.
--   **Software Engineer:** Software Engineer may not assume any other roles
--   **Development Operations (DevOps):** Development Operations may not assume the LRA, Security Officer, Help Desk Representatives, Operations Manager or Software Engineer role.
 
 ## **5.3 Personnel Controls**
 
@@ -2035,79 +1910,15 @@ IdenTrust shall provide all personnel performing information verification duties
 
 All Individuals responsible for carrying out information verification responsibilities receive skill-enhancing training. This training encompasses fundamental Public Key Infrastructure knowledge, authentication and vetting policies and protocols (including the CA\'s CP and/or CPS), typical risks associated with the information verification process (such as phishing and other social engineering methods), and adherence to the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates.
 
-Records of this training are upheld to ensure that personnel assigned to Validation Specialist duties maintain the proficiency needed to execute their responsibilities effectively.
+Records of this training are upheld to ensure that personnel assigned to Trusted Role duties maintain the proficiency needed to execute their responsibilities effectively.
 
-Before authorizing Validation Specialists to undertake [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates tasks, IdenTrust confirms the possession of essential skills by each specialist.
+Before authorizing a Trusted Role to undertake [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates tasks, IdenTrust confirms the possession of essential skills by the relevant Trusted Role.
 
-IdenTrust requires that all Validation Specialists successfully complete an assessment conducted by the internal compliance team. This assessment evaluates their understanding of the information verification requisites outlined in the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates.
+IdenTrust requires that the relevant Trusted Role individual successfully complete an assessment conducted by the internal compliance team. This assessment evaluates their understanding of the information verification requisites outlined in the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates.
 
-RAs are obligated by contract and by this CP-CPS, to retrain its personnel and maintain a record of the training provided; specific additional areas are covered for each Trusted Role as outlined below.
+RAs are obligated by contract and by this CP-CPS, to retrain its personnel and maintain a record of the training provided.
 
-#### **5.3.3.1 CA/CSA Administrator**
-
--   Key Pair Generation and Certificate Issuance, re-keying and Revocation for Root CA, Issuing CAs, External CAs, and CSAs;
--   Configuration and posting of Certificates and CRLs;
--   Daily maintenance and other CA-, CSA-related administrative functions; and
--   Initializing CA and CSA hardware.
-
-#### **5.3.3.2 LRA**
-
--   Verifying identity, either through personal contact or through Trusted Agents;
--   Understanding common threats to the information verification process (including phishing and other social engineering tactics);
--   Entry of Applicant/PKI Sponsors information and verifying correctness;
--   Securely handling requests to and responses from CAs;
--   Executing the Certificate Revocation process;
--   Completing the Certificate Issuance process; and
--   Understanding the requirements in this CP-CPS for Identity Proofing Certificate Issuance and passing an examination administered by IdenTrust or the RA covering those requirements.
-
-#### **5.3.3.3 Enterprise RA**
-
--   Verifying Certificate requests and employment;
--   Understanding common threats to the information verification process (including phishing and other social engineering tactics);
--   Entering of Applicant/PKI Sponsors information and verifying correctness;
--   Securely handling requests to and responses from CAs;
--   Executing the Certificate Revocation process;
--   Completing the Certificate Issuance process; and
--   Understanding the requirements in this CP-CPS for Identity Proofing of Certificate Issuance and passing IdenTrust training covering those requirements.
-
-#### **5.3.3.4 System Administrator**
-
--   Operating systems and software applications used within the PKI systems;
--   Backup applications and procedures;
--   Use of database tools including reporting and maintenance;
--   Restriction for privileged system use; and
--   Generation of audit data.
-
-#### **5.3.3.5 Network Engineer**
-
--   Network architecture and equipment used in the PKI;
--   Proper and secure configuration and switching for the network;
--   Intrusion detection monitoring; and
--   Requirements for securing network transmissions.
-
-#### **5.3.3.6 Security Officer**
-
--   Security risk assessment and analysis;
--   Security policies and guidelines;
--   Computer attack trends, security threats, and vulnerabilities;
--   Physical security and physical access controls;
--   Networks, distributed systems trust relationships, PKI, and cryptosystems;
--   Firewalls and other network security devices;
--   Event logging and auditing; and
--   Incident response and contingency planning.
-
-#### **5.3.3.7 Customer Support Representative**
-
--   End user systems;
--   Proper and secure handling of sensitive customer information; and
--   Use of trouble-tracking software.
-
-#### **5.3.3.8 Operations and Software Applications Used Within the PKI System;**
-
--   Network architecture; and
--   Audit and risk management oversight.
-
-### 5.3.4 Retraining Frequency and Requirements
+### **5.3.3 retraining Frequency and Requirements**
 
 All personnel in Trusted Roles shall maintain skill levels consistent with the CA's training and performance programs.
 
