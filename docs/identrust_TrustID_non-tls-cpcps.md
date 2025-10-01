@@ -843,7 +843,7 @@ The Remote Identity Proofing session must be conducted by an IdenTrust LRA or an
 10. All remote sessions will be initiated by an IdenTrust LRA and will be prescheduled (not impromptu). Sessions initiated by an Applicant are prohibited.
 11. The use of remote kiosks or publicly located workstations for the express purpose of conducting Remote Identity Proofing is prohibited under this CP-CPS.
 
-> Once the remote identity session has been complete, the Applicant must submit, via email, scanned copies of identity credentials and all application forms completed during the session and/or required for application approval.
+Once the remote identity session has been complete, the Applicant must submit, via email, scanned copies of identity credentials and all application forms completed during the session and/or required for application approval.
 
 #### **3.2.4.5 Attestation of Identity by an Employer or Other Person**
 
@@ -1031,7 +1031,7 @@ IdenTrust may reuse completed validations and/or supporting evidence performed i
 1.  **Validation of Email Address Authorization or Control**: Completed validation of the control of a mail server in accordance with [Section 3.2.2](#validating-control-over-mailbox-via-email) shall be obtained no more than 398 days prior to issuing the Certificate.
 
 > In the event of changes to the [TLS BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) methods specified in [Section 3.2.2.4 of the TLS BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/#3224-validation-of-domain-authorization-or-control), a CA may continue to reuse completed validations and/or supporting evidence for the period stated in this section.
->
+
 > Completed validation of control of an Email Address in accordance with [Section 3.2.2](#validating-control-over-mailbox-via-email) shall be obtained no more than 30 days prior to issuing the Certificate.
 
 2.  **Authentication of Organization Identity**: Completed validation of Organization identity in accordance with [Section 3.2.3](#authentication-of-organization-identity) shall be obtained no more than 825 days prior to issuing the Certificate.
@@ -1323,21 +1323,23 @@ IdenTrust shall revoke a Certificate within 24 hours if one or more of the follo
 5.  IdenTrust obtains evidence that the validation of domain authorization or mailbox control for any Mailbox Address in the Certificate should not be relied upon;
 6.  IdenTrust is made aware of a demonstrated or proven method that exposes the Subscriber's Private Key to compromise or if there is clear evidence that the specific method used to generate the Private Key was flawed; or
 7.  IdenTrust has reasonable assurance that a Certificate was used to sign Suspect Code.
+   
 IdenTrust should revoke a Certificate within 24 hours and shall revoke a Certificate within 5 days if one or more of the following occurs:
-8.  The Certificate no longer complies with the requirements of [Section 6.1.5](#key-sizes) and [Section 6.1.6](#public-key-parameters-generation-and-quality-checking);
-8.  IdenTrust obtains evidence that the Certificate was misused;
-9.  IdenTrust is made aware that a Subscriber has violated one or more of its material obligations under the Subscriber Agreement or Terms of Use;
-10. IdenTrust is made aware of any circumstance indicating that use of an Email Address or Fully-Qualified Domain Name in the Certificate is no longer legally permitted (e.g., a court or arbitrator has revoked the right to use an Email Address or Domain Name, a relevant licensing or services agreement between the Subscriber has terminated, or the account holder has failed to maintain the active status of the Email Address or Domain Name);
-11. IdenTrust is made aware of a material change in the information contained in the Certificate;
-IdenTrust is made aware that the Certificate was not issued in accordance with the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates or with this CP-CPS;
-12. IdenTrust determines or is made aware that any of the information appearing in the Certificate is inaccurate;
-13. IdenTrust's right to issue Certificates under the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates expires or is revoked or terminated, unless IdenTrust has made arrangements to continue maintaining the CRL/OCSP Repository;
-14. Revocation is required by IdenTrust CP-CPS;
-15. IdenTrust is made aware of a demonstrated or proven method that exposes the Subscriber's Private Key to compromise or if there is clear evidence that the specific method used to generate the Private Key was flawed.
 
-> IdenTrust may delay Revocation of a Code Signing Certificate based on a request from Application Software Suppliers where immediate Revocation has a potentially large negative impact to the ecosystem.
->
-> Note: Nothing herein prohibits IdenTrust from revoking a Code Signing Certificate prior to these time frames.
+8.  The Certificate no longer complies with the requirements of [Section 6.1.5](#key-sizes) and [Section 6.1.6](#public-key-parameters-generation-and-quality-checking);
+9.  IdenTrust obtains evidence that the Certificate was misused;
+10.  IdenTrust is made aware that a Subscriber has violated one or more of its material obligations under the Subscriber Agreement or Terms of Use;
+11.  IdenTrust is made aware of any circumstance indicating that use of an Email Address or Fully-Qualified Domain Name in the Certificate is no longer legally permitted (e.g., a court or arbitrator has revoked the right to use an Email Address or Domain Name, a relevant licensing or services agreement between the Subscriber has terminated, or the account holder has failed to maintain the active status of the Email Address or Domain Name);
+12.  IdenTrust is made aware of a material change in the information contained in the Certificate;
+13.  IdenTrust is made aware that the Certificate was not issued in accordance with the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates or with this CP-CPS;
+14.  IdenTrust determines or is made aware that any of the information appearing in the Certificate is inaccurate;
+15.  IdenTrust's right to issue Certificates under the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates and the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates expires or is revoked or terminated, unless IdenTrust has made arrangements to continue maintaining the CRL/OCSP Repository;
+16. Revocation is required by IdenTrust CP-CPS;
+17. IdenTrust is made aware of a demonstrated or proven method that exposes the Subscriber's Private Key to compromise or if there is clear evidence that the specific method used to generate the Private Key was flawed.
+
+IdenTrust may delay Revocation of a Code Signing Certificate based on a request from Application Software Suppliers where immediate Revocation has a potentially large negative impact to the ecosystem.
+
+**Note:** Nothing herein prohibits IdenTrust from revoking a Code Signing Certificate prior to these time frames.
 
 #### **4.9.1.2 Reasons for Revoking a Subordinate CA Certificate**
 
@@ -1647,7 +1649,7 @@ All employees, contractors, and consultants of IdenTrust and RAs who have access
 
 IdenTrust Trusted Role personnel are appointed via “Trusted Role Appointment Letters” and are made aware to follow up on alerts of possible Critical Security Events and other security requirements.
 Specifically, the generic roles in this CP-CPS translate into specific roles for the CA and RA, which include, but are not limited to:
--	CA Administrator;
+- CA Administrator;
 -	RA Administrator;
 -	Quality Assurance Personnel;
 -	Local Registration Agent (LRA);
@@ -1662,38 +1664,54 @@ Specifically, the generic roles in this CP-CPS translate into specific roles for
 ##### **5.2.1.1 CA Administrator**
 
 The CA Administrator’s responsibilities and operating procedures, as they relate to CA Operations, are as follows:
-•	Installation, configuration, and maintenance of the CA software;
-•	Establishing and maintaining system accounts and configuring audit parameters;
-•	Installation and configuration of Repository software;
-•	Installation and configuration of the RA software (Internal RA only);
-•	Configuration of CRL parameters;
-•	Configuration of Certificate Profiles;
-•	Cross-Certified Subordinate CA Certificate, Root CA Certificate, and Subordinate CA Certificate Key management (performed under 2-person control); and
-•	Cross-certification paperwork and workflow of the Root CA and Subordinate CAs by the other Bridges.
-• The CA Administrator will ensure that the Root CA Keys will not be used to sign Certificates except in the following cases:
-•	Self-signed Certificate to represent the Root CA itself;
-•	Certificates for Issuing CAs and External CAs;
-•	Certificates for infrastructure purposes (e.g., administrative role Certificates, internal CA operational Certificates for Electronic Devices, and OCSP Response verification Certificates); and
-•	Certificates issued solely for the purpose of testing products with Certificates issued by the Root CA.
+- Installation, configuration, and maintenance of the CA software;
+- Establishing and maintaining system accounts and configuring audit parameters;
+- Installation and configuration of Repository software;
+- Installation and configuration of the RA software (Internal RA only);
+- Configuration of CRL parameters;
+- Configuration of Certificate Profiles;
+- Cross-Certified Subordinate CA Certificate, Root CA Certificate, and Subordinate CA Certificate Key management (performed under 2-person control); and
+- Cross-certification paperwork and workflow of the Root CA and Subordinate CAs by the other Bridges.
+ 
+The CA Administrator will ensure that the Root CA Keys will not be used to sign Certificates except in the following cases:
+- Self-signed Certificate to represent the Root CA itself;
+- Certificates for Issuing CAs and External CAs;
+- Certificates for infrastructure purposes (e.g., administrative role Certificates, internal CA operational Certificates for Electronic Devices, and OCSP Response verification Certificates); and
+- Certificates issued solely for the purpose of testing products with Certificates issued by the Root CA.
+  
 IdenTrust will maintain redundancy in the role of CA Administrators. For the TrustID PKI, at least 2 CA Administrators are maintained in case a primary CA Administrator is on vacation, sick leave, etc.
 
 #### **5.2.1.2	RA Administrator**
 The RA Administrator of an RA is a Trusted Role with duties for the RA that are similar to those of the CA Administrator for IdenTrust, including the following responsibilities and operating procedures:
-•	Installation, configuration, and maintenance of software on the RA System;
-•	Key Generation and management of Keys and the Certificate lifecycle of the RA System; and 
-•	Secure operation and management of the RA System, including patch management, backup, system logging, and physical and logical security.
+- Installation, configuration, and maintenance of software on the RA System;
+- Key Generation and management of Keys and the Certificate lifecycle of the RA System; and
+- Secure operation and management of the RA System, including patch management, backup, system logging, and physical and logical security.
+
 Within IdenTrust, the RA Administrator functions are performed by the System Administrator except for Key Management which would be performed by the CA Administrator.
 
-#### *5.2.1.3	Quality Assurance Personnel**
+#### **5.2.1.3	Quality Assurance Personnel**
 As Quality Assurance Personnel roles perform functions that, if not carried out properly, can introduce security problems, whether accidentally or maliciously, controls are in place requiring approval from the Operations Management Personnel role prior to the introduction of code to Staging and Production environments. 
 Quality Assurance Personnel have the following tasks:
-•	Develop and execute test plans; 
-•	Identify and document defects;
-•	Conduct functional, regression, performance and user acceptance testing; 
-•	Collaborate with cross-functional teams including developers, product managers and other stake holders; 
-•	Maintain test environments;
-•	Report and track quality metrics
-•	Lead Change Management from code freeze through Production deployment. 
+- Develop and execute test plans;
+- Identify and document defects;
+- Conduct functional, regression, performance and user acceptance testing;
+- Collaborate with cross-functional teams including developers, product managers and other stake holders;
+- Maintain test environments;
+- Report and track quality metrics
+- Lead Change Management from code freeze through Production deployment. 
+
+##### **5.2.1.4 Local Registration Agent (LRA)**
+
+An LRA is a Trusted Role. The responsibilities and operating procedures for the LRA relating to CA and RA Operations are as follows:
+
+-   Verifying identity via review and approval of documents provided by the Applicant/PKI Sponsor/Subscriber or submitted by Trusted Agents if appropriate;
+-   Entering Applicant/PKI Sponsor/Subscriber information, verifying correctness, and approving requests;
+-   Securely communicating requests to and responses from the RA/CA Infrastructure System;
+-   Receiving and distributing Certificates;
+-   Authenticating identity upon request for Revocation and executing Revocation;
+-   Archiving of Subscriber authentication information (i.e., copies of paper forms, etc.);
+-   Operating of the LRA/RA systems and cryptographic hardware (including system backups and recovery, or changing recording media); and
+-   Generating of Cross-Certified Subordinate CA Certificate, the Root CA Certificate and Subordinate CA Certificates, re-keying, and Revocation (performed under 2-person control).
 
 
 ##### **5.2.1.1.5 Software Engineer**
@@ -1709,7 +1727,7 @@ The Software Engineers, also known as developers, have the following responsibil
 -   Handle incident response and incident management.
 
 > As Software Engineer roles perform functions that can introduce security problems if not carried out properly, whether accidentally or maliciously, controls are in place requiring approval from the Security Officer or from Operations Manager roles prior to the execution of any tasks that bridge Software Engineer roles.
->
+
 > All such controls are audited annually by a third party auditor as part of the WebTrust Program for Certification Authorities, in compliance with the* ISO 21188 Public Key Policy and Practices Framework* standard.
 
 ##### **5.2.1.1.6 DevOps**
@@ -1789,19 +1807,6 @@ The RA Auditor of an RA is a Trusted Role with duties for the RA that are simila
 -   Performance or oversight of internal compliance audits to ensure that the RA is operating in accordance with this CP-CPS.
 
 Within IdenTrust, the RA Auditor functions are performed by the Security Officer. See [Section 5.2.1.5.3](#security-officer) for details.
-
-##### **5.2.1.4.4 Local Registration Agent (LRA)**
-
-An LRA is a Trusted Role. The responsibilities and operating procedures for the LRA relating to CA and RA Operations are as follows:
-
--   Verifying identity via review and approval of documents provided by the Applicant/PKI Sponsor/Subscriber or submitted by Trusted Agents if appropriate;
--   Entering Applicant/PKI Sponsor/Subscriber information, verifying correctness, and approving requests;
--   Securely communicating requests to and responses from the RA/CA Infrastructure System;
--   Receiving and distributing Certificates;
--   Authenticating identity upon request for Revocation and executing Revocation;
--   Archiving of Subscriber authentication information (i.e., copies of paper forms, etc.);
--   Operating of the LRA/RA systems and cryptographic hardware (including system backups and recovery, or changing recording media); and
--   Generating of Cross-Certified Subordinate CA Certificate, the Root CA Certificate and Subordinate CA Certificates, re-keying, and Revocation (performed under 2-person control).
 
 ##### **5.2.1.4.5 Trusted Agent**
 
