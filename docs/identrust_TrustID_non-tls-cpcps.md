@@ -590,7 +590,7 @@ Completed validations of Applicant authority may be valid for the Issuance of mu
 
 Note: Mailbox Fields may be listed in Subscriber Certificates using rfc822Name or otherNames of type id-on-SmtpUTF8Mailbox in the subjectAltName extension. Mailbox fields may be listed in Subordinate CA Certificates via rfc822Name in permittedSubtrees within the nameConstraints extension.
 
-### **3.2.3 Validating Authority Over Mailbox Via Domain**
+#### **3.2.2.1 Validating Authority Over Mailbox Via Domain**
 
 IdenTrust may confirm the Applicant, such as an Enterprise RA, has been authorized by the email account holder to act on the account holder's behalf by verifying the entity's control over the domain portion of the Mailbox Address to be used in the Certificate.
 
@@ -598,7 +598,7 @@ IdenTrust only uses the approved methods in [Section 3.2.2.4 the TLS BR](https:
 
 For purposes of domain validation, the term Applicant includes the Applicant's Parent Company, Subsidiary Company, or Affiliate.
 
-#### **3.2.3.1 Validating Control Over Mailbox Via Email**
+#### **3.2.2.2 Validating Control Over Mailbox Via Email**
 
 IdenTrust may confirm the Applicant's control over each Mailbox field to be included in a Certificate by sending a Random Value via email and then receiving a confirming response utilizing the Random Value.
 
@@ -614,7 +614,7 @@ IdenTrust ensures that the Applicant has control over the email accounts linked 
 
 For S/MIME Certificates or Code Signing Certificates, IdenTrust does not delegate the verification of Email Addresses authorization or control. IdenTrust shall maintain a record of the validation method used, including the relevant version number from the [TLS BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) or [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/), that was used to validate every domain or Email Address in issued Certificates.
 
-##### **3.2.3.1.1 Electronic Verification of Email Address**
+##### **3.2.2.2.1 Electronic Verification of Email Address**
 
 Upon submitting an application via a secure online form, an automated email is sent to the specified Email Address provided in the Certificate Application. This email contains a link directing the Applicant/PKI Sponsor to a server-authenticated, TLS-secured website. The instructions on this site guide the Applicant/PKI Sponsor to provide a single-use email verification Random Value, valid for 24 hours. Additionally, the Account password created during the Certificate Application process is required.
 
@@ -622,17 +622,17 @@ The Applicant/PKI Sponsor must enter the Account Password, which they exclusivel
 
 If the 24-hour window expires, making the Random Value void, a new Random Value will be sent to the Applicant\'s Email Address, invalidating the previous one.
 
-##### **3.2.3.1.2 Manual Verification of Email**
+##### **3.2.2.2.2 Manual Verification of Email**
 
 Enterprise RAs may furnish a list of authorized sponsored Applicants/PKI Sponsors. These Individuals have their Email Addresses verified by a Trusted Agent, drawing upon the internal insights of the Sponsoring Organization. The Trusted Agent employs internal databases and directories to ascertain the correctness of email information.
 
 Completed validations of Applicant authority may be valid for the Issuance of multiple Certificates over time. In all cases, the validation is handled within the time period specified in a prior to Certificate Issuance.
 
-### **3.2.4 Authentication of Organization Identity**
+### **3.2.3 Authentication of Organization Identity**
 
 The following requirements shall be fulfilled to authenticate Organization identity included in the Organization-validated and Sponsor-Validated profiles.
 
-#### **3.2.4.1 Attribute Collection of Organization Identity**
+#### **3.2.3.1 Attribute Collection of Organization Identity**
 
 IdenTrust or RA shall collect and retain evidence supporting the following identity attributes for the Organization:
 
@@ -646,11 +646,11 @@ For S/MIME Certificates, the identifier shall be included in the Certificate su
 
 When processing EV Code Signing Certificates, additional checks are performed based on [Section 3.2.2.10 of the CS BR.](https://cabforum.org/working-groups/code-signing/requirements/#322210-verification-of-certain-information-sources)
 
-#### **3.2.4.2 Validation of Organization Identity**
+#### **3.2.3.2 Validation of Organization Identity**
 
 If an Attestation Letter is used as evidence for the validation of the attributes described in this section, then the Attestation Letter shall be verified for authenticity as described in [Section 3.2.8](#reliability-of-verification-sources-data-source-accuracy).
 
-#####  **3.2.4.2.1 Verification of Name, Address, and Identifier**
+#####  **3.2.3.2.1 Verification of Name, Address, and Identifier**
 
 IdenTrust or RA shall verify the full legal name and an address (if included in the Certificate Subject) of the Legal Entity Applicant using documentation provided by, or through communication with, at least one of the following:
 
@@ -665,7 +665,7 @@ In cases 1 and 4 above, the CA or RA shall verify that the status of the Applica
 
 In case 2 above when LEI data reference is used, the CA or RA shall verify that the *RegistrationStatus* is ISSUED and the *EntityStatus* is ACTIVE. IdenTrust shall only allow use of an LEI if the *ValidationSources* entry is *FULLY_CORROBORATED*. An LEI shall not be used if *ValidationSources* entry is *PARTIALLY_CORROBORATED*, PENDING, or *ENTITY_SUPPLIED_ONLY*.
 
-##### **3.2.4.2.2 Verification of Assumed Name**
+##### **3.2.3.2.2 Verification of Assumed Name**
 
 Applicants may request an Assumed Name to be included in the Certificate. IdenTrust or RA shall verify that:
 
@@ -676,7 +676,7 @@ IdenTrust may rely on an Attestation Letter that indicates the Assumed Name unde
 
 All information obtained by this process will be uploaded to and retained electronically in the PKI Sponsor's application file in IdenTrust's or the RA's System. If the information is obtained through a phone call, the LRA must document the telephone number, the source it was obtained and verified through, and the name and title of the Individual that provided the information for the verification and place this information into the System through the related application account.
 
-#### **3.2.4.3 Disclosure of Verification Sources**
+#### **3.2.3.3 Disclosure of Verification Sources**
 
 IdenTrust or RA shall verify the Registration Reference to be included in the Certificate from a register that is maintained or authorized by the relevant Government Agency. IdenTrust shall disclose the authorized sources it uses to verify the Applicant's creation, existence, or recognition. This disclosure shall be through an appropriate and readily accessible online means.
 
@@ -694,7 +694,7 @@ The "Organization Verification Sources" document is located in the "Product Data
 
 For S/MIME Certificates, IdenTrust documents and publishes the methods it uses to collect Individual identity attributes at this location: <https://www.identrust.com/support/documents/trustid> under General Questions: TrustID \| Identity Verification Requirements.
 
-### **3.2.5 Authentication of Individual Identity**
+### **3.2.4 Authentication of Individual Identity**
 
 The following requirements shall be fulfilled to authenticate Individual identity attributes included in Sponsor-Validated and Individual-Validated Certificate Profiles.
 
@@ -708,7 +708,7 @@ IdenTrust, RA, or Enterprise RA shall collect and retain evidence supporting the
 
 For S/MIME Certificates, the CA or RA shall comply with applicable data protection legislation in the gathering and retention of evidence relating to Individual identity supporting the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) in accordance with [Section 9.4](#privacy-of-personal-information).
 
-#### **3.2.5.1 Attribute Collection of Individual Identity**
+#### **3.2.4.1 Attribute Collection of Individual Identity**
 
 The order in which the authentication steps are followed and how they are performed, in-person or automatically, are driven by the Certificate type and specific implementations.
 
@@ -735,7 +735,7 @@ To ensure that the Applicant's identity information, its validation, and the Pub
 
 IdenTrust issues TrustID Certificates only to Individual Applicants or to Devices represented by the PKI Sponsors. Specifically, in the case of human Subscribers, IdenTrust does not issue Certificates that contain a Public Key whose associated Private Key is shared.
 
-#### **3.2.5.2 Validation of Individual Identity -- Acceptable Forms of Identification Documents**
+#### **3.2.4.2 Validation of Individual Identity -- Acceptable Forms of Identification Documents**
 
 IdenTrust or RA shall validate all identity attributes of the Individual to be included in the Certificate.
 
@@ -773,7 +773,7 @@ The following are considered by this CP-CPS to be other "Acceptable Forms of ID"
 -   A high school or college diploma;
 -   Third party affidavits of identity based on personal acquaintance with the Applicant/PKI Sponsor.
 
-#### **3.2.5.3 In-Person Identification**
+#### **3.2.4.3 In-Person Identification**
 
 Identity Proofing is a component of the overall Certificate application process and may be done either in-person or remotely. The process also includes submission of an online secure application, verification of the information provided in that application, and completion of a telephone number-address-name match. When in-person identity verification is performed, the Applicant/PKI Sponsor meets with an Individual authorized to collect the appropriate Physical Identity Documents in its original form to verify the Applicant's/PKI Sponsor's identity. See conditions for remote Identity Proofing provided later in this section.
 
@@ -817,7 +817,7 @@ final application verification, approval, and recording in the System. If suppor
 
 After an application has been approved using the automated, in-person, or Remote Identity Proofing processes, an out-of-band notification is sent to the previously verified physical mail address via US Postal Service first class mail.
 
-#### **3.2.5.4 Remote Identity Proofing**
+#### **3.2.4.4 Remote Identity Proofing**
 
 According to NIST publication SP 800-63-3A there are 2 scenarios for conducting Remote Identity Proofing---Supervised Remote Identity Proofing and Unsupervised Remote Identity Proofing. The need to conduct Supervised Remote, Unsupervised Remote, or in-person Identity Proofing is determined by the Assurance level of the Certificate for which the Applicant has requested.
 
@@ -845,7 +845,7 @@ The Remote Identity Proofing session must be conducted by an IdenTrust LRA or an
 
 > Once the remote identity session has been complete, the Applicant must submit, via email, scanned copies of identity credentials and all application forms completed during the session and/or required for application approval.
 
-#### **3.2.5.5 Attestation of Identity by an Employer or Other Person**
+#### **3.2.4.5 Attestation of Identity by an Employer or Other Person**
 
 Identity may be established by an Attestation Letter signed (in writing or digitally) by an authorized representative (e.g., a supervisor, administrative officer, information security officer, authorizing official, Certificate coordinator, etc.) of the Applicant's employer that has been identified and authenticated in accordance with [Section 3.2.4](#authentication-of-individual-identity), or by a person or entity certified by a government agency as being authorized to confirm identities, provided that the attestation is checked to ensure legitimacy.
 
@@ -855,31 +855,31 @@ In the case of Sponsor-Validated Certificates approved by an Enterprise RA, The 
 
 The Enterprise RA will maintain records to satisfy the requirements of [Section 1.3.2.1](#enterprise-registration-authorities) S/MIME Certificates.
 
-#### **3.2.5.6 Code Signing and Time-Stamping Certificates**
+#### **3.2.4.6 Code Signing and Time-Stamping Certificates**
 
 A TrustID Non-EV Code Signing or EV Code Signing Certificate or TrustID Time-Stamping Certificate identifies an Organization as the Subject of a Certificate, and such Organization is attributable for the purposes of accountability and responsibility for signatures created by the Organization to be used to verify the integrity of its code.
 
 EV Code Signing, identity shall be established by verification of the Applicant's Organization in accordance with [Section 3.2.2.2 of the CS BR](https://cabforum.org/working-groups/code-signing/requirements/#3222-authentication-of-organization-identity-for-ev-code-signing-certificates).
 
-#### **3.2.5.7 TrustID CIV Card Authentication Certificate**
+#### **3.2.4.7 TrustID CIV Card Authentication Certificate**
 
 For TrustID CIV Card Authentication Certificate either an RA or a CA will assign a unique name-identifier to the relevant Cryptographic Module and such unique name-identifier is at a minimum to be contained in the Subject Name of the TrustID CIV Card Authentication Certificate issued to the Cryptographic Module.
 
-#### **3.2.5.8 TrustID CIV Device Certificate**
+#### **3.2.4.8 TrustID CIV Device Certificate**
 
 For a TrustID CIV Device Certificate, the RA or Applicant authenticates an Electronic Device and assigns it a unique name-identifier. Such unique name-identifier is to be contained in the Subject Name of the TrustID CIV Device Certificate issued to the Electronic Device containing the Cryptographic Module storing the corresponding Key Pair.
 
-#### **3.2.5.9 Authorized Relying Parties**
+#### **3.2.4.9 Authorized Relying Parties**
 
 IdenTrust may perform Identity Proofing of Authorized Relying Parties, including but not limited to performing such Identity Proofing as part of any enrollment process by which an Authorized Relying Party enters into an Authorized Relying Party Agreement with IdenTrust.
 
-### **3.2.6 Non-Verified Subscriber Information**
+### **3.2.5 Non-Verified Subscriber Information**
 
 Subscriber information that has not been verified in accordance with the [S/MIME BR](https://cabforum.org/working-groups/server/baseline-requirements/requirements/) for S/MIME Certificates or the [CS BR](https://cabforum.org/working-groups/code-signing/documents/) for Code Signing Certificates, shall not be included in Publicly-Trusted Certificates.
 
 IdenTrust does not include unverified Subscriber information in TrustID Certificates.
 
-### **3.2.7 Validation of Authority**
+### **3.2.6 Validation of Authority**
 
 If the Applicant for a Certificate containing Subject Identity Information is an Organization, the CA shall use a Reliable Method of Communication to verify the authenticity of the Applicant Representative's Certificate Request for the following:
 
@@ -893,13 +893,13 @@ IdenTrust or RA may use the sources listed in [Section 3.2.8](#reliability-of-v
 
 Provided that IdenTrust uses a Reliable Method of Communication, IdenTrust may establish the authenticity of the Certificate Request directly with the Applicant Representative or with an authoritative source within the Applicant's Organization, such as the Applicant's main business offices, corporate offices, human resource offices, information technology offices, or other department that IdenTrust deems appropriate.
 
-#### **3.2.7.1 Verification of the Certificate Request**
+#### **3.2.6.1 Verification of the Certificate Request**
 
 When evaluating the authenticity of a Certificate Request, the LRA or Enterprise RA will establish the verification directly with the Applicant/PKI Sponsor. Any information collected during the verification process by the LRA or Enterprise RA will be placed into the System for documentation purposes. The source of verification will depend upon the type of Certificate requested.
 
 If a Certificate Request is being submitted to an Enterprise RA, verification of the Certificate Request is completed by the Enterprise RA. The Enterprise RA will contact the PKI Sponsor via the company/Organization internal directory or telephone list that is maintained by the human resources department or similar authority. Equivalent processes to fulfill this verification may be approved by the PMA and documented by the Sponsoring Organization with Enterprise RAs. The Enterprise RA will request to speak to the PKI Sponsor at the Sponsoring Organization telephone number and upon confirming identity, will ask the PKI Sponsor to verify the validity of the request.
 
-### **3.2.8 Criteria for Interoperation**
+### **3.2.7 Criteria for Interoperation**
 
 IdenTrust shall disclose all Cross Certificates that identify the CA as the Subject, provided that the CA arranged for or accepted the establishment of the trust relationship (i.e., the Cross Certificate at issue).
 
@@ -913,11 +913,11 @@ IdenTrust as CA shall adhere to the following requirements:
 -   Disclose all Cross-Certified Subordinate CA Certificates that identify the CA as the Subject, provided that it has arranged for or accepted the establishment of the trust relationship (i.e. the Cross-Certified Subordinate CA Certificate at issue).
 -   Upon request, issue Code Signing and Timestamp Certificates that allow Application Software Suppliers to test their software with Certificates that chain up to each Publicly-Trusted Root Certificate.
 
-#### **3.2.8.1 Cross-Certification**
+#### **3.2.7.1 Cross-Certification**
 
 Upon PMA approval, when cross-certification between an IdenTrust Root Certificate with an external Certification Authority takes place, IdenTrust must inform End Entities of the uses allowed within the cross-certified PKI.
 
-### **3.2.9 Reliability of Verification Sources / Data Source Accuracy**
+### **3.2.8 Reliability of Verification Sources / Data Source Accuracy**
 
 Before relying on a source of verification data to validate Certificate Requests, the CA shall verify its suitability as a Reliable Data Source. Enterprise RA records are a Reliable Data Source for Individual Subject attributes included in Sponsor-Validated Certificates issued to the Enterprise RA's Organization.
 
@@ -933,15 +933,15 @@ IdenTrust or RA may rely upon an Attestation Letter attesting that Subject Infor
 
 An Attestation Letter shall include a copy of documentation supporting the fact to be attested. IdenTrust or RA shall use a Reliable Method of Communication to contact the sender and to confirm the Attestation Letter is authentic.
 
-#### **3.2.9.1 Verification and Validation of Individual Information Sources**
+##### **3.2.8.1.1 Verification and Validation of Individual Information Sources**
 
 Registration information provided by the Applicant must include at least his or her name, address, telephone number, Email Address, and the serial numbers from 2 acceptable forms of ID, one of which shall be a Government-issued photo ID as described and required in [[Section 3.2.4](#authentication-of-individual-identity)](#authentication-of-individual-identity).
 
-#### **3.2.9.2 Verification Against High Risk and Denied Request Lists**
+##### **3.2.8.1.2 Verification Against High Risk and Denied Request Lists**
 
 To ensure that requests for TrustID EV Code Signing Certificates are properly verified, IdenTrust and RAs conduct additional checks for Applicants as outlined in [Section 3.2.8 of the CS BR](https://cabforum.org/working-groups/code-signing/requirements/#328-denied-lists-and-other-legal-block-lists).
 
-### **3.2.10 Final Cross-Correlation and Due Diligence**
+### **3.2.9 Final Cross-Correlation and Due Diligence**
 
 For Code Signing Certificates, the CA LRA, the cross-correlation and due diligence is done following the requirements of [Section 3.2.9 of the CS BR](https://cabforum.org/working-groups/code-signing/requirements/#329-final-cross-correlation-and-due-diligence).
 
