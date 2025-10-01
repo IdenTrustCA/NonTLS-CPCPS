@@ -52,7 +52,7 @@ The following table contains subsequent revisions:
 ### **CP-CPS Document Versions**
 | **Version**   | **Date**    | **Summary of Changes / Comments** |      
 |----------|----------|----------|
-| 5.0.0 | September 26, 2025 | This document replaces IdenTrust CP v4.9.2 and IdenTrust CPS v4.9.2 with the following updates:                                                                                                                <ol> <li> Remove all TLS Certificate references </li> <li> Added relevant CP language where applicable </li> <li> Moved sections to align the S/MIME BR and CS BR </li> <li> Section 1.6: Added/updated definitions/Acronyms/References </li> <li> 5. Section 4.10.2.1: "Problem Report" moved to Section 1.5.2.1 </li> <li> Section 5.4.1: Removed detailed audit log entries in table </li> <li> Section 6.3.2: Updated Timestamp CA details </li> <li> Section 7: Removed TLS Certificate Profile details </li> <li> Appendix A: Removed 
+| 5.0.0 | September 26, 2025 | This document replaces IdenTrust CP v4.9.2 and IdenTrust CPS v4.9.2 with the following updates:                                                                                                                <ol> <li> Remove all TLS Certificate references </li> <li> Added relevant CP language where applicable </li> <li> Moved sections to align the S/MIME BR and CS BR </li> <li> Section 1.6: Added/updated definitions/Acronyms/References </li> <li> Section 4.10.2.1: "Problem Report" moved to Section 1.5.2.1 </li> <li>Section 5.2.1: Updated language for Trusted Roles</li> <li>Section 5.2.4: Removed detailed separation of duties</li> <li>Section 5.4.1: Removed detailed audit log entries in table </li> <li> Section 6.3.2: Updated Timestamp CA details </li> <li> Section 7: Removed TLS Certificate Profile details </li> <li> Appendix A: Removed 
 
 
 Prior versions of IdenTrust CP, CPS and combined CP-CPS documents can be found in the "Policies -- Archived" Section of the [IdenTrust TrustID Document Library](https://www.identrust.com/support/documents/trustid).
@@ -194,30 +194,18 @@ Code Signing Certificates are not intended to assert that the signed code is saf
 
 ### **1.5.1 Organization Administering the Document**
 
-This CP-CPS is administered by:
-
-##IdenTrust PMA##
-
-IdenTrust Services, LLC
-
-5225 Wiley Post Way, Suite 450
-
-Salt Lake City, UT 84116
-
-Email: <Policy@IdenTrust.com>
-
-Phone: (888) 882-1104
+This CP-CPS is administered by IdenTrust PMA
 
 ### **1.5.2 Contact Person**
 
 Questions regarding the implementation and administration of this CP-CPS should be directed to:
 
-IdenTrust PMA
-IdenTrust Services, LLC
-5225 Wiley Post Way, Suite 450
-Salt Lake City, UT 84116
-Email: <Policy@IdenTrust.com>
-Phone: (888) 882-1104
+IdenTrust PMA.  
+IdenTrust Services, LLC.  
+5225 Wiley Post Way, Suite 450.  
+Salt Lake City, UT 84116.  
+Email: <Policy@IdenTrust.com>.  
+Phone: (888) 882-1104.
 
 ### **1.5.3 Certificate Problem Reporting**
 
@@ -392,11 +380,7 @@ If a Policy change is significant, the PMA may assign a new Object Identifier (O
 | **Subscriber**                                         | A Natural Person or Legal Entity to whom a Certificate is issued and who is legally bound by a Subscriber Agreement or Terms of Use.|
 | **Subscriber Agreement**                               | An agreement between the CA and the Applicant/Subscriber that specifies the rights and responsibilities of the parties.|
 | **Subscriber Certificate**                             | See TrustID Certificate|
-| **Supervised Remote Identity Proofing**                | A real-time Identity Proofing event where the RA/Trusted Agent is not in the same physical location as the Applicant/Subscriber. The RA/Trusted Agent controls a device that is utilized by the Applicant/Subscriber in order to ensure the Remote Identity Proofing process employs physical, technical, and procedural measures to provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person Identity Proofing process.|
-|| Supervised Remote Identity Proofing requires that a third person, in addition to the RA/TA and the Applicant, participate in the Identity Proofing event to attest to the Applicant's identity and act as a witness to the proceedings.
-|| Supervised Remote Identity Proofing is used for high assurance Certificate Issuance.|
-|| Refer to Remote Identity Proofing and Unsupervised Remote Identity Proofing for related information.|
-|| Refer to [Section 3.2.4.4](#remote-identity-proofing) for further definitions regarding Supervised versus Unsupervised Identity Proofing.|
+| **Supervised Remote Identity Proofing**                | A real-time Identity Proofing event where the RA/Trusted Agent is not in the same physical location as the Applicant/Subscriber. The RA/Trusted Agent controls a device that is utilized by the Applicant/Subscriber in order to ensure the Remote Identity Proofing process employs physical, technical, and procedural measures to provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person Identity Proofing process. Supervised Remote Identity Proofing requires that a third person, in addition to the RA/TA and the Applicant, participate in the Identity Proofing event to attest to the Applicant's identity and act as a witness to the proceedings.<br>Supervised Remote Identity Proofing is used for high assurance Certificate Issuance. Refer to Remote Identity Proofing and Unsupervised Remote Identity Proofing for related information.Refer to [Section 3.2.4.4](#remote-identity-proofing) for further definitions regarding Supervised versus Unsupervised Identity Proofing.|
 | **Suspect Code**                                       | Code that contains malicious functionality or serious vulnerabilities, including spyware, malware and other code that installs without the user\'s consent and/or resists its own removal, code that compromises user security and/or code that can be exploited in ways not intended by its designers to compromise the trustworthiness of the platforms on which it executes.|
 | **System**                                             | One or more pieces of equipment or software that stores, transforms, or communicates data.|
 | **Technically Constrained Subordinate CA Certificate** | A Subordinate CA Certificate that uses a combination of Extended Key Usage and Name Constraint extensions as defined within the Certificate Profile to limit the scope within which the Subordinate CA Certificate may issue Subscriber or additional Subordinate CA Certificates.|
@@ -407,11 +391,7 @@ If a Policy change is significant, the PMA may assign a new Object Identifier (O
 | **Trusted Agent(s)**                                   | Entity authorized to act as a representative of a Sponsoring Organization in verifying Applicant or PKI Sponsor identification during the registration process. Trusted Agents do not have automated interfaces with CAs. See [Section 1.3.5.5](#trusted-agents).|
 | **Trusted Role(s)**                                    | An employee or contractor of a CA or Delegated Third Party who has authorized access to any component of CA Infrastructure.|
 | **TrustID Certificate**                                | A Non-TLS Certificate issued pursuant to this CP-CPS.|
-| **Unsupervised Remote Identity Proofing**              | A real-time Identity Proofing event where the RA/Trusted Agent is not in the same physical location as the Applicant/Subscriber. The RA/Trusted Agent controls a device that is utilized by the Applicant/Subscriber in order to ensure the Remote Identity Proofing process employs physical, technical, and procedural measures to provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person Identity Proofing process.|
-|| For Unsupervised Remote Identity Proofing, only the RA/Trusted Agent and the Applicant are required to participate in the session.|
-|| Unsupervised Remote Identity Proofing may be used for Basic and Medium Assurance Certificate Issuance.|
-|| Refer to Remote Identity Proofing and Supervised Remote Identity Proofing for related information.|
-|| Refer to [Section 3.2.4.4](#remote-identity-proofing) for additional details.|
+| **Unsupervised Remote Identity Proofing**              | A real-time Identity Proofing event where the RA/Trusted Agent is not in the same physical location as the Applicant/Subscriber. The RA/Trusted Agent controls a device that is utilized by the Applicant/Subscriber in order to ensure the Remote Identity Proofing process employs physical, technical, and procedural measures to provide sufficient confidence that the remote session can be considered equivalent to a physical, in-person Identity Proofing process. For Unsupervised Remote Identity Proofing, only the RA/Trusted Agent and the Applicant are required to participate in the session. Unsupervised Remote Identity Proofing may be used for Basic and Medium Assurance Certificate Issuance. Refer to Remote Identity Proofing and Supervised Remote Identity Proofing for related information. Refer to [Section 3.2.4.4](#remote-identity-proofing) for additional details.|
 | **Valid Certificate**                                  | Certificate that passes the validation procedures specified in this CP-CPS which are in line with [RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280).|
 | **Validation Specialist**                              | Someone who performs the information verification duties specified by the CA/Browser Forum Baseline Requirements.|
 | **Validity Period**                                    | The intended term of validity of a Certificate, beginning with the date of Issuance ("Valid From" or "Activation" date), and ending on the expiration date indicated in the Certificate ("Valid To" or "Expiry" date). From [Section 4.1.2.5 of RFC 5280](https://datatracker.ietf.org/doc/html/rfc5280#section-4.1.2.5): "The period of time from notBefore through notAfter, inclusive."|
@@ -463,7 +443,7 @@ If a Policy change is significant, the PMA may assign a new Object Identifier (O
 |  **QGIS**      | Qualified Government Information Source|
 |  **QGTIS**     | Qualified Government Tax Information Source|
 |  **RA**        | Registration Authority|
-|  **RFPS**      | Registration Practices Statements|
+|  **RPS**      | Registration Practices Statements|
 |  **RSA**       | Rivest-Shamir-Adleman cryptosystem|
 |  **SAN**       | Subject Alternative Name|
 |  **S/MIME**    | Secure Multipurpose Internet Mail Exchange|
