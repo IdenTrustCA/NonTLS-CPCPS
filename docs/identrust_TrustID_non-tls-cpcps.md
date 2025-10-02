@@ -2744,8 +2744,7 @@ All TrustID Certificate contents and extensions are based on [RFC 5280](https://
 | *subjectPublicKeyInfo*| See [Section 7.1.3.1](#subjectpublickeyinfo).|
 | *signatureAlgorithm*| Encoded value must be byte-for-byte identical to the tbsCertificate.signature.|
 | **Extension**| **Present**| **Description |
-| *authorityInformationAccess*| Presence: Yes; Critical: No; <br> {May} - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
-|||| *id-ad-caIssuers* (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate.|
+| *authorityInformationAccess*| Presence: Yes; Critical: No; <br> {May} - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.<br> *id-ad-caIssuers* (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate.|
 | *authorityKeyIdentifier*| Presence: Yes; Critical: No; <br> Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA.|
 | *certificatePolicies*| Presence: Yes; Critical: No; <br> Certificate Policy: <br> Policy Identifier = One S/MIME Policy OID pair in [Section 7.1.6](#certificate-policy-object-identifier) (CA/B Forum+IdenTrust) <br> Policy Qualifier Info: <br> Policy Qualifier Id=*id-qt-cps* <br> Qualifier: HTTPS URL for the Issuing CA's Certificate Policy <br> Policy Qualifier Info:[^4] <br> Policy Qualifier Id=User Notice <br> Qualifier: Notice Text=Subordinate CA text|
 | *extKeyUsage*| Presence: Yes; Critical: No; <br> **Strict:** *id-kp-emailProtection* <br> **Multipurpose:** *id-kp-emailProtection* and other values may be present, except these:*id-kp-serverAuth*, *id-kp-codeSigning, id-kp-timeStamping*, or *anyExtendedKeyUsage* |
