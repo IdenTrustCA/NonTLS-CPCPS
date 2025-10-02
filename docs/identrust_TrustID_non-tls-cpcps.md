@@ -2743,36 +2743,17 @@ All TrustID Certificate contents and extensions are based on [RFC 5280](https://
 | *Subject*| See [S/MIME Subject Attributes](#smime-subject-attributes)|
 | *subjectPublicKeyInfo*| See [Section 7.1.3.1](#subjectpublickeyinfo).|
 | *signatureAlgorithm*| Encoded value must be byte-for-byte identical to the tbsCertificate.signature.|
-
-| **Extension**| **Present**| **Critical** | **Description / Value** ||||||
-|---|---|---|---|---|---|---|---|---|
-| *authorityInformationAccess*| Y| N| Optional - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
+| **Extension**| **Present**| **Description |
+| *authorityInformationAccess*| Presence: Yes; Critical: No; <br> {May} - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
 |||| *id-ad-caIssuers* (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate.|
-| *authorityKeyIdentifier*| Y| N| Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA.|
-| *certificatePolicies*| Y| N| Certificate Policy:|||
-|||| Policy Identifier = One S/MIME Policy OID pair in [Section 7.1.6](#certificate-policy-object-identifier) (CA/B Forum+IdenTrust)|
-|||| Policy Qualifier Info:|
-|||| Policy Qualifier Id=*id-qt-cps*|
-|||| Qualifier: HTTPS URL for the Issuing CA's Certificate Policy|
-|||| Policy Qualifier Info:[^4]|
-|||| Policy Qualifier Id=User Notice|
-|||| Qualifier: Notice Text=Subordinate CA text|
-| *extKeyUsage*| Y| N|
-|||| **Strict**| **Multipurpose**. |
-|||| *id-kp-emailProtection*| *id-kp-emailProtection* and other values may be present, except these:|
-||||| *id-kp-serverAuth*, *id-kp-codeSigning, id-kp-timeStamping*, or *anyExtendedKeyUsage* |
-| *subjectAltName*| Y| N| Contains at least one GeneralName entry of the following types:|
-|||| \- rfc822Name and/or|||
-|||| \- otherName of type id-on-SmtpUTF8Mailbox.|||
-|||| \- otherName: *userPrincipalName*|||
-| *keyUsage*| Y| Y| **Strict**| **Multipurpose**|
-|||| For signing only, bit positions are set for digitalSignature and may be set for nonrepudiation.\|| For signing only, bit positions are set for digitalSignature and may be set for nonrepudiation.\|
-|||| For Key management only, bit positions are set for *keyAgreemen*t and may be set for *encipherOnly* or *decipherOnly*.\|| For Key management only, bit positions are set for *keyAgreement* and may be set for *encipherOnly* or *decipherOnly*.\|
-|||| For dual use, bit positions are set for digitalSignature and *keyAgreement* and may be set for nonrepudiation and for *encipherOnly* or *decipherOnly* (only if keyAgreement is set).|
-| *basicConstraints*| Y| Y| The cA field is set to false.|
-| *crlDistributionPoints*| Y| N| Present and not marked critical.|
-|||| It contains the HTTP URL of the CA's CRL service.|
-| *subjectKeyIdentifier*| Y| N| Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2)|
+| *authorityKeyIdentifier*| Presence: Yes; Critical: No; <br> Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA.|
+| *certificatePolicies*| Presence: Yes; Critical: No; <br> Certificate Policy: <br> Policy Identifier = One S/MIME Policy OID pair in [Section 7.1.6](#certificate-policy-object-identifier) (CA/B Forum+IdenTrust) <br> Policy Qualifier Info: <br> Policy Qualifier Id=*id-qt-cps* <br> Qualifier: HTTPS URL for the Issuing CA's Certificate Policy <br> Policy Qualifier Info:[^4] <br> Policy Qualifier Id=User Notice <br> Qualifier: Notice Text=Subordinate CA text|
+| *extKeyUsage*| Presence: Yes; Critical: No; <br> **Strict:** *id-kp-emailProtection* <br> **Multipurpose:** *id-kp-emailProtection* and other values may be present, except these:*id-kp-serverAuth*, *id-kp-codeSigning, id-kp-timeStamping*, or *anyExtendedKeyUsage* |
+| *subjectAltName*| Presence: Yes; Critical: No; <br> Contains at least one GeneralName entry of the following types: <br> - rfc822Name and/or<br>- otherName of type id-on-SmtpUTF8Mailbox <br>- otherName: *userPrincipalName*|
+| *keyUsage*| Presence: Yes; Critical: Yes; <br> **Strict:** For signing only, bit positions are set for digitalSignature and may be set for nonrepudiation. <br> For Key management only, bit positions are set for *keyAgreement* and may be set for *encipherOnly* or *decipherOnly*. <br> For dual use, bit positions are set for digitalSignature and *keyAgreement* and may be set for nonrepudiation and for *encipherOnly* or *decipherOnly* (only if keyAgreement is set). <br> **Multipurpose:** For signing only, bit positions are set for digitalSignature and may be set for nonrepudiation. For Key management only, bit positions are set for keyAgreement and may be set for encipherOnly or decipherOnly. For dual use, bit positions are set for digitalSignature and keyAgreement and may be set for nonrepudiation and for encipherOnly or decipherOnly (only if keyAgreement is set).|
+| *basicConstraints*| Presence: Yes; Critical: Yes; <br> The cA field is set to false.|
+| *crlDistributionPoints*| Presence: Yes; Critical: No; <br>It contains the HTTP URL of the CA's CRL service.|
+| *subjectKeyIdentifier*| Presence: Yes; Critical: No; <br> Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2)|
 
 ##### **7.1.2.3.1.1 S/MIME Subject Attributes**
 
@@ -2808,7 +2789,7 @@ All TrustID Certificate contents and extensions are based on [RFC 5280](https://
 | *Issuer* | Encoded value byte‐for‐byte identical to the encoded Subject of the Issuing CA |
 | *validity* | See [Section 6.3.2](#certificate-operational-periods-and-key-pair-usage-periods). |
 | *Subject* **Code Signing Non EV** | CN = Organization legal name |
-|| OU = Organizational unit (Optional) |
+|| OU = Organizational unit {May} |
 || CN = Organization legal name |
 || O = Full legal name or DBA with full legal name in parenthesis |
 || SERIALNUMBER = Unique registration number[^5] |
@@ -2816,7 +2797,7 @@ All TrustID Certificate contents and extensions are based on [RFC 5280](https://
 || S = State or province name present if L is absent |
 || C = Two-letter ISO 3166-1 country code of Organization's place of business |
 | *Subject* **Code Signing EV** | CN = Organization legal name |
-|| OU = Organizational unit (Optional) |
+|| OU = Organizational unit {May} |
 || O = Full legal name or DBA with full legal name in parenthesis |
 || 2.5.4.15 = *businessCategory*[^6] |
 || 1.3.6.1.4.1.311.60.2.1.2 = *jurisdictionStateOrProvinceName* |
@@ -2830,7 +2811,7 @@ All TrustID Certificate contents and extensions are based on [RFC 5280](https://
 
 | **Extension** | **Present** | **Critical** | **Description / Value** |
 |---|---|---|---|
-| *authorityInformationAccess* | Y | N | Optional - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
+| *authorityInformationAccess* | Y | N | {May} id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
 |||| id-ad-caIssuers (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate. |
 | *authorityKeyIdentifier* | Y | N | Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA. |
 | *certificatePolicies* | Y | N | Certificate Policy: |
@@ -2866,7 +2847,7 @@ All TrustID Certificate contents and extensions are based on [RFC 5280](https://
 
 | **Extension**| **Present**| **Critical** | **Description / Value**|
 |---|---|---|---|
-| *authorityInformationAccess*| Y| N| Optional - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
+| *authorityInformationAccess*| Y| N| {May} id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
 |||| id-ad-caIssuers (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate.|
 | *authorityKeyIdentifier*| Y| N| Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA.|
 | *certificatePolicies*| Y| N| Certificate Policy:|
@@ -2906,7 +2887,7 @@ All TrustID Certificate contents and extensions are based on [RFC 5280](https://
 
 | **Extension**| **Present**| **Critical** | **Description / Value**|
 |---|---|---|---|
-| *authorityInformationAccess*| Y| N| Optional - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
+| *authorityInformationAccess*| Y| N| {May} id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
 |||| id-ad-caIssuers (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate.|
 | *authorityKeyIdentifier*| Y| N| Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA.|
 | *certificatePolicies*| Y| N| Certificate Policy:|
@@ -2948,7 +2929,7 @@ All TrustID Certificate contents and extensions are based on [RFC 5280](https://
 
 | **Extension**| **Present**| **Critical** | **Description / Value**|
 |---|---|---|---|
-| *authorityInformationAccess*| Y| N| Optional - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
+| *authorityInformationAccess*| Y| N| {May} id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
 |||| id-ad-caIssuers (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate.|
 | *authorityKeyIdentifier*| Y| N| Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA.|
 | *certificatePolicies*| Y| N| Certificate Policy:|
