@@ -2743,10 +2743,10 @@ All TrustID Certificate contents and extensions are based on [RFC 5280](https://
 | *Subject*| See [S/MIME Subject Attributes](#smime-subject-attributes)|
 | *subjectPublicKeyInfo*| See [Section 7.1.3.1](#subjectpublickeyinfo).|
 | *signatureAlgorithm*| Encoded value must be byte-for-byte identical to the tbsCertificate.signature.|
-| **Extension**| **Present**| **Description |
+| **Extension**| **Description** |
 | *authorityInformationAccess*| Presence: Yes; Critical: No; <br> {May} - id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.<br> *id-ad-caIssuers* (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate.|
 | *authorityKeyIdentifier*| Presence: Yes; Critical: No; <br> Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA.|
-| *certificatePolicies*| Presence: Yes; Critical: No; <br> Certificate Policy: <br> Policy Identifier = One S/MIME Policy OID pair in [Section 7.1.6](#certificate-policy-object-identifier) (CA/B Forum+IdenTrust) <br> Policy Qualifier Info: <br> Policy Qualifier Id=*id-qt-cps* <br> Qualifier: HTTPS URL for the Issuing CA's Certificate Policy <br> Policy Qualifier Info:[^4] <br> Policy Qualifier Id=User Notice <br> Qualifier: Notice Text=Subordinate CA text|
+| *certificatePolicies*| Presence: Yes; Critical: No; <br> Certificate Policy: <br> Policy Identifier = One S/MIME single Policy OID pair from [Section 7.1.6](#certificate-policy-object-identifier) (CA/B Forum + IdenTrust) <br> Policy Qualifier Info: <br> Policy Qualifier Id=*id-qt-cps* <br> Qualifier: HTTPS URL for the Issuing CA's Certificate Policy <br> Policy Qualifier Info:[^4] <br> Policy Qualifier Id=User Notice <br> Qualifier: Notice Text=Subordinate CA text|
 | *extKeyUsage*| Presence: Yes; Critical: No; <br> **Strict:** *id-kp-emailProtection* <br> **Multipurpose:** *id-kp-emailProtection* and other values may be present, except these:*id-kp-serverAuth*, *id-kp-codeSigning, id-kp-timeStamping*, or *anyExtendedKeyUsage* |
 | *subjectAltName*| Presence: Yes; Critical: No; <br> Contains at least one GeneralName entry of the following types: <br> - rfc822Name and/or<br>- otherName of type id-on-SmtpUTF8Mailbox <br>- otherName: *userPrincipalName*|
 | *keyUsage*| Presence: Yes; Critical: Yes; <br> **Strict:** For signing only, bit positions are set for digitalSignature and may be set for nonrepudiation. <br> For Key management only, bit positions are set for *keyAgreement* and may be set for *encipherOnly* or *decipherOnly*. <br> For dual use, bit positions are set for digitalSignature and *keyAgreement* and may be set for nonrepudiation and for *encipherOnly* or *decipherOnly* (only if keyAgreement is set). <br> **Multipurpose:** For signing only, bit positions are set for digitalSignature and may be set for nonrepudiation. For Key management only, bit positions are set for keyAgreement and may be set for encipherOnly or decipherOnly. For dual use, bit positions are set for digitalSignature and keyAgreement and may be set for nonrepudiation and for encipherOnly or decipherOnly (only if keyAgreement is set).|
@@ -2779,91 +2779,52 @@ All TrustID Certificate contents and extensions are based on [RFC 5280](https://
 
 ##### **7.1.2.3.2 End Entity Certificates Code Signing**
 
-| **End Entity Code Signing Certificate Profile** | | | |
-|---|---|---|---|
+| **End Entity Code Signing Certificate Profile** | |
+|---|---|
 | **Field** | **Value** |
 | *version* | v3(2). |
 | *serialNumber* | Unique non‐sequential number greater than zero (0) and less than 2¹⁵⁹ containing at least 64 bits of output from a CSPRNG. |
 | *signature* | See [Section 7.1.3.2.](#signature-algorithm-identifier) |
 | *Issuer* | Encoded value byte‐for‐byte identical to the encoded Subject of the Issuing CA |
 | *validity* | See [Section 6.3.2](#certificate-operational-periods-and-key-pair-usage-periods). |
-| *Subject* **Code Signing Non EV** | CN = Organization legal name |
-|| OU = Organizational unit {May} |
-|| CN = Organization legal name |
-|| O = Full legal name or DBA with full legal name in parenthesis |
-|| SERIALNUMBER = Unique registration number[^5] |
-|| L = City/locality name present if S is absent |
-|| S = State or province name present if L is absent |
-|| C = Two-letter ISO 3166-1 country code of Organization's place of business |
-| *Subject* **Code Signing EV** | CN = Organization legal name |
-|| OU = Organizational unit {May} |
-|| O = Full legal name or DBA with full legal name in parenthesis |
-|| 2.5.4.15 = *businessCategory*[^6] |
-|| 1.3.6.1.4.1.311.60.2.1.2 = *jurisdictionStateOrProvinceName* |
-|| 1.3.6.1.4.1.311.60.2.1.3 = *jurisdictionCountryName* |
-|| SERIALNUMBER = Unique registration number^8^ |
-|| L = City/locality name |
-|| S = State or province name |
-|| C = Two-letter ISO 3166-1 country code of Organization's place of business |
+| *Subject* **Code Signing Non EV** | CN = Organization legal name <br> OU = Organizational unit {May} <br> CN = Organization legal name <br> O = Full legal name or DBA with full legal name in parenthesis <br> SERIALNUMBER = Unique registration number[^5] <br> L = City/locality name present if S is absent <br> S = State or province name present if L is absent <br> C = Two-letter ISO 3166-1 country code of Organization's place of business |
+| *Subject* **Code Signing EV** | CN = Organization legal name <br> OU = Organizational unit {May} <br> O = Full legal name or DBA with full legal name in parenthesis <br> 2.5.4.15 = *businessCategory*[^6] <br> 1.3.6.1.4.1.311.60.2.1.2 = *jurisdictionStateOrProvinceName* <br> 1.3.6.1.4.1.311.60.2.1.3 = *jurisdictionCountryName* <br> SERIALNUMBER = Unique registration number^8^ <br> L = City/locality name <br> S = State or province name <br> C = Two-letter ISO 3166-1 country code of Organization's place of business |
 | *subjectPublicKeyInfo* | See [Section 7.1.3.1](#subjectpublickeyinfo). |
 | *signatureAlgorithm* | Encoded value must be byte-for-byte identical to the tbsCertificate.signature. |
-
-| **Extension** | **Present** | **Critical** | **Description / Value** |
-|---|---|---|---|
-| *authorityInformationAccess* | Y | N | {May} id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
-|||| id-ad-caIssuers (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate. |
-| *authorityKeyIdentifier* | Y | N | Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA. |
-| *certificatePolicies* | Y | N | Certificate Policy: |
-|||| Policy Identifier = One Code Signing (EV or Non-EV) Policy OID pair in [Section 7.1.6](#certificate-policy-object-identifier) (CA/B Forum+IdenTrust) |
-|||| Policy Qualifier Info: |
-|||| Policy Qualifier Id=id-qt-cps |
-|||| Qualifier: HTTPS URL for the Issuing CA's Certificate Policy |
-|||| Policy Qualifier Info:[^7] |
-|||| Policy Qualifier Id=User Notice |
-|||| Qualifier: Notice Text=Subordinate CA text |
-| *extKeyUsage* | Y | N | *id-kp-codeSigning* |
-| *subjectAltName* | Not present | | |
-| *keyUsage* | Y | Y | digitalSignature |
-| *basicConstraints* | May | Y | The cA field is set to false. |
-| *crlDistributionPoints* | Y | N | Present and not marked critical. It contains the HTTP URL of the CA's CRL service. |
-| *subjectKeyIdentifier* | Y | N | Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2) |
+| **Extension** | **Description** |
+| *authorityInformationAccess* | Presence: Yes; Critical: No <br> {May} id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder <br> id-ad-caIssuers (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate. |
+| *authorityKeyIdentifier* | Presence: Yes; Critical: No <br> Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA. |
+| *certificatePolicies* | Presence: Yes; Critical: No <br> Certificate Policy: <br> Policy Identifier = One Code Signing (EV or Non-EV) single Policy OID pair from [Section 7.1.6](#certificate-policy-object-identifier) (CA/B Forum + IdenTrust) <br> Policy Qualifier Info: <br> Policy Qualifier Id=id-qt-cps <br> Qualifier: HTTPS URL for the Issuing CA's Certificate Policy <br> Policy Qualifier Info:[^7] <br> Policy Qualifier Id=User Notice <br> Qualifier: Notice Text=Subordinate CA text |
+| *extKeyUsage* | Presence: Yes; Critical: No <br> *id-kp-codeSigning* |
+| *subjectAltName* | Not present |
+| *keyUsage* | Presence: Yes; Critical: Yes <br> digitalSignature |
+| *basicConstraints* |Presence: May; Critical: Yes <br> The cA field is set to false. |
+| *crlDistributionPoints* | Presence: Yes; Critical: No <br> It contains the HTTP URL of the CA's CRL service. |
+| *subjectKeyIdentifier* | Presence: Yes; Critical: No <br> Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2) |
 
 ##### **7.1.2.3.3 End Entity Certificates Timestamping**
 
-| **End Entity Timestamping Certificate Profile** ||||
-|---|---|---|---|
-| **Field**| **Value**|||
-| *version*| v3(2).|||
-| *serialNumber*| Unique non‐sequential number greater than zero (0) and less than 2¹⁵⁹ containing at least 64 bits of output from a CSPRNG. |||
-| *signature*| See [Section 7.1.3.2.](#signature-algorithm-identifier)|||
-| *Issuer*| Encoded value byte‐for‐byte identical to the encoded Subject of the Issuing CA|||
-| *validity*| See [Section 6.3.2](#certificate-operational-periods-and-key-pair-usage-periods).|||
-| *Subject*| CN = Timestamp authority name|||
-|| O = Full legal name or DBA with full legal name in parenthesis|||
-|| C = Two-letter ISO 3166-1 country code of Organization's place of business|||
-| *subjectPublicKeyInfo*| See [Section 7.1.3.1](#subjectpublickeyinfo).|||
-| *signatureAlgorithm*| Encoded value must be byte-for-byte identical to the tbsCertificate.signature.|||
-
-| **Extension**| **Present**| **Critical** | **Description / Value**|
-|---|---|---|---|
-| *authorityInformationAccess*| Y| N| {May} id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder.|
-|||| id-ad-caIssuers (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate.|
-| *authorityKeyIdentifier*| Y| N| Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA.|
-| *certificatePolicies*| Y| N| Certificate Policy:|
-|||| Policy Identifier = One Timestamping Policy OID pair in [Section 7.1.6](#certificate-policy-object-identifier) (CA/B Forum+IdenTrust) |
-|||| Policy Qualifier Info:|
-|||| Policy Qualifier Id=id-qt-cps|
-|||| Qualifier: HTTPS URL for the Issuing CA's Certificate Policy|
-|||| Policy Qualifier Info:[^8]|
-|||| Policy Qualifier Id=User Notice|
-|||| Qualifier: Notice Text=Subordinate CA text|
-| *extKeyUsage*| Y| N| *id-kp-timeStamping*|
-| *subjectAltName*| Not present|||
-| *keyUsage*| Y| Y| digitalSignature|
-| *basicConstraints*| May| Y| The cA field is set to false.|
-| *crlDistributionPoints*| Y| N| Present and not marked critical.|
-|||| It contains the HTTP URL of the CA's CRL service.|
-| *subjectKeyIdentifier*| Y| N| Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2)|
+| **End Entity Timestamping Certificate Profile** ||
+|---|---|
+| **Field**| **Value**|
+| *version*| v3(2).|
+| *serialNumber*| Unique non‐sequential number greater than zero (0) and less than 2¹⁵⁹ containing at least 64 bits of output from a CSPRNG. |
+| *signature*| See [Section 7.1.3.2.](#signature-algorithm-identifier)|
+| *Issuer*| Encoded value byte‐for‐byte identical to the encoded Subject of the Issuing CA|
+| *validity*| See [Section 6.3.2](#certificate-operational-periods-and-key-pair-usage-periods).|
+| *Subject*| CN = Timestamp authority name <br> O = Full legal name or DBA with full legal name in parenthesis <br> C = Two-letter ISO 3166-1 country code of Organization's place of business|
+| *subjectPublicKeyInfo*| See [Section 7.1.3.1](#subjectpublickeyinfo).|
+| *signatureAlgorithm*| Encoded value must be byte-for-byte identical to the tbsCertificate.signature.|
+| **Extension**| **Description**|
+| *authorityInformationAccess*| Presence: Yes; Critical: No <br> {May} id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder. <br> id-ad-caIssuers (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate.|
+| *authorityKeyIdentifier*| Presence: Yes; Critical: No <br> Contains only the *keyIdentifier* field identical to the *subjectKeyIdentifer* field of the Issuing CA.|
+| *certificatePolicies*| Presence: Yes; Critical: No <br>| Certificate Policy: <br>Policy Identifier = One IdenTrust single Timestamping Policy OID from [Section 7.1.6](#certificate-policy-object-identifier) (CA/B Forum + IdenTrust) <br> Policy Qualifier Info:<br> Policy Qualifier Id=id-qt-cps <br> Qualifier: HTTPS URL for the Issuing CA's Certificate Policy <br> Policy Qualifier Info:[^8] <br> Policy Qualifier Id=User Notice <br> Qualifier: Notice Text=Subordinate CA text|
+| *extKeyUsage*| Presence: Yes; Critical: No <br> *id-kp-timeStamping*|
+| *subjectAltName*| Not present|
+| *keyUsage*| Presence: Yes; Critical: Yes <br> *digitalSignature*|
+| *basicConstraints*| Presence: May; Critical: Yes <br>The cA field is set to false.|
+| *crlDistributionPoints*| Presence: Yes; Critical: No <br> It contains the HTTP URL of the CA's CRL service.|
+| *subjectKeyIdentifier*| Presence: Yes; Critical: No <br> Set as defined within in [Section 4.2.1.2 of RFC 5280.](https://tools.ietf.org/html/rfc5280#section-4.2.1.2)|
 
 ##### **7.1.2.3.4 End Entity Certificates Card Authentication**
 
