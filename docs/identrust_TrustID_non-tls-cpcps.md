@@ -3540,22 +3540,22 @@ No stipulation.
 
 [^1]: No longer offered after September 30, 2024
 
-[^2]:
+[^2]: As of September 1, 2023, electronic individual identity verification has been discontinued
 
 [^3]: The *Policy Qualifier Info-User Notice* is not present on Certificates issued on or after September 15, 2023
 
-[^4]: Policy Qualifier Info-User Notice is not present on Certificates issued on or after September 15, 2023
+[^4]: The *Policy Qualifier Info-User Notice* is not present on Certificates issued on or after September 15, 2023
 
-[^5]: SERIALNUMBER: For **Private Organizations**, this field must include the registration number assigned by the relevant Incorporating or Registration Agency. If no number is provided, the incorporation or registration date must be entered in a standard date format; for **Government Entities** without a registration number or verifiable creation date, the CA must enter language indicating the entity is a government body; for **Business Entities**, the government-issued registration number must be entered. If the jurisdiction does not issue such numbers, the registration date must be used instead.
+[^5]: *SERIALNUMBER:* For **Private Organizations**, this field must include the registration number assigned by the relevant Incorporating or Registration Agency. If no number is provided, the incorporation or registration date must be entered in a standard date format; for **Government Entities** without a registration number or verifiable creation date, the CA must enter language indicating the entity is a government body; for **Business Entities**, the government-issued registration number must be entered. If the jurisdiction does not issue such numbers, the registration date must be used instead.
 
-[^6]: businessCategory accepted values: Private Organization; Government Entity; Non-Commercial Entity
+[^6]: *businessCategory* accepted values: Private Organization; Government Entity; Non-Commercial Entity
 
-[^7]: Policy Qualifier Info-User Notice is not present on Certificates issued on or after September 15, 2023
+[^7]: The *Policy Qualifier Info-User Notice* is not present on Certificates issued on or after September 15, 2023
 
-[^8]: Policy Qualifier Info-User Notice is not present on Certificates issued on or after September 15, 2023
+[^8]: The *Policy Qualifier Info-User Notice* is not present on Certificates issued on or after September 15, 2023
 
-[^9]: Policy Qualifier Info-User Notice is not present on Certificates issued on or after September 15, 2023
+[^9]: The *Policy Qualifier Info-User Notice* is not present on Certificates issued on or after September 15, 2023
 
-[^10]: Policy Qualifier Info-User Notice is not present on Certificates issued on or after September 15, 2023
+[^10]: The *Policy Qualifier Info-User Notice* is not present on Certificates issued on or after September 15, 2023
 
 [^11]: For Enterprise RAs, the firm must be experienced in information system auditing and may be a qualified third party or a qualified independent internal auditing group.
