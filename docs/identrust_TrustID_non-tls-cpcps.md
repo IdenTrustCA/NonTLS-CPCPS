@@ -2907,14 +2907,10 @@ IdenTrust, as the Issuing CA, includes at least one Policy OID in every Certific
 |**TrustID Certificate Names, Types, and Policy OIDs**||||
 |---|---|---|---|
 | **Name**| **Type**| **CA/Browser Forum OID**| **IdenTrust Policy OID**|
-| Mailbox-Validated          | S/MIME          | 2.23.140.1.5.1.2 (MP^*^)          | 2.16.840.1.113839.0.6.11.1   |
-| Secure Email Software          | Signing/Encryption           | 2.23.140.1.5.1.3 (Strict)          |          |
-| Mailbox-Validated          | S/MIME          | 2.23.140.1.5.1.2(MP^*^)           | 2.16.840.1.113839.0.6.11.2   |
-| Secure Email Hardware          | Signing/Encryption          | 2.23.140.1.5.1.3 (MP^*^) (Strict) |          |
-| Organization-Validated          | S/MIME          | 2.23.140.1.5.2.2 (MP^*^)          | 2.16.840.1.113839.0.6.8      |
-| FATCA Organization          | Signing/Encryption           | 2.23.140.1.5.2.3 (Strict)          |          |
-| Sponsor-Validated          | S/MIME          | 2.23.140.1.5.3.2 (MP^*^)          | 2.16.840.1.113839.0.6.10.2   |
-| Business Card-Auth          | Signing/Encryption/Identity  | 2.23.140.1.5.3.3 (Strict)          |          |
+| Mailbox-Validated <.br>  Secure Email Software        | S/MIME <br> Signing/Encryption           | 2.23.140.1.5.1.2 (MP*) <br> 2.23.140.1.5.1.3 (Strict) |2.16.840.1.113839.0.6.11.1 |  
+|  Mailbox-Validated <br>  Secure Email Hardware          | S/MIME  <br> Signing/Encryption       | 2.23.140.1.5.1.2(MP*) <br> 2.23.140.1.5.1.3 (Strict) | 2.16.840.1.113839.0.6.11.2   |
+| Organization-Validated   <br> FATCA Organization        | S/MIME  <br> Signing/Encryption         | 2.23.140.1.5.2.2 (MP*) <br> 2.23.140.1.5.2.3 (Strict) |       2.16.840.1.113839.0.6.8      |
+| Sponsor-Validated   <br> Business Card-Auth        | S/MIME <br> Signing/Encryption/Identity     | 2.23.140.1.5.3.2 (MP*) <br> 2.23.140.1.5.3.3 (Strict)  | 2.16.840.1.113839.0.6.10.2   |
 | Sponsor-Validated          | S/MIME          | 2.23.140.1.5.3.2 (MP^*^)          | 2.16.840.1.113839.0.6.10.100 |
 | Business Card-Auth          | Card Authentication          | 2.23.140.1.5.3.3 (Strict)          |          |
 | Sponsor-Validated          | S/MIME          | 2.23.140.1.5.3.2 (MP^*^)          | 2.16.840.1.113839.0.6.2.1    |
