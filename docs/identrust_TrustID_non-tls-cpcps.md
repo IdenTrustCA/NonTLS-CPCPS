@@ -2907,40 +2907,30 @@ IdenTrust, as the Issuing CA, includes at least one Policy OID in every Certific
 |**TrustID Certificate Names, Types, and Policy OIDs**||||
 |---|---|---|---|
 | **Name**| **Type**| **CA/Browser Forum OID**| **IdenTrust Policy OID**|
-| Mailbox-Validated <.br>  Secure Email Software        | S/MIME <br> Signing/Encryption           | 2.23.140.1.5.1.2 (MP*) <br> 2.23.140.1.5.1.3 (Strict) |2.16.840.1.113839.0.6.11.1 |  
-|  Mailbox-Validated <br>  Secure Email Hardware          | S/MIME  <br> Signing/Encryption       | 2.23.140.1.5.1.2(MP*) <br> 2.23.140.1.5.1.3 (Strict) | 2.16.840.1.113839.0.6.11.2   |
-| Organization-Validated   <br> FATCA Organization        | S/MIME  <br> Signing/Encryption         | 2.23.140.1.5.2.2 (MP*) <br> 2.23.140.1.5.2.3 (Strict) |       2.16.840.1.113839.0.6.8      |
-| Sponsor-Validated   <br> Business Card-Auth        | S/MIME <br> Signing/Encryption/Identity     | 2.23.140.1.5.3.2 (MP*) <br> 2.23.140.1.5.3.3 (Strict)  | 2.16.840.1.113839.0.6.10.2   |
-| Sponsor-Validated          | S/MIME          | 2.23.140.1.5.3.2 (MP^*^)          | 2.16.840.1.113839.0.6.10.100 |
-| Business Card-Auth          | Card Authentication          | 2.23.140.1.5.3.3 (Strict)          |          |
-| Sponsor-Validated          | S/MIME          | 2.23.140.1.5.3.2 (MP^*^)          | 2.16.840.1.113839.0.6.2.1    |
-| Business Software          | Signing /Encryption/Identity | 2.23.140.1.5.3.3 (Strict)          |          |
-| Sponsor-Validated          | S/MIME (AATL enabled)        | 2.23.140.1.5.3.2 (MP^*^)          | 2.16.840.1.113839.0.6.12.2   |
-| Business Hardware          | Signing /Encryption/Identity | 2.23.140.1.5.3.3 (Strict)          |          |
-| Individual-Validated          | S/MIME          | 2.23.140.1.5.4.2 (MP^*^)          | 2.16.840.1.113839.0.6.1.1    |
-| Personal Basic Software          | Signing /Encryption/Identity | 2.23.140.1.5.4.3 (Strict)          |          |
-| Individual-Validated          | S/MIME          | 2.23.140.1.5.4.2 (MP^*^)          | 2.16.840.1.113839.0.6.1.2    |
-| Personal Medium SW          | Signing /Encryption/Identity | 2.23.140.1.5.4.3 (Strict)          |          |
-| Individual-Validated          | S/MIME (AATL enabled)        | 2.23.140.1.5.4.2 (MP^*^)          | 2.16.840.1.113839.0.6.12.1   |
-| Personal Medium HW          | Signing /Encryption/Identity | 2.23.140.1.5.4.3 (Strict)          |          |
+| Mailbox-Validated <.br>  Secure Email Software        | S/MIME <br> Signing/Encryption          | 2.23.140.1.5.1.2 (MP*) <br> 2.23.140.1.5.1.3 (Strict) |2.16.840.1.113839.0.6.11.1 |  
+|  Mailbox-Validated <br>  Secure Email Hardware        | S/MIME  <br> Signing/Encryption          | 2.23.140.1.5.1.2(MP*) <br> 2.23.140.1.5.1.3 (Strict) | 2.16.840.1.113839.0.6.11.2  |
+| Organization-Validated   <br> FATCA Organization      | S/MIME  <br> Signing/Encryption          | 2.23.140.1.5.2.2(MP*) <br> 2.23.140.1.5.2.3 (Strict) |       2.16.840.1.113839.0.6.8     |
+| Sponsor-Validated   <br> Business Card-Auth           | S/MIME <br> Signing/Encryption/Identity  | 2.23.140.1.5.3.2(MP*) <br> 2.23.140.1.5.3.3 (Strict)  | 2.16.840.1.113839.0.6.10.2  |
+| Sponsor-Validated <br> Card Authentication            | S/MIME <br> Card Authentication          | 2.23.140.1.5.3.2(MP*) <br> 2.23.140.1.5.3.3 (Strict)  | 2.16.840.1.113839.0.6.10.100 |
+| Sponsor-Validated <br> Business Software              | S/MIME <br> Signing/Encryption/Identity  | 2.23.140.1.5.3.2(MP*) <br> 2.23.140.1.5.3.3 (Strict) | 2.16.840.1.113839.0.6.2.1   |
+| Sponsor-Validated  <br>  Business Hardware       | S/MIME (AATL enabled) Signing/Encryption/Identity  | 2.23.140.1.5.3.2(MP*) <br> 2.23.140.1.5.3.3 (Strict)     | 2.16.840.1.113839.0.6.12.2   |
+| Individual-Validated <br> Personal Basic Software     | S/MIME <br> Signing/Encryption/Identity     | 2.23.140.1.5.4.2(MP*) <br> 2.23.140.1.5.4.3 (Strict)      | 2.16.840.1.113839.0.6.1.1    |
+| Individual-Validated   <br> Personal Medium SW        | S/MIME <br> Signing/Encryption/Identity    | 2.23.140.1.5.4.2 (MP*) <br> 2.23.140.1.5.4.3 (Strict)      | 2.16.840.1.113839.0.6.1.2    |
+| Individual-Validated   <br> Personal Medium HW        | S/MIME (AATL enabled) <br> Signing /Encryption/Identity | 2.23.140.1.5.4.2 (MP*) <br>  2.23.140.1.5.4.3 (Strict) | 2.16.840.1.113839.0.6.12.1   |
 | Non-EV Code Signing          | Code Signing          | 2.23.140.1.4.1          | 2.16.840.1.113839.0.6.14.2   |
 | EV Code Signing          | Code Signing          | 2.23.140.1.3          | 2.16.840.1.113839.0.6.14.1   |
-| Time-Stamping          | Timestamping          | 2.23.140.1.4.2          | 2.16.840.1.113839.0.6.13.1   |
-|          |          |          | 2.16.840.1.113839.0.6.13.3   |
-| CIV^\*\*^ Card Authentication          | Signing/Encryption           | N/A          | 2.16.840.1.101.3.2.1.3.19    |
-| Device          |          |          | 2.16.840.1.113839.0.6.20.1   |
-| CIV^\*\*^ Card Authentication Human          | Signing          | N/A          | 2.16.840.1.101.3.2.1.3.19    |
-|          |          |          | 2.16.840.1.113839.0.6.12.25  |
-| CIV^\*\*^ Card Auth Basic          | Signing/Encryption           | N/A          | 2.16.840.1.101.3.2.1.3.19    |
-|          |          |          | 2.16.840.1.113839.0.6.30.1   |
+| Time-Stamping          | Timestamping          | 2.23.140.1.4.2          | 2.16.840.1.113839.0.6.13.1 <br> 2.16.840.1.113839.0.6.13.3  | 
+| CIV** Card Authentication Device         |      Signing/Encryption      | N/A          | 2.16.840.1.101.3.2.1.3.19 <br> 2.16.840.1.113839.0.6.20.1    |
+| CIV** Card Authentication Human          | Signing          | N/A          | 2.16.840.1.101.3.2.1.3.19 <br> 2.16.840.1.113839.0.6.12.25  |
+| CIV** Card Auth Basic          | Signing/Encryption           | N/A          | 2.16.840.1.101.3.2.1.3.19 <br> 2.16.840.1.113839.0.6.30.1    |
 | Administrative CA          | Signing/Encryption/Identity  | N/A          | 2.16.840.1.113839.0.7 (arc)  |
 | Administrators          | Signing/Encryption/Identity  | N/A          | 2.16.840.1.113839.0.7.1      |
 | Registration Authorities          | Signing/Encryption/Identity  | N/A          | 2.16.840.1.113839.0.7.2.2    |
 | Authorized Relying Parties          | Signing/Encryption/Identity  | N/A          | 2.16.840.1.113839.0.7.3.1    |
 
-^\*^Multipurpose
+*Multipurpose
 
-^\*\*^ These Certificates are issued to enterprise customers implementing the CIV framework, without having to cross-sign with the U.S. Federal Public Key Infrastructure (PKI) Bridge. The CIV framework leverages the same technology and data model as PIV-I credentials, which are based on the FIPS 201 standard and PIV-I specifications.
+** These Certificates are issued to enterprise customers implementing the CIV framework, without having to cross-sign with the U.S. Federal Public Key Infrastructure (PKI) Bridge. The CIV framework leverages the same technology and data model as PIV-I credentials, which are based on the FIPS 201 standard and PIV-I specifications.
 
 ### **7.1.7 Usage of Policy Constraints Extension**
 
