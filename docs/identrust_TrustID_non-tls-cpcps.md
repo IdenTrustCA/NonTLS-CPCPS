@@ -1044,6 +1044,29 @@ A prior validation shall not be reused if any data or document used in the prior
 For EV Code Signing Certificates, IdenTrust follows the re-use of existing documentation requirements per [Section 4.2.1.1 of the CS BR](https://cabforum.org/working-groups/code-signing/requirements/#4211-requirements-for-re-use-of-existing-documentation-for-ev-code-signing-certificates).
 
 ### **4.2.2 Approval or Rejection of Certificate Applications**
+IdenTrust and RAs appoint Individuals within the Organization who act in the role of an LRA and are responsible to approve Certificate applications.
+IdenTrust and RAs approve an Applicant/PKI Sponsor Certificate application if the Identity Proofing processes described in Section 3.2 and Section 3.3 are completed successfully. An RA or IdenTrust terminates an Applicant/PKI Sponsor registration process if:
+- The Applicant/PKI Sponsor’s identity or Organization affiliation cannot be established in accordance with Identity Proofing requirements;
+- Not all forms necessary to establish Identity Proofing are submitted on a timely basis;
+
+Upon application rejection, the RA or IdenTrust provides information to the Certificate Applicant/PKI Sponsor:
+- Indicating a failure of the Identity Proofing process; and
+- Informing the Applicant/PKI Sponsor of the process necessary to resume the processing of the application.
+
+Upon application rejection, the RA or IdenTrust records applicable transaction data including the following:
+- Applicant/PKI Sponsor’s name as it appears in the Applicant/PKI Sponsor’s request for a Certificate;
+- Method of application (e.g., online, in-person, remote) for each data element accepted for proofing, including electronic forms;
+- Name of the document presented for Identity Proofing including the name of its issuing authority, the date of Issuance, and the date of expiration (not required for server Certificates);
+- All fields verified;
+- Source of verification (i.e., which databases used for cross-checks);
+- Method of verification (e.g., online, in-person, remote);
+- Date/time of verification;
+- Names of entities providing identification services, including contractors, subcontractors, if any;
+- Fields that failed verification;
+- Status of current registration process (suspended or ended);
+- All Identity Proofing data;
+- All associated error messages and codes; and
+- Date/time of process completion.
 
 #### **4.2.2.1 CAA Records**
 
