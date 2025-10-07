@@ -1088,7 +1088,7 @@ IdenTrust is permitted to treat a record lookup failure as permission to issue i
 -   the lookup has been retried at least once; and
 -   the domain's zone does not have a DNSSEC validation chain to the ICANN Root Certificate.
 
-CAs must document potential Issuances that were prevented by a CAA record in sufficient detail to provide feedback to the CA/Browser Forum on the circumstances, and should dispatch reports of such Issuance Requests to the contact(s) stipulated in the CAA iodef record(s), if present. CAs are not expected to support URL schemes in the iodef record other than mailto: or https:.
+IdenTrust must document potential Issuances that were prevented by a CAA record in sufficient detail to provide feedback to the CA/Browser Forum on the circumstances, and should dispatch reports of such Issuance Requests to the contact(s) stipulated in the CAA iodef record(s), if present. IdenTrust is not expected to support URL schemes in the iodef record other than mailto: or https:.
 
 IdenTrust and RAs appoint Individuals within the Organization who act in the role of an LRA and are responsible to approve Certificate applications.
 
