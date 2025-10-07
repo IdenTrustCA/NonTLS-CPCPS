@@ -1477,7 +1477,7 @@ Practices followed in the case of a CA Private Key compromised are explained in 
 
 ### **4.9.13 Circumstances for Suspension**
 
-IdenTrust does not include suspended Certificates in the Repository.
+No stipulation.
 
 ### **4.9.14 Who Can Request Suspension**
 
@@ -1527,7 +1527,7 @@ Upon renewal, the remaining period of the Certificate being renewed is added to 
 
 ### **4.12.1 Key Escrow and Recovery Policy and Practices**
 
-If a Key Pair is used for signature and confidentiality purposes, recovery of the Private Key is prohibited. If an encryption Certificate is issued and retrieved separately from the signing Certificate, IdenTrust does offer selective services to recover the Private Key of the Encryption Certificate only. IdenTrust does not provide the mechanisms (hardware, software, or procedural) that permit recovery of the Private Key of TrustID Certificates. The Encryption service may or may not be available for TrustID Certificates. The following steps provide the stipulations for Key recovery.
+If a Key Pair is used for signature and confidentiality purposes, recovery of the Private Key is prohibited. If an encryption Certificate is issued and retrieved separately from the signing Certificate, IdenTrust does offer selective services to recover the Private Key of the Encryption Certificate only. IdenTrust does not provide the mechanisms (hardware, software, or procedural) that permit recovery of the Private Key of TrustID Certificates. The Encryption service may or may not be available for TrustID Certificates. 
 
 ### **4.12.2 Session Key Encapsulation and Recovery Policy and Practices**
 
@@ -2372,8 +2372,6 @@ If IdenTrust or any of its designated RAs become aware that a Subscriber's Priva
 
 The Subscriber's Public Key is delivered to IdenTrust or the RA (which in turn is delivered to IdenTrust) in a secure and trustworthy manner. Should the initial information be sent to an RA, that information will be securely forwarded (through any form of digital communications) to IdenTrust. The delivery of the Public Key, in a *PKCS#10* structure, binds the Private and Public Keys, through a Digital Signature, and is submitted to the CA during a server-authenticated SSL/TLS Encrypted Session.
 
-Before the retrieval process, an Enterprise RA enrolls applications in bulk (i.e., a bulk load file) of Applicants/PKI Sponsors and approves Issuance of a Certificate to the Subscribers and PKI Sponsors. Activation Code(s) is/are generated and sent via a verified channel to the Applicant/PKI Sponsor before the time of retrieval. The Applicant/PKI Sponsor uses the Activation Code(s) in a server-authenticated SSL/TLS Encrypted Session during which the Public Key is submitted to the RA/CA in a *PKCS#10* and a Certificate is returned back during the same session.
-
 ### 6.1.4 CA Public Key Delivery to Relying Parties**
 IdenTrust and its RAs ensure that Subscribers and Relying Parties receive and maintain the trust anchor(s) in a trustworthy fashion. Methods implemented for this delivery may include:
 
@@ -2918,7 +2916,8 @@ IdenTrust, as the Issuing CA, includes at least one Policy OID in every Certific
 | CIV2** Card Authentication Device         |      Signing/Encryption      | N/A          | 2.16.840.1.101.3.2.1.3.19 <br> 2.16.840.1.113839.0.6.20.1    |
 | CIV** Card Authentication Human          | Signing          | N/A          | 2.16.840.1.101.3.2.1.3.19 <br> 2.16.840.1.113839.0.6.12.25  |
 | CIV** Card Auth Basic          | Signing/Encryption           | N/A          | 2.16.840.1.101.3.2.1.3.19 <br> 2.16.840.1.113839.0.6.30.1    |
-| Administrative CA          | Signing/Encryption/Identity  | N/A          | 2.16.840.1.113839.0.7 (arc)  |
+| Administrative CA          | Signing/Encryption/Identity  | N/A          | 2.16.840.1.1138 39.0.7 (arc)  |
+| Client Authentication device only  | Signing/Encryption/Identity  | N/A  | 2.16.840.1.113839.0.6.20.4  |
 | Administrators          | Signing/Encryption/Identity  | N/A          | 2.16.840.1.113839.0.7.1      |
 | Registration Authorities          | Signing/Encryption/Identity  | N/A          | 2.16.840.1.113839.0.7.2.2    |
 | Authorized Relying Parties          | Signing/Encryption/Identity  | N/A          | 2.16.840.1.113839.0.7.3.1    |
