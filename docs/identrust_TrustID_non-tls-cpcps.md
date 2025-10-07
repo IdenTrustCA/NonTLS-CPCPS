@@ -1090,12 +1090,6 @@ IdenTrust is permitted to treat a record lookup failure as permission to issue i
 
 IdenTrust must document potential Issuances that were prevented by a CAA record in sufficient detail to provide feedback to the CA/Browser Forum on the circumstances, and should dispatch reports of such Issuance Requests to the contact(s) stipulated in the CAA iodef record(s), if present. IdenTrust is not expected to support URL schemes in the iodef record other than mailto: or https:.
 
-IdenTrust and RAs appoint Individuals within the Organization who act in the role of an LRA and are responsible to approve Certificate applications.
-
-IdenTrust and RAs approve an Applicant/PKI Sponsor Certificate application if the Identity Proofing processes described in [Section 3.2](#initial-identity-validation) and [Section 3.3](#identification-and-authentication-for-re-key-requests) are completed successfully. An RA or IdenTrust terminates an Applicant/PKI Sponsor registration process if:
--   The Applicant/PKI Sponsor's identity or Organization affiliation cannot be established in accordance with Identity Proofing requirements;
--   Not all forms necessary to establish Identity Proofing are submitted on a timely basis;
-
 Upon application rejection, the RA or IdenTrust provides information to the Certificate Applicant/PKI Sponsor:
 -   Indicating a failure of the Identity Proofing process; and
 -   Informing the Applicant/PKI Sponsor of the process necessary to resume the processing of the application.
