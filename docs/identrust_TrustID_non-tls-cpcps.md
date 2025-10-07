@@ -2894,7 +2894,7 @@ IdenTrust, as the Issuing CA, includes at least one Policy OID in every Certific
 |**TrustID Certificate Names, Types, and Policy OIDs**||||
 |---|---|---|---|
 | **Name**| **Type**| **CA/Browser Forum OID**| **IdenTrust Policy OID**|
-| Mailbox-Validated <.br>  Secure Email Software        | S/MIME <br> Signing/Encryption          | 2.23.140.1.5.1.2 (MP*) <br> 2.23.140.1.5.1.3 (Strict) |2.16.840.1.113839.0.6.11.1 |  
+| Mailbox-Validated <br>  Secure Email Software        | S/MIME <br> Signing/Encryption          | 2.23.140.1.5.1.2 (MP*) <br> 2.23.140.1.5.1.3 (Strict) |2.16.840.1.113839.0.6.11.1 |  
 |  Mailbox-Validated <br>  Secure Email Hardware        | S/MIME  <br> Signing/Encryption          | 2.23.140.1.5.1.2(MP*) <br> 2.23.140.1.5.1.3 (Strict) | 2.16.840.1.113839.0.6.11.2  |
 | Organization-Validated   <br> FATCA Organization      | S/MIME  <br> Signing/Encryption          | 2.23.140.1.5.2.2(MP*) <br> 2.23.140.1.5.2.3 (Strict) |       2.16.840.1.113839.0.6.8     |
 | Sponsor-Validated   <br> Business Card-Auth           | S/MIME <br> Signing/Encryption/Identity  | 2.23.140.1.5.3.2(MP*) <br> 2.23.140.1.5.3.3 (Strict)  | 2.16.840.1.113839.0.6.10.2  |
