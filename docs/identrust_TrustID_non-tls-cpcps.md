@@ -568,7 +568,7 @@ IdenTrust as Issuing CA authenticates the identity attributes of the Subject and
 -   Organization-Validated (FATCA), [Section 3.2.2](#validation-of-mailbox-authorization-or-control) and [Section 3.2.3](#authentication-of-organization-identity).
 -   Code Signing and Time-Stamping, [Section 3.2.4.6](#code-signing-and-time-stamping-certificates)
 -   CIV Card Authentication, See [Section 3.2.4.7](#trustid-civ-card-authentication-certificate)
--   CIV Device, See [Section 3.2.4.8](#trustid-civ-device-certificate)
+-   CIV Device and Client Authentication Device, See [Section 3.2.4.8](#trustid-civ-device-certificate)
 -   Administrative CA for Authorized Relying Parties, See [Section 3.2.4.9](#authorized-relying-parties).
 -   Client Authentication, See [Section 3.2.2](#validation-of-mailbox-authorization-or-control) and [Section 3.2.4](#authentication-of-individual-identity), and [Section 3.2.4](#authentication-of-individual-identity).
 
@@ -867,9 +867,9 @@ EV Code Signing, identity shall be established by verification of the Applicant'
 
 For TrustID CIV Card Authentication Certificate either an RA or a CA will assign a unique name-identifier to the relevant Cryptographic Module and such unique name-identifier is at a minimum to be contained in the Subject Name of the TrustID CIV Card Authentication Certificate issued to the Cryptographic Module.
 
-#### **3.2.4.8 TrustID CIV Device Certificate**
+#### **3.2.4.8 TrustID CIV Device and Client Authentication Device Certificate**
 
-For a TrustID CIV Device Certificate, the RA or Applicant authenticates an Electronic Device and assigns it a unique name-identifier. Such unique name-identifier is to be contained in the Subject Name of the TrustID CIV Device Certificate issued to the Electronic Device containing the Cryptographic Module storing the corresponding Key Pair.
+For a TrustID CIV Device and Client Authentication Device Certificate, the RA or Applicant authenticates an Electronic Device and assigns it a unique name-identifier. Such unique name-identifier is to be contained in the Subject Name of the TrustID CIV Device Certificate issued to the Electronic Device containing the Cryptographic Module storing the corresponding Key Pair.
 
 #### **3.2.4.9 Authorized Relying Parties**
 
