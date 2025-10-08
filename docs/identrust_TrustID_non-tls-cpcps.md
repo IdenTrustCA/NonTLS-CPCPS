@@ -164,6 +164,9 @@ Applications for which TrustID Certificates are suitable include, but are not li
 -   Document signing/encryption
 -   Code signing (OV and EV) of object and executable files
 -   Timestamping of code signed files and PDFs
+-   CIV Card Authentication: Device and Human  / CIV Card Auth Basic
+-   Client Authentication Device
+
 -   CIV Client / Device / Card Authentication
 -   OCSP Signer
 
