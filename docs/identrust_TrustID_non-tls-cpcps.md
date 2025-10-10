@@ -1530,6 +1530,10 @@ If a Key Pair is used for signature and confidentiality purposes, recovery of th
 
 IdenTrust currently does not support Key escrow and recovery using Key encapsulation techniques.
 
+### **4.12.2.1 Automated Self-Recovery**
+
+When and if the Key Recovery feature is enabled for TrustID, the Subscriber is authenticated to the Key escrow System using a valid Certificate. The identity of the Subscriber for the escrowed Key to be recovered is authenticated during automated self-recovery when the Subscriber attempts to access IdenTrust’s Certificate Management Center (CMC) or card management system (CMS), for hosted registration processes. Subscribers are asked to present their digital Certificate or apply their Digital Signature and authenticate themselves to the CMC or CMS system. The encryption Key cannot be recovered unless the corresponding Digital Signature Certificate is presented which is an equivalent to the Certificate whose companion Private Key is being recovered (e.g., a TrustID Business Certificate cannot be recovered with a TrustID Personal Certificate). Once the Subscriber has authenticated himself/herself to the CMC or CMS system, the Subscriber’s PKCS#12 and the Account Password are extracted from the Key Escrow Database (KED) and made available to the Subscriber during a secure, online session. The Subscriber is then required to install the Key in a cryptographic container meeting the same security level for the Certificate, as specified in the Subscriber Agreement and the Certificate Policy for the corresponding product.
+
 # **5 FACILITY, MANAGEMENT, AND OPERATIONAL CONTROLS**
 
 IdenTrust developed, implements and maintains a comprehensive security program designed to:
