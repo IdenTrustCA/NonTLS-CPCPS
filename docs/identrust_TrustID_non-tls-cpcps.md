@@ -5,7 +5,7 @@ subtitle: Version 5.0.0
 author: 
   - IdenTrust Services LLC.
 
-date: September 26, 2025
+date: October 30, 2025
 
 copyright: Copyright © 2025 IdenTrust Services, LLC. All rights reserved.
 ---
@@ -45,14 +45,14 @@ D. This page must be included with every copy of the Policy.
 
 ### **1.2.1 Alphanumeric Identifier**
 
-The name of this CP-CPS which follow the [RFC 3647](https://www.ietf.org/rfc/rfc3647.txt) framework, is the \" TrustID Non-TLS Certificate Policy / Certificate Practice Statement", approved for publication on September 26, 2025, by the IdenTrust PMA.
+The name of this CP-CPS which follow the [RFC 3647](https://www.ietf.org/rfc/rfc3647.txt) framework, is the \" TrustID Non-TLS Certificate Policy / Certificate Practice Statement", approved for publication on October 30, 2025, by the IdenTrust PMA.
 
 The following table contains subsequent revisions:
 
 ### **CP-CPS Document Versions**
 | **Version**   | **Date**    | **Summary of Changes / Comments** |      
 |----------|----------|----------|
-| 5.0.0 | September 26, 2025 | This document replaces IdenTrust CP v4.9.2 and IdenTrust CPS v4.9.2 with the following updates:                                                                                                                <ol> <li> Remove all TLS Certificate references </li> <li> Added relevant CP language where applicable </li> <li> Moved sections to align the S/MIME BR and CS BR </li> <li> Section 1.6: Added/updated definitions/Acronyms/References </li> <li> Section 4.10.2.1: "Problem Report" moved to Section 1.5.2.1 </li> <li>Section 5.2.1: Updated language for Trusted Roles</li> <li>Section 5.2.4: Removed detailed separation of duties</li> <li>Section 5.4.1: Removed detailed audit log entries in table </li> <li> Section 6.3.2: Updated Timestamp CA details </li> <li> Section 7: Removed TLS Certificate Profile details </li> <li> Appendix A: Removed 
+| 5.0.0 | October 30, 2025 | This document replaces IdenTrust CP v4.9.2 and IdenTrust CPS v4.9.2 with the following updates:                                                                                                                <ol> <li> Remove all TLS Certificate references </li> <li> Added relevant CP language where applicable </li> <li> Moved sections to align the S/MIME BR and CS BR </li> <li> Section 1.6: Added/updated definitions/Acronyms/References </li> <li> Section 4.10.2.1: "Problem Report" moved to Section 1.5.2.1 </li> <li>Section 5.2.1: Updated language for Trusted Roles</li> <li>Section 5.2.4: Removed detailed separation of duties</li> <li>Section 5.4.1: Removed detailed audit log entries in table </li> <li> Section 6.3.2: Updated Timestamp CA details </li> <li> Section 7: Removed TLS Certificate Profile details </li> <li> Appendix A: Removed 
 
 
 Prior versions of IdenTrust CP, CPS and combined CP-CPS documents can be found in the "Policies -- Archived" Section of the [IdenTrust TrustID Document Library](https://www.identrust.com/support/documents/trustid).
@@ -1485,10 +1485,6 @@ No stipulation.
 No stipulation.
 
 ### **4.9.16 Limits on Suspension Period**
-
-No stipulation.
-
-### **4.9.17 4.9.16 Limits on Suspension Period**
 
 No stipulation.
 
