@@ -1,11 +1,11 @@
 ---
 title: Non-TLS Certificate Policy / Certification Practice Statement
 
-subtitle: Version 5.1
+subtitle: Version 5.1.1
 author:
   - IdenTrust Services LLC.
 
-date: September 10, 2026
+date: October 29, 2026
 
 copyright: Copyright © 2026 IdenTrust Services, LLC. All rights reserved.
 ---
@@ -45,7 +45,7 @@ D. This page must be included with every copy of the Policy.
 
 ### **1.2.1 Alphanumeric Identifier**
 
-The name of this CP-CPS which follow the [RFC 3647](https://www.ietf.org/rfc/rfc3647.txt) framework, is the \" TrustID Non-TLS Certificate Policy / Certificate Practice Statement", approved for publication on September 10, 2026 by the IdenTrust PMA.
+The name of this CP-CPS which follow the [RFC 3647](https://www.ietf.org/rfc/rfc3647.txt) framework, is the \" TrustID Non-TLS Certificate Policy / Certificate Practice Statement", approved for publication on October 29, 2026 by the IdenTrust PMA.
 
 The following table contains subsequent revisions:
 (Prior versions of IdenTrust CP, CPS and combined CP-CPS documents can be found in the "Policies -- Archived" Section of the [IdenTrust TrustID Document Library](https://www.identrust.com/support/documents/trustid)).
@@ -59,6 +59,7 @@ The following table contains subsequent revisions:
 | 5.0.2 | January 13, 2026 | Section 6.3.2 : Add cross-signed subordinate CA ;Section 7.1.2.2: Add cross-signed Subordinate CA Certificate profile ; Section 7.1.2.3: Update foot note [9] to reflect '*clientAuth*' as optional ; Update internal links throughout the document. |
 | 5.0.3 | March 9, 2026 | (1) Section 1.6.1: Removed table format and added definitions, (2) Section 1.6.2: Removed table format, (3) Section 4.2.2: updated language, (4) Section 7: Removed table formats, (5) Section 9.12.2 and 9.16.3: Updated legal language, (6) Removed references to explicit sections in external non-IdenTrust documents, adding relevant text.|
 | 5.1 | September 10, 2026 | (1) Overall clean-up of list formatting, (2) Section 1.1 and 1.6.3: Link updates, (3) Section 5.1: Updated language, (4) Section 5.4.8: Language reworded and moved (5) Section 6.6.1: Updated language, (6) Section 6.7: Updated language, (7) Section 7.1.2.3: Updated language | 
+| 5.1.1 | October 29, 2026 | Section 7.1.2.3.2 address jurisdictionLocalityName field | 
 
 ### **1.2.2 Object Identifier**
 
@@ -3047,7 +3048,7 @@ _keyCertSign_ and _cRLSign_. \
 **_version:_**  v3(2). \
 **_serialNumber:_** Unique non‐sequential number greater than zero (0) and less than 2¹⁵⁹ containing at least 64 bits of output from a CSPRNG. \
 **_signature:_** See [Section 7.1.3.2](#7132-signature-algorithm-identifier). \
-**_Issuer:_** Must be byte-for-byte identical to the _subject_ field of the Issuing CA. \
+**_Issuer:_** Must be byte-for-byte identical to the _subject_ field of the Issuing CA. \
 **_validity_:** See [Section 6.3.2](#632-certificate-operational-periods-and-key-pair-usage-periods). \
 **_Subject:_** **CN** = Subordinate CA's unique identifier name  **O** = Subordinate CA's Organization legal name or DBA  **C** = Two-letter ISO 3166-1 country code of Subordinate CA's place of business. \
 **_subjectPublicKeyInfo:_** See [Section 7.1.3.1](#7131-subjectpublickeyinfo). \
@@ -3159,7 +3160,7 @@ _keyCertSign_ and _cRLSign_. \
 **_Issuer:_** Encoded value byte‐for‐byte identical to the encoded Subject of the Issuing CA. \
 **_validity:_**  See [Section 6.3.2](#632-certificate-operational-periods-and-key-pair-usage-periods). \
 **_Subject:_** **Code Signing Non EV**  **CN** = Organization legal name  **OU** = Organizational unit {May}  **O** = Full legal name or DBA with full legal name in parenthesis  **SERIALNUMBER** = Unique registration number[^5]  **L** = City/locality name present if **S** is absent  **S** = State or province name present if **L** is absent  **C** = Two-letter ISO 3166-1 country code of Organization's place of business. \
-**_Subject:_** **Code Signing EV**  **CN** = Organization legal name  **OU** = Organizational unit {May}  **O** = Full legal name or DBA with full legal name in parenthesis  2.5.4.15 = _businessCategory_[^6]  1.3.6.1.4.1.311.60.2.1.2 = _jurisdictionStateOrProvinceName_  1.3.6.1.4.1.311.60.2.1.3 = _jurisdictionCountryName_  **SERIALNUMBER** = Unique registration number^8^  **L** = City/locality name  **S** = State or province name  **C** = Two-letter ISO 3166-1 country code of Organization's place of business. \
+**_Subject:_** **Code Signing EV**  **CN** = Organization legal name  **OU** = Organizational unit {May}  **O** = Full legal name or DBA with full legal name in parenthesis  2.5.4.15 = _businessCategory_[^6] {May} 1.3.6.1.4.1.311.60.2.1.1 = _jurisdictionLocalityName_ {May} 1.3.6.1.4.1.311.60.2.1.2 = _jurisdictionStateOrProvinceName_  1.3.6.1.4.1.311.60.2.1.3 = _jurisdictionCountryName_  **SERIALNUMBER** = Unique registration number[^5]  **L** = City/locality name  **S** = State or province name  **C** = Two-letter ISO 3166-1 country code of Organization's place of business. \
 **_subjectPublicKeyInfo:_** See [Section 7.1.3.1](#7131-subjectpublickeyinfo). \
 **_signatureAlgorithm:_**  Encoded value must be byte-for-byte identical to the tbsCertificate.signature. \
 **_authorityInformationAccess:_** Presence: Yes; Critical: No {May} _id-ad-ocsp_ (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder  _id-ad-caIssuers_ (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate. \
