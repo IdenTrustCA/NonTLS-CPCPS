@@ -1,11 +1,11 @@
 ---
 title: Non-TLS Certificate Policy / Certification Practice Statement
 
-subtitle: Version 5.1.1
+subtitle: Version 5.1.2
 author:
   - IdenTrust Services LLC.
 
-date: October 29, 2026
+date: November 16, 2026 at 17:00:00 MST
 
 copyright: Copyright © 2026 IdenTrust Services, LLC. All rights reserved.
 ---
@@ -45,7 +45,7 @@ D. This page must be included with every copy of the Policy.
 
 ### **1.2.1 Alphanumeric Identifier**
 
-The name of this CP-CPS which follow the [RFC 3647](https://www.ietf.org/rfc/rfc3647.txt) framework, is the \" TrustID Non-TLS Certificate Policy / Certificate Practice Statement", approved for publication on October 29, 2026 by the IdenTrust PMA.
+The name of this CP-CPS which follow the [RFC 3647](https://www.ietf.org/rfc/rfc3647.txt) framework, is the \" TrustID Non-TLS Certificate Policy / Certificate Practice Statement", approved for publication on November 16, 2026 by the IdenTrust PMA.
 
 The following table contains subsequent revisions:
 (Prior versions of IdenTrust CP, CPS and combined CP-CPS documents can be found in the "Policies -- Archived" Section of the [IdenTrust TrustID Document Library](https://www.identrust.com/support/documents/trustid)).
@@ -60,6 +60,7 @@ The following table contains subsequent revisions:
 | 5.0.3 | March 9, 2026 | (1) Section 1.6.1: Removed table format and added definitions, (2) Section 1.6.2: Removed table format, (3) Section 4.2.2: updated language, (4) Section 7: Removed table formats, (5) Section 9.12.2 and 9.16.3: Updated legal language, (6) Removed references to explicit sections in external non-IdenTrust documents, adding relevant text.|
 | 5.1 | September 10, 2026 | (1) Overall clean-up of list formatting, (2) Section 1.1 and 1.6.3: Link updates, (3) Section 5.1: Updated language, (4) Section 5.4.8: Language reworded and moved (5) Section 6.6.1: Updated language, (6) Section 6.7: Updated language, (7) Section 7.1.2.3: Updated language | 
 | 5.1.1 | October 29, 2026 | Section 7.1.2.3.2 address jurisdictionLocalityName field | 
+| 5.1.2 | November 16, 2026 | Section 7.1.2.3.2 address subject:serialNumber and ambiguity with Mays, Section 7.1.2.3.3 address extKeyUsage criticality, Section 7.1.2.3.1 address basicConstraints to May |
 
 ### **1.2.2 Object Identifier**
 
@@ -3087,7 +3088,7 @@ _keyCertSign_ and _cRLSign_. \
 **_subjectAltName:_** Presence: Yes; Critical: No; Contains at least one GeneralName entry of the following types:  - rfc822Name and/or- otherName of type id-on-SmtpUTF8Mailbox - otherName: **_userPrincipalName_**. \
 **_keyUsage:_** Presence: Yes; Critical: Yes;  **Strict:** For ECDSA certificates: For signing only, bit positions are set for  _digitalSignature_ and may be set for _nonrepudiation_. For Key management only, bit positions are set for _keyAgreement_ and may be set for _encipherOnly_ or _decipherOnly_. For dual use, bit positions are set for _digitalSignature_ and _keyAgreement_ and may be set for _nonrepudiation_ and for _encipherOnly_ or _decipherOnly_ (only if keyAgreement is set). For RSA certificates: For signing only, bit positions are set for  _digitalSignature_ and may be set for _nonrepudiation_. For Key management only, bit positions are set for _keyEnchipherment_. For dual use, bit positions are set for _digitalSignature_ and _keyEncipherment_ and may be set for _nonrepudiation_. \
 **Multipurpose:** For ECDSA certificates: For signing only, bit positions are set for _digitalSignature_ and may be set for _nonrepudiation_. For Key management only, bit positions are set for _keyAgreement_ and may be set for _encipherOnly_ or _decipherOnly_. For dual use, bit positions are set for _digitalSignature_ and _keyAgreement_ and may be set for _nonrepudiation_ and for _encipherOnly_ or _decipherOnly_ (only if keyAgreement is set). For RSA certificates: For signing only, bit positions are set for _digitalSignature_ and may be set for _nonrepudiation_. For Key management only, bit positions are set for _keyEnchipherment_ and may be set for _dataEnchipherment_. For dual use, bit positions are set for _digitalSignature_ and _keyEnchipherment_ and may be set for _nonrepudiation_ and for _dataEnchipherment_. \
-**_basicConstraints:_** Presence: Yes; Critical: Yes;  The cA field is set to false. \
+**_basicConstraints:_** {May} Presence: Yes; Critical: Yes;  The cA field is set to false. \
 **_crlDistributionPoints:_** Presence: Yes; Critical: No; Contains the HTTP URL of the CA's CRL service. \
 **_subjectKeyIdentifier_:** Presence: Yes; Critical: No; Set as defined within in [Section 4.2.1.2 of RFC 5280](https://tools.ietf.org/html/rfc5280#section-4.2.1.2).
 
@@ -3159,8 +3160,8 @@ _keyCertSign_ and _cRLSign_. \
 **_signature:_**  See [Section 7.1.3.2](#7132-signature-algorithm-identifier). \
 **_Issuer:_** Encoded value byte‐for‐byte identical to the encoded Subject of the Issuing CA. \
 **_validity:_**  See [Section 6.3.2](#632-certificate-operational-periods-and-key-pair-usage-periods). \
-**_Subject:_** **Code Signing Non EV**  **CN** = Organization legal name  **OU** = Organizational unit {May}  **O** = Full legal name or DBA with full legal name in parenthesis  **SERIALNUMBER** = Unique registration number[^5]  **L** = City/locality name present if **S** is absent  **S** = State or province name present if **L** is absent  **C** = Two-letter ISO 3166-1 country code of Organization's place of business. \
-**_Subject:_** **Code Signing EV**  **CN** = Organization legal name  **OU** = Organizational unit {May}  **O** = Full legal name or DBA with full legal name in parenthesis  2.5.4.15 = _businessCategory_[^6] {May} 1.3.6.1.4.1.311.60.2.1.1 = _jurisdictionLocalityName_ {May} 1.3.6.1.4.1.311.60.2.1.2 = _jurisdictionStateOrProvinceName_  1.3.6.1.4.1.311.60.2.1.3 = _jurisdictionCountryName_  **SERIALNUMBER** = Unique registration number[^5]  **L** = City/locality name  **S** = State or province name  **C** = Two-letter ISO 3166-1 country code of Organization's place of business. \
+**_Subject:_** **Code Signing Non EV**  **CN** = Organization legal name;  **OU** = Organizational unit {May};  **O** = Full legal name or DBA with full legal name in parenthesis;  **SERIALNUMBER** = Unique registration number[^5] {May}; **L** = City/locality name present if **S** is absent;  **S** = State or province name present if **L** is absent;  **C** = Two-letter ISO 3166-1 country code of Organization's place of business. \
+**_Subject:_** **Code Signing EV**  **CN** = Organization legal name;  **OU** = Organizational unit {May};  **O** = Full legal name or DBA with full legal name in parenthesis;  2.5.4.15 = _businessCategory_[^6]; 1.3.6.1.4.1.311.60.2.1.1 = _jurisdictionLocalityName_ {if required} ; 1.3.6.1.4.1.311.60.2.1.2 = _jurisdictionStateOrProvinceName_ {if required} ;  1.3.6.1.4.1.311.60.2.1.3 = _jurisdictionCountryName_;  **SERIALNUMBER** = Unique registration number[^5]; **L** = City/locality name;  **S** = State or province name;  **C** = Two-letter ISO 3166-1 country code of Organization's place of business. \
 **_subjectPublicKeyInfo:_** See [Section 7.1.3.1](#7131-subjectpublickeyinfo). \
 **_signatureAlgorithm:_**  Encoded value must be byte-for-byte identical to the tbsCertificate.signature. \
 **_authorityInformationAccess:_** Presence: Yes; Critical: No {May} _id-ad-ocsp_ (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder  _id-ad-caIssuers_ (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate. \
@@ -3186,7 +3187,7 @@ _keyCertSign_ and _cRLSign_. \
 **_authorityInformationAccess:_** Presence: Yes; Critical: No {May} id-ad-ocsp (OID 1.3.6.1.5.5.7.48.1): A HTTP URL of the Issuing CA's OCSP responder. _id-ad-caIssuers_ (OID 1.3.6.1.5.5.7.48.2): A HTTP URL of the Issuing CA's certificate. \
 **_authorityKeyIdentifier:_** Presence: Yes; Critical: No; Contains only the _keyIdentifier_ field identical to the _subjectKeyIdentifer_ field of the Issuing CA. \
 **_certificatePolicies:_** Presence: Yes; Critical: No; Certificate Policy: Policy Identifier = One IdenTrust single Timestamping Policy OID from [Section 7.1.6](#716-certificate-policy-object-identifier) (CA/B Forum + IdenTrust) Policy Qualifier Info: Policy Qualifier Id=id-qt-cps  Qualifier: HTTPS URL for the Issuing CA's Certificate Policy  Policy Qualifier Info:[^8]  Policy Qualifier Id=User Notice  Qualifier: Notice Text=Subordinate CA text. \
-**_extKeyUsage:_** Presence: Yes; Critical: No; _id-kp-timeStamping*. \
+**_extKeyUsage:_** Presence: Yes; Critical: Yes; _id-kp-timeStamping*. \
 **_subjectAltName:_** Not present. \
 **_keyUsage:_** Presence: Yes; Critical: Yes _digitalSignature_. \
 **_basicConstraints:_** Presence: May; Critical: Yes The cA field is set to false. \
@@ -3985,7 +3986,7 @@ No stipulation.
 
 [^5]: *SERIALNUMBER:* For **Private Organizations**, this field must include the registration number assigned by the relevant Incorporating or Registration Agency. If no number is provided, the incorporation or registration date must be entered in a standard date format; for **Government Entities** without a registration number or verifiable creation date, the CA must enter language indicating the entity is a government body; for **Business Entities**, the government-issued registration number must be entered. If the jurisdiction does not issue such numbers, the registration date must be used instead.
 
-[^6]: *businessCategory* accepted values: Private Organization; Government Entity; Non-Commercial Entity
+[^6]: *businessCategory* accepted values: Private Organization; Government Entity; Non-Commercial Entity; Business Entity 
 
 [^7]: The *Policy Qualifier Info-User Notice* is not present on Certificates issued on or after September 15, 2023
 
@@ -3997,4 +3998,4 @@ No stipulation.
 
 [^11]: For Enterprise RAs, the firm must be experienced in information system auditing and may be a qualified third party or a qualified independent internal auditing group.
 
-[^12]: 3 years when issued before February 26, 2026
+[^12]: 39 months when issued before February 26, 2026
